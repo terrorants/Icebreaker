@@ -1,3 +1,3 @@
-# Component constraints for C:\Users\Terence Kim\Documents\PSoC Creator\CY8CKIT_046_USB_Audio01\Icebreaker.cydsn\TopDesign\TopDesign.cysch
-# Project: C:\Users\Terence Kim\Documents\PSoC Creator\CY8CKIT_046_USB_Audio01\Icebreaker.cydsn\Icebreaker.cyprj
-# Date: Tue, 27 Nov 2018 08:54:54 GMT
+# Component constraints for C:\dev\git\Icebreaker\Icebreaker.cydsn\TopDesign\TopDesign.cysch
+# Project: C:\dev\git\Icebreaker\Icebreaker.cydsn\Icebreaker.cyprj
+# Date: Tue, 27 Nov 2018 10:19:26 GMT

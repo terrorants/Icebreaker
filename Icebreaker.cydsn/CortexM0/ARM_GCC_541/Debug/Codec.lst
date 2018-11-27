@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
   28:Codec.c       **** * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Cypress 
   29:Codec.c       **** * reserves the right to make changes to the Software without notice. Cypress 
   30:Codec.c       **** * does not assume any liability arising out of the application or use of the 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 2
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 2
 
 
   31:Codec.c       **** * Software or any product or circuit described in the Software. Cypress does 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
   85:Codec.c       **** 	return ret;  
   86:Codec.c       **** }
   87:Codec.c       **** 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 3
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 3
 
 
   88:Codec.c       **** /*******************************************************************************
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  116:Codec.c       **** 	{
  117:Codec.c       **** 		temp = CodecI2CM_I2CMasterWriteByte(((regAddr << 0x01) | (HI8(data) & 0x01)), I2C_TIMEOUT_MS);
   54              		.loc 1 117 0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 4
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 4
 
 
   55 0016 6D00     		lsls	r5, r5, #1
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
   95              		.size	Codec_SendData, .-Codec_SendData
   96 0046 C046     		.section	.text.Codec_SetSamplingRate,"ax",%progbits
   97              		.align	2
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 5
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 5
 
 
   98              		.global	Codec_SetSamplingRate
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  121 000a 10BD     		pop	{r4, pc}
  122              		.cfi_endproc
  123              	.LFE3:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 6
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 6
 
 
  124              		.size	Codec_SetSamplingRate, .-Codec_SetSamplingRate
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  148              	.L5:
  193:Codec.c       **** 	}
  194:Codec.c       **** 	
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 7
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 7
 
 
  195:Codec.c       **** 	return Codec_SendData(CODEC_REG_LHPOUT, (volume + (CODEC_LHPOUT_BOTH + CODEC_LHPOUT_LZCEN + CODEC_
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  176 0000 10B5     		push	{r4, lr}
  177              		.cfi_def_cfa_offset 8
  178              		.cfi_offset 4, -8
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 8
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 8
 
 
  179              		.cfi_offset 14, -4
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  235:Codec.c       **** * Summary:
  236:Codec.c       **** *   Enables/Disables microphone boost (amplification)
  237:Codec.c       **** *
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 9
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 9
 
 
  238:Codec.c       **** *
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  248              	.LVL26:
  249 001e FFF7FEFF 		bl	Codec_SendData
  250              	.LVL27:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 10
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 10
 
 
  264:Codec.c       **** }
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  278 0002 0121     		movs	r1, #1
  279 0004 0920     		movs	r0, #9
  280 0006 FFF7FEFF 		bl	Codec_SendData
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 11
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 11
 
 
  281              	.LVL28:
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  308              	.LVL29:
  318:Codec.c       **** }
  309              		.loc 1 318 0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 12
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 12
 
 
  310              		@ sp needed
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  339              		.cfi_endproc
  340              	.LFE9:
  341              		.size	Codec_ResetOverI2C, .-Codec_ResetOverI2C
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 13
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 13
 
 
  342              		.section	.text.Codec_Init,"ax",%progbits
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
   86:Codec.c       **** 
  388              		.loc 1 86 0
  389              		@ sp needed
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 14
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 14
 
 
  390 0030 10BD     		pop	{r4, pc}
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  371:Codec.c       ****     return Codec_SendData(CODEC_REG_POWER_CTRL, Codec_powerControlSetting);
  417              		.loc 1 371 0
  418 000a 81B2     		uxth	r1, r0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 15
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 15
 
 
  419 000c 0620     		movs	r0, #6
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  446              		.cfi_def_cfa_offset 8
  447              		.cfi_offset 4, -8
  448              		.cfi_offset 14, -4
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 16
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 16
 
 
  399:Codec.c       **** 	Codec_powerControlSetting &= ~powerOnMask;
@@ -950,20 +950,20 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  492 0006 00000000 		.4byte	.Ldebug_abbrev0
  493 000a 04       		.byte	0x4
  494 000b 01       		.uleb128 0x1
- 495 000c D7010000 		.4byte	.LASF43
+ 495 000c 82010000 		.4byte	.LASF43
  496 0010 0C       		.byte	0xc
  497 0011 C8000000 		.4byte	.LASF44
- 498 0015 10010000 		.4byte	.LASF45
+ 498 0015 59020000 		.4byte	.LASF45
  499 0019 00000000 		.4byte	.Ldebug_ranges0+0
  500 001d 00000000 		.4byte	0
  501 0021 00000000 		.4byte	.Ldebug_line0
  502 0025 02       		.uleb128 0x2
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 17
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 17
 
 
  503 0026 01       		.byte	0x1
  504 0027 06       		.byte	0x6
- 505 0028 00030000 		.4byte	.LASF0
+ 505 0028 D2020000 		.4byte	.LASF0
  506 002c 02       		.uleb128 0x2
  507 002d 01       		.byte	0x1
  508 002e 08       		.byte	0x8
@@ -971,7 +971,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  510 0033 02       		.uleb128 0x2
  511 0034 02       		.byte	0x2
  512 0035 05       		.byte	0x5
- 513 0036 C6020000 		.4byte	.LASF2
+ 513 0036 98020000 		.4byte	.LASF2
  514 003a 02       		.uleb128 0x2
  515 003b 02       		.byte	0x2
  516 003c 07       		.byte	0x7
@@ -979,7 +979,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  518 0041 02       		.uleb128 0x2
  519 0042 04       		.byte	0x4
  520 0043 05       		.byte	0x5
- 521 0044 E6020000 		.4byte	.LASF4
+ 521 0044 B8020000 		.4byte	.LASF4
  522 0048 02       		.uleb128 0x2
  523 0049 04       		.byte	0x4
  524 004a 07       		.byte	0x7
@@ -987,7 +987,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  526 004f 02       		.uleb128 0x2
  527 0050 08       		.byte	0x8
  528 0051 05       		.byte	0x5
- 529 0052 85020000 		.4byte	.LASF6
+ 529 0052 30020000 		.4byte	.LASF6
  530 0056 02       		.uleb128 0x2
  531 0057 08       		.byte	0x8
  532 0058 07       		.byte	0x7
@@ -999,26 +999,26 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  538 0064 02       		.uleb128 0x2
  539 0065 04       		.byte	0x4
  540 0066 07       		.byte	0x7
- 541 0067 89010000 		.4byte	.LASF8
+ 541 0067 34010000 		.4byte	.LASF8
  542 006b 04       		.uleb128 0x4
  543 006c B6000000 		.4byte	.LASF9
  544 0070 02       		.byte	0x2
  545 0071 E401     		.2byte	0x1e4
  546 0073 2C000000 		.4byte	0x2c
  547 0077 04       		.uleb128 0x4
- 548 0078 65010000 		.4byte	.LASF10
+ 548 0078 10010000 		.4byte	.LASF10
  549 007c 02       		.byte	0x2
  550 007d E501     		.2byte	0x1e5
  551 007f 3A000000 		.4byte	0x3a
  552 0083 04       		.uleb128 0x4
- 553 0084 6C010000 		.4byte	.LASF11
+ 553 0084 17010000 		.4byte	.LASF11
  554 0088 02       		.byte	0x2
  555 0089 E601     		.2byte	0x1e6
  556 008b 48000000 		.4byte	0x48
  557 008f 02       		.uleb128 0x2
  558 0090 04       		.byte	0x4
  559 0091 04       		.byte	0x4
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 18
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 18
 
 
  560 0092 47000000 		.4byte	.LASF12
@@ -1029,17 +1029,17 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  565 009d 02       		.uleb128 0x2
  566 009e 01       		.byte	0x1
  567 009f 08       		.byte	0x8
- 568 00a0 EF020000 		.4byte	.LASF14
+ 568 00a0 C1020000 		.4byte	.LASF14
  569 00a4 02       		.uleb128 0x2
  570 00a5 08       		.byte	0x8
  571 00a6 04       		.byte	0x4
- 572 00a7 F4020000 		.4byte	.LASF15
+ 572 00a7 C6020000 		.4byte	.LASF15
  573 00ab 02       		.uleb128 0x2
  574 00ac 04       		.byte	0x4
  575 00ad 07       		.byte	0x7
- 576 00ae 7C020000 		.4byte	.LASF16
+ 576 00ae 27020000 		.4byte	.LASF16
  577 00b2 05       		.uleb128 0x5
- 578 00b3 9F020000 		.4byte	.LASF19
+ 578 00b3 4A020000 		.4byte	.LASF19
  579 00b7 01       		.byte	0x1
  580 00b8 6E       		.byte	0x6e
  581 00b9 6B000000 		.4byte	0x6b
@@ -1049,7 +1049,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  585 00c6 9C       		.byte	0x9c
  586 00c7 51010000 		.4byte	0x151
  587 00cb 06       		.uleb128 0x6
- 588 00cc 74020000 		.4byte	.LASF17
+ 588 00cc 1F020000 		.4byte	.LASF17
  589 00d0 01       		.byte	0x1
  590 00d1 6E       		.byte	0x6e
  591 00d2 6B000000 		.4byte	0x6b
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  614 010a 09       		.uleb128 0x9
  615 010b 01       		.uleb128 0x1
  616 010c 51       		.byte	0x51
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 19
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 19
 
 
  617 010d 01       		.uleb128 0x1
@@ -1126,7 +1126,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  659 014c 22040000 		.4byte	0x422
  660 0150 00       		.byte	0
  661 0151 05       		.uleb128 0x5
- 662 0152 73010000 		.4byte	.LASF20
+ 662 0152 1E010000 		.4byte	.LASF20
  663 0156 01       		.byte	0x1
  664 0157 9C       		.byte	0x9c
  665 0158 6B000000 		.4byte	0x6b
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  671 016a 06       		.uleb128 0x6
  672 016b BC000000 		.4byte	.LASF21
  673 016f 01       		.byte	0x1
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 20
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 20
 
 
  674 0170 9C       		.byte	0x9c
@@ -1165,7 +1165,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  695 019d 9C       		.byte	0x9c
  696 019e C1010000 		.4byte	0x1c1
  697 01a2 06       		.uleb128 0x6
- 698 01a3 DF020000 		.4byte	.LASF23
+ 698 01a3 B1020000 		.4byte	.LASF23
  699 01a7 01       		.byte	0x1
  700 01a8 BC       		.byte	0xbc
  701 01a9 6B000000 		.4byte	0x6b
@@ -1191,14 +1191,14 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  721 01d5 9C       		.byte	0x9c
  722 01d6 F9010000 		.4byte	0x1f9
  723 01da 06       		.uleb128 0x6
- 724 01db D0020000 		.4byte	.LASF25
+ 724 01db A2020000 		.4byte	.LASF25
  725 01df 01       		.byte	0x1
  726 01e0 DC       		.byte	0xdc
  727 01e1 F9010000 		.4byte	0x1f9
  728 01e5 D0000000 		.4byte	.LLST5
  729 01e9 0B       		.uleb128 0xb
  730 01ea 22000000 		.4byte	.LVL24
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 21
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 21
 
 
  731 01ee B2000000 		.4byte	0xb2
@@ -1212,9 +1212,9 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  739 01f9 02       		.uleb128 0x2
  740 01fa 01       		.byte	0x1
  741 01fb 02       		.byte	0x2
- 742 01fc 1D030000 		.4byte	.LASF26
+ 742 01fc EF020000 		.4byte	.LASF26
  743 0200 05       		.uleb128 0x5
- 744 0201 C5010000 		.4byte	.LASF27
+ 744 0201 70010000 		.4byte	.LASF27
  745 0205 01       		.byte	0x1
  746 0206 FE       		.byte	0xfe
  747 0207 6B000000 		.4byte	0x6b
@@ -1240,7 +1240,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  767 0236 00       		.byte	0
  768 0237 00       		.byte	0
  769 0238 0C       		.uleb128 0xc
- 770 0239 65020000 		.4byte	.LASF29
+ 770 0239 10020000 		.4byte	.LASF29
  771 023d 01       		.byte	0x1
  772 023e 2001     		.2byte	0x120
  773 0240 6B000000 		.4byte	0x6b
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  785 025e 01       		.uleb128 0x1
  786 025f 39       		.byte	0x39
  787 0260 09       		.uleb128 0x9
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 22
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 22
 
 
  788 0261 01       		.uleb128 0x1
@@ -1268,7 +1268,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  792 0265 00       		.byte	0
  793 0266 00       		.byte	0
  794 0267 0C       		.uleb128 0xc
- 795 0268 0C030000 		.4byte	.LASF30
+ 795 0268 DE020000 		.4byte	.LASF30
  796 026c 01       		.byte	0x1
  797 026d 3B01     		.2byte	0x13b
  798 026f 6B000000 		.4byte	0x6b
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  842 02c3 00       		.byte	0
  843 02c4 00       		.byte	0
  844 02c5 05       		.uleb128 0x5
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 23
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 23
 
 
  845 02c6 05010000 		.4byte	.LASF32
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  899 0332 00       		.byte	0
  900 0333 08       		.uleb128 0x8
  901 0334 22000000 		.4byte	.LVL35
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 24
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 24
 
 
  902 0338 B2000000 		.4byte	0xb2
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  956 039a 12010000 		.4byte	.LLST7
  957 039e 0B       		.uleb128 0xb
  958 039f 12000000 		.4byte	.LVL40
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 25
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 25
 
 
  959 03a3 B2000000 		.4byte	0xb2
@@ -1450,7 +1450,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  965 03ac 00       		.byte	0
  966 03ad 00       		.byte	0
  967 03ae 0C       		.uleb128 0xc
- 968 03af 96010000 		.4byte	.LASF36
+ 968 03af 41010000 		.4byte	.LASF36
  969 03b3 01       		.byte	0x1
  970 03b4 8D01     		.2byte	0x18d
  971 03b6 6B000000 		.4byte	0x6b
@@ -1460,7 +1460,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  975 03c3 9C       		.byte	0x9c
  976 03c4 E8030000 		.4byte	0x3e8
  977 03c8 0E       		.uleb128 0xe
- 978 03c9 93020000 		.4byte	.LASF37
+ 978 03c9 3E020000 		.4byte	.LASF37
  979 03cd 01       		.byte	0x1
  980 03ce 8D01     		.2byte	0x18d
  981 03d0 83000000 		.4byte	0x83
@@ -1476,7 +1476,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  991 03e6 00       		.byte	0
  992 03e7 00       		.byte	0
  993 03e8 0F       		.uleb128 0xf
- 994 03e9 AE020000 		.4byte	.LASF38
+ 994 03e9 80020000 		.4byte	.LASF38
  995 03ed 01       		.byte	0x1
  996 03ee 30       		.byte	0x30
  997 03ef 77000000 		.4byte	0x77
@@ -1484,7 +1484,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  999 03f4 03       		.byte	0x3
  1000 03f5 00000000 		.4byte	Codec_analogPathSetting
  1001 03f9 10       		.uleb128 0x10
- 1002 03fa AB010000 		.4byte	.LASF46
+ 1002 03fa 56010000 		.4byte	.LASF46
  1003 03fe 01       		.byte	0x1
  1004 03ff 31       		.byte	0x31
  1005 0400 83000000 		.4byte	0x83
@@ -1492,26 +1492,26 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  1007 0405 03       		.byte	0x3
  1008 0406 00000000 		.4byte	Codec_powerControlSetting
  1009 040a 11       		.uleb128 0x11
- 1010 040b 47030000 		.4byte	.LASF39
- 1011 040f 47030000 		.4byte	.LASF39
+ 1010 040b 19030000 		.4byte	.LASF39
+ 1011 040f 19030000 		.4byte	.LASF39
  1012 0413 03       		.byte	0x3
  1013 0414 1B01     		.2byte	0x11b
  1014 0416 11       		.uleb128 0x11
  1015 0417 0E000000 		.4byte	.LASF40
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 26
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 26
 
 
  1016 041b 0E000000 		.4byte	.LASF40
  1017 041f 03       		.byte	0x3
  1018 0420 1E01     		.2byte	0x11e
  1019 0422 11       		.uleb128 0x11
- 1020 0423 2B030000 		.4byte	.LASF41
- 1021 0427 2B030000 		.4byte	.LASF41
+ 1020 0423 FD020000 		.4byte	.LASF41
+ 1021 0427 FD020000 		.4byte	.LASF41
  1022 042b 03       		.byte	0x3
  1023 042c 1D01     		.2byte	0x11d
  1024 042e 12       		.uleb128 0x12
- 1025 042f 23030000 		.4byte	.LASF42
- 1026 0433 23030000 		.4byte	.LASF42
+ 1025 042f F5020000 		.4byte	.LASF42
+ 1026 0433 F5020000 		.4byte	.LASF42
  1027 0437 04       		.byte	0x4
  1028 0438 D9       		.byte	0xd9
  1029 0439 00       		.byte	0
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  1070 0026 08       		.uleb128 0x8
  1071 0027 00       		.byte	0
  1072 0028 00       		.byte	0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 27
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 27
 
 
  1073 0029 04       		.uleb128 0x4
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  1127 0060 00       		.byte	0
  1128 0061 07       		.uleb128 0x7
  1129 0062 34       		.uleb128 0x34
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 28
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 28
 
 
  1130 0063 00       		.byte	0
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  1184 00a2 3F       		.uleb128 0x3f
  1185 00a3 19       		.uleb128 0x19
  1186 00a4 03       		.uleb128 0x3
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 29
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 29
 
 
  1187 00a5 0E       		.uleb128 0xe
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  1241 00dc 03       		.uleb128 0x3
  1242 00dd 0E       		.uleb128 0xe
  1243 00de 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 30
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 30
 
 
  1244 00df 0B       		.uleb128 0xb
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  1298 0115 3A       		.uleb128 0x3a
  1299 0116 0B       		.uleb128 0xb
  1300 0117 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 31
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 31
 
 
  1301 0118 0B       		.uleb128 0xb
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  1355 0074 41000000 		.4byte	.LVL13-1
  1356 0078 0400     		.2byte	0x4
  1357 007a 70       		.byte	0x70
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 32
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 32
 
 
  1358 007b 9C7F     		.sleb128 -100
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  1412 0104 0400     		.2byte	0x4
  1413 0106 F3       		.byte	0xf3
  1414 0107 01       		.uleb128 0x1
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 33
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 33
 
 
  1415 0108 50       		.byte	0x50
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  1469 0048 00000000 		.4byte	.LFB9
  1470 004c 0C000000 		.4byte	.LFE9-.LFB9
  1471 0050 00000000 		.4byte	.LFB1
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 34
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 34
 
 
  1472 0054 32000000 		.4byte	.LFE1-.LFB1
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  1513      7369676E 
  1513      65642069 
  1513      6E7400
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 35
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 35
 
 
  1514              	.LASF28:
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  1539      676E6564 
  1539      20636861 
  1539      7200
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 36
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 36
 
 
  1540              	.LASF13:
@@ -2114,155 +2114,150 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 1
  1545 0105 436F6465 		.ascii	"Codec_Init\000"
  1545      635F496E 
  1545      697400
- 1546              	.LASF45:
- 1547 0110 433A5C55 		.ascii	"C:\\Users\\Terence Kim\\Documents\\PSoC Creator\\CY"
- 1547      73657273 
- 1547      5C546572 
- 1547      656E6365 
- 1547      204B696D 
- 1548 013e 38434B49 		.ascii	"8CKIT_046_USB_Audio01\\Icebreaker.cydsn\000"
- 1548      545F3034 
- 1548      365F5553 
- 1548      425F4175 
- 1548      64696F30 
- 1549              	.LASF10:
- 1550 0165 75696E74 		.ascii	"uint16\000"
- 1550      313600
- 1551              	.LASF11:
- 1552 016c 75696E74 		.ascii	"uint32\000"
- 1552      333200
- 1553              	.LASF20:
- 1554 0173 436F6465 		.ascii	"Codec_SetSamplingRate\000"
- 1554      635F5365 
- 1554      7453616D 
- 1554      706C696E 
- 1554      67526174 
- 1555              	.LASF8:
- 1556 0189 756E7369 		.ascii	"unsigned int\000"
- 1556      676E6564 
- 1556      20696E74 
- 1556      00
- 1557              	.LASF36:
- 1558 0196 436F6465 		.ascii	"Codec_PowerOnControl\000"
- 1558      635F506F 
- 1558      7765724F 
- 1558      6E436F6E 
- 1558      74726F6C 
- 1559              	.LASF46:
- 1560 01ab 436F6465 		.ascii	"Codec_powerControlSetting\000"
- 1560      635F706F 
- 1560      77657243 
- 1560      6F6E7472 
- 1560      6F6C5365 
- 1561              	.LASF27:
- 1562 01c5 436F6465 		.ascii	"Codec_SetMicBoost\000"
- 1562      635F5365 
- 1562      744D6963 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 37
+ 1546              	.LASF10:
+ 1547 0110 75696E74 		.ascii	"uint16\000"
+ 1547      313600
+ 1548              	.LASF11:
+ 1549 0117 75696E74 		.ascii	"uint32\000"
+ 1549      333200
+ 1550              	.LASF20:
+ 1551 011e 436F6465 		.ascii	"Codec_SetSamplingRate\000"
+ 1551      635F5365 
+ 1551      7453616D 
+ 1551      706C696E 
+ 1551      67526174 
+ 1552              	.LASF8:
+ 1553 0134 756E7369 		.ascii	"unsigned int\000"
+ 1553      676E6564 
+ 1553      20696E74 
+ 1553      00
+ 1554              	.LASF36:
+ 1555 0141 436F6465 		.ascii	"Codec_PowerOnControl\000"
+ 1555      635F506F 
+ 1555      7765724F 
+ 1555      6E436F6E 
+ 1555      74726F6C 
+ 1556              	.LASF46:
+ 1557 0156 436F6465 		.ascii	"Codec_powerControlSetting\000"
+ 1557      635F706F 
+ 1557      77657243 
+ 1557      6F6E7472 
+ 1557      6F6C5365 
+ 1558              	.LASF27:
+ 1559 0170 436F6465 		.ascii	"Codec_SetMicBoost\000"
+ 1559      635F5365 
+ 1559      744D6963 
+ 1559      426F6F73 
+ 1559      7400
+ 1560              	.LASF43:
+ 1561 0182 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1561      43313120 
+ 1561      352E342E 
+ 1561      31203230 
+ 1561      31363036 
+ 1562 01b5 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 1562      20726576 
+ 1562      6973696F 
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 37
 
 
- 1562      426F6F73 
- 1562      7400
- 1563              	.LASF43:
- 1564 01d7 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1564      43313120 
- 1564      352E342E 
- 1564      31203230 
- 1564      31363036 
- 1565 020a 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 1565      20726576 
- 1565      6973696F 
- 1565      6E203233 
- 1565      37373135 
- 1566 023d 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1566      66756E63 
- 1566      74696F6E 
- 1566      2D736563 
- 1566      74696F6E 
- 1567              	.LASF29:
- 1568 0265 436F6465 		.ascii	"Codec_Activate\000"
- 1568      635F4163 
- 1568      74697661 
- 1568      746500
- 1569              	.LASF17:
- 1570 0274 72656741 		.ascii	"regAddr\000"
- 1570      64647200 
- 1571              	.LASF16:
- 1572 027c 73697A65 		.ascii	"sizetype\000"
- 1572      74797065 
- 1572      00
- 1573              	.LASF6:
- 1574 0285 6C6F6E67 		.ascii	"long long int\000"
- 1574      206C6F6E 
- 1574      6720696E 
- 1574      7400
- 1575              	.LASF37:
- 1576 0293 706F7765 		.ascii	"powerOnMask\000"
- 1576      724F6E4D 
- 1576      61736B00 
- 1577              	.LASF19:
- 1578 029f 436F6465 		.ascii	"Codec_SendData\000"
- 1578      635F5365 
- 1578      6E644461 
- 1578      746100
- 1579              	.LASF38:
- 1580 02ae 436F6465 		.ascii	"Codec_analogPathSetting\000"
- 1580      635F616E 
- 1580      616C6F67 
- 1580      50617468 
- 1580      53657474 
- 1581              	.LASF2:
- 1582 02c6 73686F72 		.ascii	"short int\000"
- 1582      7420696E 
- 1582      7400
- 1583              	.LASF25:
- 1584 02d0 69734D75 		.ascii	"isMuteOrUnmute\000"
- 1584      74654F72 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccRw6Eej.s 			page 38
+ 1562      6E203233 
+ 1562      37373135 
+ 1563 01e8 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1563      66756E63 
+ 1563      74696F6E 
+ 1563      2D736563 
+ 1563      74696F6E 
+ 1564              	.LASF29:
+ 1565 0210 436F6465 		.ascii	"Codec_Activate\000"
+ 1565      635F4163 
+ 1565      74697661 
+ 1565      746500
+ 1566              	.LASF17:
+ 1567 021f 72656741 		.ascii	"regAddr\000"
+ 1567      64647200 
+ 1568              	.LASF16:
+ 1569 0227 73697A65 		.ascii	"sizetype\000"
+ 1569      74797065 
+ 1569      00
+ 1570              	.LASF6:
+ 1571 0230 6C6F6E67 		.ascii	"long long int\000"
+ 1571      206C6F6E 
+ 1571      6720696E 
+ 1571      7400
+ 1572              	.LASF37:
+ 1573 023e 706F7765 		.ascii	"powerOnMask\000"
+ 1573      724F6E4D 
+ 1573      61736B00 
+ 1574              	.LASF19:
+ 1575 024a 436F6465 		.ascii	"Codec_SendData\000"
+ 1575      635F5365 
+ 1575      6E644461 
+ 1575      746100
+ 1576              	.LASF45:
+ 1577 0259 433A5C64 		.ascii	"C:\\dev\\git\\Icebreaker\\Icebreaker.cydsn\000"
+ 1577      65765C67 
+ 1577      69745C49 
+ 1577      63656272 
+ 1577      65616B65 
+ 1578              	.LASF38:
+ 1579 0280 436F6465 		.ascii	"Codec_analogPathSetting\000"
+ 1579      635F616E 
+ 1579      616C6F67 
+ 1579      50617468 
+ 1579      53657474 
+ 1580              	.LASF2:
+ 1581 0298 73686F72 		.ascii	"short int\000"
+ 1581      7420696E 
+ 1581      7400
+ 1582              	.LASF25:
+ 1583 02a2 69734D75 		.ascii	"isMuteOrUnmute\000"
+ 1583      74654F72 
+ 1583      556E6D75 
+ 1583      746500
+ 1584              	.LASF23:
+ 1585 02b1 766F6C75 		.ascii	"volume\000"
+ 1585      6D6500
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccnoO5QW.s 			page 38
 
 
- 1584      556E6D75 
- 1584      746500
- 1585              	.LASF23:
- 1586 02df 766F6C75 		.ascii	"volume\000"
- 1586      6D6500
- 1587              	.LASF4:
- 1588 02e6 6C6F6E67 		.ascii	"long int\000"
- 1588      20696E74 
- 1588      00
- 1589              	.LASF14:
- 1590 02ef 63686172 		.ascii	"char\000"
- 1590      00
- 1591              	.LASF15:
- 1592 02f4 6C6F6E67 		.ascii	"long double\000"
- 1592      20646F75 
- 1592      626C6500 
- 1593              	.LASF0:
- 1594 0300 7369676E 		.ascii	"signed char\000"
- 1594      65642063 
- 1594      68617200 
- 1595              	.LASF30:
- 1596 030c 436F6465 		.ascii	"Codec_Deactivate\000"
- 1596      635F4465 
- 1596      61637469 
- 1596      76617465 
- 1596      00
- 1597              	.LASF26:
- 1598 031d 5F426F6F 		.ascii	"_Bool\000"
- 1598      6C00
- 1599              	.LASF42:
- 1600 0323 43794465 		.ascii	"CyDelay\000"
- 1600      6C617900 
- 1601              	.LASF41:
- 1602 032b 436F6465 		.ascii	"CodecI2CM_I2CMasterSendStop\000"
- 1602      63493243 
- 1602      4D5F4932 
- 1602      434D6173 
- 1602      74657253 
- 1603              	.LASF39:
- 1604 0347 436F6465 		.ascii	"CodecI2CM_I2CMasterSendStart\000"
- 1604      63493243 
- 1604      4D5F4932 
- 1604      434D6173 
- 1604      74657253 
- 1605              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 1586              	.LASF4:
+ 1587 02b8 6C6F6E67 		.ascii	"long int\000"
+ 1587      20696E74 
+ 1587      00
+ 1588              	.LASF14:
+ 1589 02c1 63686172 		.ascii	"char\000"
+ 1589      00
+ 1590              	.LASF15:
+ 1591 02c6 6C6F6E67 		.ascii	"long double\000"
+ 1591      20646F75 
+ 1591      626C6500 
+ 1592              	.LASF0:
+ 1593 02d2 7369676E 		.ascii	"signed char\000"
+ 1593      65642063 
+ 1593      68617200 
+ 1594              	.LASF30:
+ 1595 02de 436F6465 		.ascii	"Codec_Deactivate\000"
+ 1595      635F4465 
+ 1595      61637469 
+ 1595      76617465 
+ 1595      00
+ 1596              	.LASF26:
+ 1597 02ef 5F426F6F 		.ascii	"_Bool\000"
+ 1597      6C00
+ 1598              	.LASF42:
+ 1599 02f5 43794465 		.ascii	"CyDelay\000"
+ 1599      6C617900 
+ 1600              	.LASF41:
+ 1601 02fd 436F6465 		.ascii	"CodecI2CM_I2CMasterSendStop\000"
+ 1601      63493243 
+ 1601      4D5F4932 
+ 1601      434D6173 
+ 1601      74657253 
+ 1602              	.LASF39:
+ 1603 0319 436F6465 		.ascii	"CodecI2CM_I2CMasterSendStart\000"
+ 1603      63493243 
+ 1603      4D5F4932 
+ 1603      434D6173 
+ 1603      74657253 
+ 1604              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

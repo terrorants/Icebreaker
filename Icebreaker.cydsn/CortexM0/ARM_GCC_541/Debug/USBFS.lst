@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
   29:Generated_Source\PSoC4/USBFS.c **** ***************************************/
   30:Generated_Source\PSoC4/USBFS.c **** 
   31:Generated_Source\PSoC4/USBFS.c **** /** Indicates whether the USBFS has been initialized. The variable is
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 2
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 2
 
 
   32:Generated_Source\PSoC4/USBFS.c **** * initialized to 0 after device reset and set to 1 the first time USBFS_Start()
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
   86:Generated_Source\PSoC4/USBFS.c ****         USBFS_ep3_dma__TR_OUTPUT,
   87:Generated_Source\PSoC4/USBFS.c ****         USBFS_ep4_dma__TR_OUTPUT,
   88:Generated_Source\PSoC4/USBFS.c ****         0u,
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 3
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 3
 
 
   89:Generated_Source\PSoC4/USBFS.c ****         USBFS_ep6_dma__TR_OUTPUT,
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  143:Generated_Source\PSoC4/USBFS.c **** *   required for USBFS component operation.
  144:Generated_Source\PSoC4/USBFS.c **** *
  145:Generated_Source\PSoC4/USBFS.c **** *   PSoC 4200L devices: when USBFS component configured to DMA with Automatic
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 4
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 4
 
 
  146:Generated_Source\PSoC4/USBFS.c **** *   Buffer Management, the DMA interrupt priority is changed to the highest
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  200:Generated_Source\PSoC4/USBFS.c **** ****************************************************************************//**
  201:Generated_Source\PSoC4/USBFS.c **** *
  202:Generated_Source\PSoC4/USBFS.c **** * This function initializes or restores the component according to the
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 5
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 5
 
 
  203:Generated_Source\PSoC4/USBFS.c **** * customizer Configure dialog settings. It is not necessary to call
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  257:Generated_Source\PSoC4/USBFS.c ****     USBFS_PM_ACT_CFG_REG |= USBFS_PM_ACT_EN_FSUSB;
  258:Generated_Source\PSoC4/USBFS.c ****     /* Enable USB block for Standby Power Mode. */
  259:Generated_Source\PSoC4/USBFS.c ****     USBFS_PM_STBY_CFG_REG |= USBFS_PM_STBY_EN_FSUSB;
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 6
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 6
 
 
  260:Generated_Source\PSoC4/USBFS.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  314:Generated_Source\PSoC4/USBFS.c **** 
  315:Generated_Source\PSoC4/USBFS.c ****     /* Configure interrupts from USB block. */
  316:Generated_Source\PSoC4/USBFS.c **** #if (CY_PSOC4)
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 7
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 7
 
 
  317:Generated_Source\PSoC4/USBFS.c ****     /* Configure hi_int: set handler and priority. */
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  371:Generated_Source\PSoC4/USBFS.c ****         (void) CyIntSetVector(USBFS_EP_5_VECT_NUM, &USBFS_EP_5_ISR);
  372:Generated_Source\PSoC4/USBFS.c ****     #endif /* (USBFS_EP5_ISR_ACTIVE) */
  373:Generated_Source\PSoC4/USBFS.c **** 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 8
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 8
 
 
  374:Generated_Source\PSoC4/USBFS.c ****     /* Set Data Endpoint 6 Interrupt. */
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  428:Generated_Source\PSoC4/USBFS.c **** *   following list.
  429:Generated_Source\PSoC4/USBFS.c **** *
  430:Generated_Source\PSoC4/USBFS.c **** *       *USBFS_3V_OPERATION* - Disable voltage regulator and pass-
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 9
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 9
 
 
  431:Generated_Source\PSoC4/USBFS.c **** *                                      through Vcc for pull-up
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  485:Generated_Source\PSoC4/USBFS.c ****     USBFS_lastPacketSize  = 0u;
  486:Generated_Source\PSoC4/USBFS.c **** 
  487:Generated_Source\PSoC4/USBFS.c ****     /* Enable component interrupts. */
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 10
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 10
 
 
  488:Generated_Source\PSoC4/USBFS.c **** #if (CY_PSOC4)
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  542:Generated_Source\PSoC4/USBFS.c **** /* Arbiter configuration for DMA transfers. */
  543:Generated_Source\PSoC4/USBFS.c **** #if (USBFS_EP_MANAGEMENT_DMA)
  544:Generated_Source\PSoC4/USBFS.c ****     /* Configure Arbiter for Manual or Auto DMA operation and clear configuration completion. */
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 11
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 11
 
 
  545:Generated_Source\PSoC4/USBFS.c ****     USBFS_ARB_CFG_REG = USBFS_DEFAULT_ARB_CFG;
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  599:Generated_Source\PSoC4/USBFS.c **** 
  600:Generated_Source\PSoC4/USBFS.c ****     /* Clear EP0 count register. */
  601:Generated_Source\PSoC4/USBFS.c ****     USBFS_EP0_CNT_REG = USBFS_CLEAR_REG;
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 12
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 12
 
 
  602:Generated_Source\PSoC4/USBFS.c **** 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  656:Generated_Source\PSoC4/USBFS.c **** *       Initialized to zero in this API.
  657:Generated_Source\PSoC4/USBFS.c **** *   USBFS_deviceAddress - Contains the current device address. This
  658:Generated_Source\PSoC4/USBFS.c **** *       variable is initialized to zero in this API. The Host starts to communicate
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 13
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 13
 
 
  659:Generated_Source\PSoC4/USBFS.c **** *      to the device with address 0 and then sets it to a whatever value using
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  713:Generated_Source\PSoC4/USBFS.c **** *
  714:Generated_Source\PSoC4/USBFS.c **** * \globalvars
  715:Generated_Source\PSoC4/USBFS.c **** *   \ref USBFS_configuration
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 14
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 14
 
 
  716:Generated_Source\PSoC4/USBFS.c **** *
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  770:Generated_Source\PSoC4/USBFS.c ****     CyIntDisable(USBFS_BUS_RESET_VECT_NUM);
  771:Generated_Source\PSoC4/USBFS.c ****     CyIntDisable(USBFS_EP_0_VECT_NUM);
  772:Generated_Source\PSoC4/USBFS.c **** 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 15
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 15
 
 
  773:Generated_Source\PSoC4/USBFS.c ****     #if (USBFS_SOF_ISR_ACTIVE)
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  827:Generated_Source\PSoC4/USBFS.c **** 
  828:Generated_Source\PSoC4/USBFS.c **** 
  829:Generated_Source\PSoC4/USBFS.c **** /*******************************************************************************
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 16
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 16
 
 
  830:Generated_Source\PSoC4/USBFS.c **** * Function Name: USBFS_CheckActivity
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  884:Generated_Source\PSoC4/USBFS.c **** *  configuration number or changes alternate settings of the interface. 
  885:Generated_Source\PSoC4/USBFS.c **** *  After configuration has been changed the OUT endpoints must be enabled and IN 
  886:Generated_Source\PSoC4/USBFS.c **** *  endpoint must be loaded with data to start communication with the host.
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 17
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 17
 
 
  887:Generated_Source\PSoC4/USBFS.c **** *
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  941:Generated_Source\PSoC4/USBFS.c **** *
  942:Generated_Source\PSoC4/USBFS.c **** * \return
  943:Generated_Source\PSoC4/USBFS.c **** *  Returns the current state of the specified USBFS endpoint. Symbolic names and
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 18
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 18
 
 
  944:Generated_Source\PSoC4/USBFS.c **** *  their associated values are given in the following table. Use these constants
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  998:Generated_Source\PSoC4/USBFS.c **** #if (USBFS_EP_MANAGEMENT_DMA)
  999:Generated_Source\PSoC4/USBFS.c **** #if (CY_PSOC4)
 1000:Generated_Source\PSoC4/USBFS.c ****     /*******************************************************************************
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 19
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 19
 
 
 1001:Generated_Source\PSoC4/USBFS.c ****     * Function Name: USBFS_InitEpDma
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
   50              		.file 2 "Generated_Source\\PSoC4\\USBFS_ep1_dma.h"
    1:Generated_Source\PSoC4/USBFS_ep1_dma.h **** /*******************************************************************************
    2:Generated_Source\PSoC4/USBFS_ep1_dma.h **** * File Name: USBFS_ep1_dma.h
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 20
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 20
 
 
    3:Generated_Source\PSoC4/USBFS_ep1_dma.h **** * Version 1.0
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
   57:Generated_Source\PSoC4/USBFS_ep1_dma.h **** static uint32 USBFS_ep1_dma_GetSrcDstTransferWidth(int32 descriptor);
   58:Generated_Source\PSoC4/USBFS_ep1_dma.h **** static void   USBFS_ep1_dma_SetAddressIncrement(int32 descriptor, uint32 addressIncrement);
   59:Generated_Source\PSoC4/USBFS_ep1_dma.h **** static uint32 USBFS_ep1_dma_GetAddressIncrement(int32 descriptor);
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 21
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 21
 
 
   60:Generated_Source\PSoC4/USBFS_ep1_dma.h **** static void   USBFS_ep1_dma_SetTriggerType(int32 descriptor, uint32 triggerType);
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  114:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *  If this function is called during a DMA transfer the transfer is aborted. 
  115:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *
  116:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *******************************************************************************/
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 22
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 22
 
 
  117:Generated_Source\PSoC4/USBFS_ep1_dma.h **** static CY_INLINE void USBFS_ep1_dma_ChDisable(void)
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  171:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *
  172:Generated_Source\PSoC4/USBFS_ep1_dma.h **** * Summary:
  173:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *  Gets the priority for the channel.
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 23
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 23
 
 
  174:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  228:Generated_Source\PSoC4/USBFS_ep1_dma.h **** 
  229:Generated_Source\PSoC4/USBFS_ep1_dma.h **** 
  230:Generated_Source\PSoC4/USBFS_ep1_dma.h **** /*******************************************************************************
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 24
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 24
 
 
  231:Generated_Source\PSoC4/USBFS_ep1_dma.h **** * Function Name: USBFS_ep1_dma_SetConfiguration
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  285:Generated_Source\PSoC4/USBFS_ep1_dma.h **** ********************************************************************************
  286:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *
  287:Generated_Source\PSoC4/USBFS_ep1_dma.h **** * Summary:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 25
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 25
 
 
  288:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *  Returns the status of the specified descriptor.
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  342:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *  Source address written to specified descriptor.
  343:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *
  344:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *******************************************************************************/
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 26
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 26
 
 
  345:Generated_Source\PSoC4/USBFS_ep1_dma.h **** static CY_INLINE void * USBFS_ep1_dma_GetSrcAddress(int32 descriptor)
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  399:Generated_Source\PSoC4/USBFS_ep1_dma.h **** ********************************************************************************
  400:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *
  401:Generated_Source\PSoC4/USBFS_ep1_dma.h **** * Summary:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 27
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 27
 
 
  402:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *  Sets the data element size for the specified descriptor.
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  456:Generated_Source\PSoC4/USBFS_ep1_dma.h **** * Function Name: USBFS_ep1_dma_SetNumDataElements
  457:Generated_Source\PSoC4/USBFS_ep1_dma.h **** ********************************************************************************
  458:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 28
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 28
 
 
  459:Generated_Source\PSoC4/USBFS_ep1_dma.h **** * Summary:
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  513:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *  address are turned on.
  514:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *
  515:Generated_Source\PSoC4/USBFS_ep1_dma.h **** * Parameters:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 29
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 29
 
 
  516:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *  descriptor:    Descriptor (0 or 1) modified by this function.
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  570:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *  descriptor:       Descriptor (0 or 1) modified by this function.
  571:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *  addressIncrement: Address increment settings. Refer to the API bit field
  572:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *                    definitions in CyDMA_P4.h or the API description in the DMA
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 30
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 30
 
 
  573:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *                    channel datasheet for the parameter options.
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  627:Generated_Source\PSoC4/USBFS_ep1_dma.h **** * Return:
  628:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *  None.
  629:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 31
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 31
 
 
  630:Generated_Source\PSoC4/USBFS_ep1_dma.h **** * Side effect:
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  684:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *
  685:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *******************************************************************************/
  686:Generated_Source\PSoC4/USBFS_ep1_dma.h **** static CY_INLINE void USBFS_ep1_dma_SetTransferMode(int32 descriptor, uint32 transferMode)
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 32
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 32
 
 
  687:Generated_Source\PSoC4/USBFS_ep1_dma.h **** {
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  741:Generated_Source\PSoC4/USBFS_ep1_dma.h **** 
  742:Generated_Source\PSoC4/USBFS_ep1_dma.h **** /*******************************************************************************
  743:Generated_Source\PSoC4/USBFS_ep1_dma.h **** * Function Name: USBFS_ep1_dma_GetPreemptable
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 33
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 33
 
 
  744:Generated_Source\PSoC4/USBFS_ep1_dma.h **** ********************************************************************************
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  798:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *
  799:Generated_Source\PSoC4/USBFS_ep1_dma.h **** * Parameters:
  800:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *  descriptor: Descriptor (0 or 1) modified by this function.
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 34
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 34
 
 
  801:Generated_Source\PSoC4/USBFS_ep1_dma.h **** *                   
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
   14:Generated_Source\PSoC4/USBFS_ep2_dma.h **** 
   15:Generated_Source\PSoC4/USBFS_ep2_dma.h **** #ifndef CY_DMA_CHANNEL_USBFS_ep2_dma_H
   16:Generated_Source\PSoC4/USBFS_ep2_dma.h **** #define CY_DMA_CHANNEL_USBFS_ep2_dma_H
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 35
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 35
 
 
   17:Generated_Source\PSoC4/USBFS_ep2_dma.h **** 
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
   71:Generated_Source\PSoC4/USBFS_ep2_dma.h **** 
   72:Generated_Source\PSoC4/USBFS_ep2_dma.h **** /*******************************************************************************
   73:Generated_Source\PSoC4/USBFS_ep2_dma.h **** * Function Name: USBFS_ep2_dma_ChEnable
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 36
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 36
 
 
   74:Generated_Source\PSoC4/USBFS_ep2_dma.h **** ********************************************************************************
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  128:Generated_Source\PSoC4/USBFS_ep2_dma.h **** *  Triggers the DMA channel, this is useful only for software triggers. This is
  129:Generated_Source\PSoC4/USBFS_ep2_dma.h **** *  not needed when hardware triggers are used.
  130:Generated_Source\PSoC4/USBFS_ep2_dma.h **** *
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 37
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 37
 
 
  131:Generated_Source\PSoC4/USBFS_ep2_dma.h **** * Parameters:
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  185:Generated_Source\PSoC4/USBFS_ep2_dma.h **** }
  186:Generated_Source\PSoC4/USBFS_ep2_dma.h **** 
  187:Generated_Source\PSoC4/USBFS_ep2_dma.h **** 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 38
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 38
 
 
  188:Generated_Source\PSoC4/USBFS_ep2_dma.h **** /*******************************************************************************
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  242:Generated_Source\PSoC4/USBFS_ep2_dma.h **** * Return:
  243:Generated_Source\PSoC4/USBFS_ep2_dma.h **** *  None.
  244:Generated_Source\PSoC4/USBFS_ep2_dma.h **** *
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 39
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 39
 
 
  245:Generated_Source\PSoC4/USBFS_ep2_dma.h **** * Side effect:
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  299:Generated_Source\PSoC4/USBFS_ep2_dma.h **** static CY_INLINE uint32 USBFS_ep2_dma_GetDescriptorStatus(int32 descriptor)
  300:Generated_Source\PSoC4/USBFS_ep2_dma.h **** {
  301:Generated_Source\PSoC4/USBFS_ep2_dma.h ****     return (CyDmaGetDescriptorStatus(USBFS_ep2_dma_CHANNEL, descriptor));
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 40
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 40
 
 
  302:Generated_Source\PSoC4/USBFS_ep2_dma.h **** }
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  356:Generated_Source\PSoC4/USBFS_ep2_dma.h **** *  Configures the destination address for the specified descriptor.
  357:Generated_Source\PSoC4/USBFS_ep2_dma.h **** *
  358:Generated_Source\PSoC4/USBFS_ep2_dma.h **** * Parameters:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 41
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 41
 
 
  359:Generated_Source\PSoC4/USBFS_ep2_dma.h **** *  descriptor: Descriptor (0 or 1) modified by this function.
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  413:Generated_Source\PSoC4/USBFS_ep2_dma.h **** * Return:
  414:Generated_Source\PSoC4/USBFS_ep2_dma.h **** *  None.
  415:Generated_Source\PSoC4/USBFS_ep2_dma.h **** *
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 42
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 42
 
 
  416:Generated_Source\PSoC4/USBFS_ep2_dma.h **** * Side effect:
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  470:Generated_Source\PSoC4/USBFS_ep2_dma.h **** * Side effect:
  471:Generated_Source\PSoC4/USBFS_ep2_dma.h **** *  This function should not be called when the specified descriptor is active
  472:Generated_Source\PSoC4/USBFS_ep2_dma.h **** *  in the DMA transfer engine. This can be checked by calling CyDmaGetStatus(). 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 43
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 43
 
 
  473:Generated_Source\PSoC4/USBFS_ep2_dma.h **** *
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  527:Generated_Source\PSoC4/USBFS_ep2_dma.h **** *
  528:Generated_Source\PSoC4/USBFS_ep2_dma.h **** *******************************************************************************/
  529:Generated_Source\PSoC4/USBFS_ep2_dma.h **** static CY_INLINE void USBFS_ep2_dma_SetSrcDstTransferWidth(int32 descriptor, uint32 transferWidth)
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 44
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 44
 
 
  530:Generated_Source\PSoC4/USBFS_ep2_dma.h **** {
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  584:Generated_Source\PSoC4/USBFS_ep2_dma.h **** {
  585:Generated_Source\PSoC4/USBFS_ep2_dma.h ****     CyDmaSetAddressIncrement(USBFS_ep2_dma_CHANNEL, descriptor, addressIncrement);
  586:Generated_Source\PSoC4/USBFS_ep2_dma.h **** }
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 45
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 45
 
 
  587:Generated_Source\PSoC4/USBFS_ep2_dma.h **** 
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  641:Generated_Source\PSoC4/USBFS_ep2_dma.h **** /*******************************************************************************
  642:Generated_Source\PSoC4/USBFS_ep2_dma.h **** * Function Name: USBFS_ep2_dma_GetTriggerType
  643:Generated_Source\PSoC4/USBFS_ep2_dma.h **** ********************************************************************************
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 46
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 46
 
 
  644:Generated_Source\PSoC4/USBFS_ep2_dma.h **** *
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  698:Generated_Source\PSoC4/USBFS_ep2_dma.h **** *  USBFS_ep2_dma_SetTransferMode() or USBFS_ep2_dma_SetConfiguration().
  699:Generated_Source\PSoC4/USBFS_ep2_dma.h **** *
  700:Generated_Source\PSoC4/USBFS_ep2_dma.h **** * Parameters:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 47
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 47
 
 
  701:Generated_Source\PSoC4/USBFS_ep2_dma.h **** *  descriptor: Descriptor (0 or 1) modified by this function.
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  755:Generated_Source\PSoC4/USBFS_ep2_dma.h **** *  information.
  756:Generated_Source\PSoC4/USBFS_ep2_dma.h **** *
  757:Generated_Source\PSoC4/USBFS_ep2_dma.h **** *******************************************************************************/
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 48
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 48
 
 
  758:Generated_Source\PSoC4/USBFS_ep2_dma.h **** static CY_INLINE uint32 USBFS_ep2_dma_GetPreemptable(int32 descriptor)
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  812:Generated_Source\PSoC4/USBFS_ep2_dma.h **** 
  813:Generated_Source\PSoC4/USBFS_ep2_dma.h **** /*******************************************************************************
  814:Generated_Source\PSoC4/USBFS_ep2_dma.h **** * Function Name: USBFS_ep2_dma_SetInterruptCallback
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 49
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 49
 
 
  815:Generated_Source\PSoC4/USBFS_ep2_dma.h **** ********************************************************************************
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
   28:Generated_Source\PSoC4/USBFS_ep3_dma.h **** 
   29:Generated_Source\PSoC4/USBFS_ep3_dma.h **** /***************************************
   30:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *        Function Prototypes
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 50
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 50
 
 
   31:Generated_Source\PSoC4/USBFS_ep3_dma.h **** ***************************************/
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
   85:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *  None.
   86:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *
   87:Generated_Source\PSoC4/USBFS_ep3_dma.h **** * Side effect:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 51
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 51
 
 
   88:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *  If this function is called before USBFS_ep3_dma_Start(), or USBFS_ep3_dma_Init()
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  142:Generated_Source\PSoC4/USBFS_ep3_dma.h **** 
  143:Generated_Source\PSoC4/USBFS_ep3_dma.h **** 
  144:Generated_Source\PSoC4/USBFS_ep3_dma.h **** /*******************************************************************************
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 52
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 52
 
 
  145:Generated_Source\PSoC4/USBFS_ep3_dma.h **** * Function Name: USBFS_ep3_dma_SetPriority
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  199:Generated_Source\PSoC4/USBFS_ep3_dma.h **** * Side effect:
  200:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *  This function should not be called while the channel is enabled.
  201:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 53
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 53
 
 
  202:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *******************************************************************************/
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  256:Generated_Source\PSoC4/USBFS_ep3_dma.h **** 
  257:Generated_Source\PSoC4/USBFS_ep3_dma.h **** 
  258:Generated_Source\PSoC4/USBFS_ep3_dma.h **** /*******************************************************************************
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 54
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 54
 
 
  259:Generated_Source\PSoC4/USBFS_ep3_dma.h **** * Function Name: USBFS_ep3_dma_ValidateDescriptor
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  313:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *  descriptor: Descriptor (0 or 1) modified by this function.
  314:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *  srcAddress: Address of DMA transfer source.
  315:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *                   
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 55
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 55
 
 
  316:Generated_Source\PSoC4/USBFS_ep3_dma.h **** * Return:
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  370:Generated_Source\PSoC4/USBFS_ep3_dma.h **** static CY_INLINE void USBFS_ep3_dma_SetDstAddress(int32 descriptor, void * dstAddress)
  371:Generated_Source\PSoC4/USBFS_ep3_dma.h **** {
  372:Generated_Source\PSoC4/USBFS_ep3_dma.h ****     CyDmaSetDstAddress(USBFS_ep3_dma_CHANNEL, descriptor, dstAddress);
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 56
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 56
 
 
  373:Generated_Source\PSoC4/USBFS_ep3_dma.h **** }
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  427:Generated_Source\PSoC4/USBFS_ep3_dma.h **** /*******************************************************************************
  428:Generated_Source\PSoC4/USBFS_ep3_dma.h **** * Function Name: USBFS_ep3_dma_GetDataElementSize
  429:Generated_Source\PSoC4/USBFS_ep3_dma.h **** ********************************************************************************
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 57
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 57
 
 
  430:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  484:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *
  485:Generated_Source\PSoC4/USBFS_ep3_dma.h **** * Summary:
  486:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *  Returns the number of data elements to be transferred. Only reflects the
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 58
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 58
 
 
  487:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *  value written by USBFS_ep3_dma_SetNumDataElements() or USBFS_ep3_dma_SetConfiguration().
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  541:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *  USBFS_ep3_dma_SetSrcDstTransferWidth() or USBFS_ep3_dma_SetConfiguration().
  542:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *
  543:Generated_Source\PSoC4/USBFS_ep3_dma.h **** * Parameters:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 59
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 59
 
 
  544:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *  descriptor: Descriptor (0 or 1) modified by this function.
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  598:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *  descriptor: Descriptor (0 or 1) modified by this function.
  599:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *                   
  600:Generated_Source\PSoC4/USBFS_ep3_dma.h **** * Return:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 60
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 60
 
 
  601:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *  Address increment settings. Refer to the API bit field definitions in
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  655:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *  information.
  656:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *
  657:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *******************************************************************************/
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 61
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 61
 
 
  658:Generated_Source\PSoC4/USBFS_ep3_dma.h **** static CY_INLINE uint32 USBFS_ep3_dma_GetTriggerType(int32 descriptor)
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  712:Generated_Source\PSoC4/USBFS_ep3_dma.h **** }
  713:Generated_Source\PSoC4/USBFS_ep3_dma.h **** 
  714:Generated_Source\PSoC4/USBFS_ep3_dma.h **** 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 62
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 62
 
 
  715:Generated_Source\PSoC4/USBFS_ep3_dma.h **** /*******************************************************************************
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  769:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *  Determines what occurs after a descriptor completes.
  770:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *
  771:Generated_Source\PSoC4/USBFS_ep3_dma.h **** * Parameters:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 63
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 63
 
 
  772:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *  descriptor: Descriptor (0 or 1) modified by this function.
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  826:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *  Pointer to the function previously set for the specified channel. 
  827:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *
  828:Generated_Source\PSoC4/USBFS_ep3_dma.h **** *******************************************************************************/
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 64
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 64
 
 
  829:Generated_Source\PSoC4/USBFS_ep3_dma.h **** static CY_INLINE cydma_callback_t USBFS_ep3_dma_SetInterruptCallback(cydma_callback_t callback)
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
   42:Generated_Source\PSoC4/USBFS_ep4_dma.h **** static int32  USBFS_ep4_dma_GetPriority(void);
   43:Generated_Source\PSoC4/USBFS_ep4_dma.h **** static void   USBFS_ep4_dma_SetNextDescriptor(int32 descriptor);
   44:Generated_Source\PSoC4/USBFS_ep4_dma.h **** static int32  USBFS_ep4_dma_GetNextDescriptor(void);
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 65
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 65
 
 
   45:Generated_Source\PSoC4/USBFS_ep4_dma.h **** static void   USBFS_ep4_dma_SetConfiguration(int32 descriptor, const cydma_init_struct * config);
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
   99:Generated_Source\PSoC4/USBFS_ep4_dma.h **** 
  100:Generated_Source\PSoC4/USBFS_ep4_dma.h **** /*******************************************************************************
  101:Generated_Source\PSoC4/USBFS_ep4_dma.h **** * Function Name: USBFS_ep4_dma_ChDisable
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 66
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 66
 
 
  102:Generated_Source\PSoC4/USBFS_ep4_dma.h **** ********************************************************************************
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  156:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *  None.
  157:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *
  158:Generated_Source\PSoC4/USBFS_ep4_dma.h **** * Side effect:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 67
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 67
 
 
  159:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *  This function should not be called while the channel is enabled.
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  213:Generated_Source\PSoC4/USBFS_ep4_dma.h **** * Summary:
  214:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *  Returns the next descriptor that should be run, as set by 
  215:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *  USBFS_ep4_dma_SetNextDescriptor().
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 68
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 68
 
 
  216:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  270:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *
  271:Generated_Source\PSoC4/USBFS_ep4_dma.h **** * Side effect:
  272:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *  The status register associated with the specified descriptor is reset to
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 69
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 69
 
 
  273:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *  zero after this function call. This function should not be called while the
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  327:Generated_Source\PSoC4/USBFS_ep4_dma.h **** }
  328:Generated_Source\PSoC4/USBFS_ep4_dma.h **** 
  329:Generated_Source\PSoC4/USBFS_ep4_dma.h **** 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 70
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 70
 
 
  330:Generated_Source\PSoC4/USBFS_ep4_dma.h **** /*******************************************************************************
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  384:Generated_Source\PSoC4/USBFS_ep4_dma.h **** * Parameters:
  385:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *  descriptor: Specifies descriptor (0 or 1) used by this function.
  386:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *                   
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 71
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 71
 
 
  387:Generated_Source\PSoC4/USBFS_ep4_dma.h **** * Return:
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  441:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *  mode. Refer to the API bit field definitions in CyDMA_P4.h or the API 
  442:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *  description in the DMA channel datasheet for more information.
  443:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 72
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 72
 
 
  444:Generated_Source\PSoC4/USBFS_ep4_dma.h **** * Note:
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  498:Generated_Source\PSoC4/USBFS_ep4_dma.h **** static CY_INLINE int32 USBFS_ep4_dma_GetNumDataElements(int32 descriptor)
  499:Generated_Source\PSoC4/USBFS_ep4_dma.h **** {
  500:Generated_Source\PSoC4/USBFS_ep4_dma.h ****     return (CyDmaGetNumDataElements(USBFS_ep4_dma_CHANNEL, descriptor));
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 73
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 73
 
 
  501:Generated_Source\PSoC4/USBFS_ep4_dma.h **** }
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  555:Generated_Source\PSoC4/USBFS_ep4_dma.h **** }
  556:Generated_Source\PSoC4/USBFS_ep4_dma.h **** 
  557:Generated_Source\PSoC4/USBFS_ep4_dma.h **** 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 74
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 74
 
 
  558:Generated_Source\PSoC4/USBFS_ep4_dma.h **** /*******************************************************************************
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  612:Generated_Source\PSoC4/USBFS_ep4_dma.h **** /*******************************************************************************
  613:Generated_Source\PSoC4/USBFS_ep4_dma.h **** * Function Name: USBFS_ep4_dma_SetTriggerType
  614:Generated_Source\PSoC4/USBFS_ep4_dma.h **** ********************************************************************************
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 75
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 75
 
 
  615:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  669:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *  Sets the DMA transfer mode. This determines how the DMA reacts to each trigger
  670:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *  event.
  671:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 76
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 76
 
 
  672:Generated_Source\PSoC4/USBFS_ep4_dma.h **** * Parameters:
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  726:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *               channel datasheet for the parameter options.
  727:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *                   
  728:Generated_Source\PSoC4/USBFS_ep4_dma.h **** * Return:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 77
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 77
 
 
  729:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *  None.
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  783:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *
  784:Generated_Source\PSoC4/USBFS_ep4_dma.h **** *******************************************************************************/
  785:Generated_Source\PSoC4/USBFS_ep4_dma.h **** static CY_INLINE void USBFS_ep4_dma_SetPostCompletionActions(int32 descriptor, uint32 actions)
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 78
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 78
 
 
  786:Generated_Source\PSoC4/USBFS_ep4_dma.h **** {
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
   89              	.LBB21:
   90              		.file 6 "Generated_Source\\PSoC4\\USBFS_ep6_dma.h"
    1:Generated_Source\PSoC4/USBFS_ep6_dma.h **** /*******************************************************************************
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 79
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 79
 
 
    2:Generated_Source\PSoC4/USBFS_ep6_dma.h **** * File Name: USBFS_ep6_dma.h
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
   56:Generated_Source\PSoC4/USBFS_ep6_dma.h **** static void   USBFS_ep6_dma_SetSrcDstTransferWidth(int32 descriptor, uint32 transferWidth);
   57:Generated_Source\PSoC4/USBFS_ep6_dma.h **** static uint32 USBFS_ep6_dma_GetSrcDstTransferWidth(int32 descriptor);
   58:Generated_Source\PSoC4/USBFS_ep6_dma.h **** static void   USBFS_ep6_dma_SetAddressIncrement(int32 descriptor, uint32 addressIncrement);
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 80
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 80
 
 
   59:Generated_Source\PSoC4/USBFS_ep6_dma.h **** static uint32 USBFS_ep6_dma_GetAddressIncrement(int32 descriptor);
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  113:Generated_Source\PSoC4/USBFS_ep6_dma.h **** * Side effect:
  114:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *  If this function is called during a DMA transfer the transfer is aborted. 
  115:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 81
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 81
 
 
  116:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *******************************************************************************/
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  170:Generated_Source\PSoC4/USBFS_ep6_dma.h **** ********************************************************************************
  171:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *
  172:Generated_Source\PSoC4/USBFS_ep6_dma.h **** * Summary:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 82
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 82
 
 
  173:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *  Gets the priority for the channel.
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  227:Generated_Source\PSoC4/USBFS_ep6_dma.h **** }
  228:Generated_Source\PSoC4/USBFS_ep6_dma.h **** 
  229:Generated_Source\PSoC4/USBFS_ep6_dma.h **** 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 83
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 83
 
 
  230:Generated_Source\PSoC4/USBFS_ep6_dma.h **** /*******************************************************************************
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  284:Generated_Source\PSoC4/USBFS_ep6_dma.h **** * Function Name: USBFS_ep6_dma_GetDescriptorStatus
  285:Generated_Source\PSoC4/USBFS_ep6_dma.h **** ********************************************************************************
  286:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 84
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 84
 
 
  287:Generated_Source\PSoC4/USBFS_ep6_dma.h **** * Summary:
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  341:Generated_Source\PSoC4/USBFS_ep6_dma.h **** * Return:
  342:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *  Source address written to specified descriptor.
  343:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 85
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 85
 
 
  344:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *******************************************************************************/
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  398:Generated_Source\PSoC4/USBFS_ep6_dma.h **** * Function Name: USBFS_ep6_dma_SetDataElementSize
  399:Generated_Source\PSoC4/USBFS_ep6_dma.h **** ********************************************************************************
  400:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 86
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 86
 
 
  401:Generated_Source\PSoC4/USBFS_ep6_dma.h **** * Summary:
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  455:Generated_Source\PSoC4/USBFS_ep6_dma.h **** /*******************************************************************************
  456:Generated_Source\PSoC4/USBFS_ep6_dma.h **** * Function Name: USBFS_ep6_dma_SetNumDataElements
  457:Generated_Source\PSoC4/USBFS_ep6_dma.h **** ********************************************************************************
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 87
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 87
 
 
  458:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  512:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *  many bytes the addresses are incremented if increment source and destination
  513:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *  address are turned on.
  514:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 88
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 88
 
 
  515:Generated_Source\PSoC4/USBFS_ep6_dma.h **** * Parameters:
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  569:Generated_Source\PSoC4/USBFS_ep6_dma.h **** * Parameters:
  570:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *  descriptor:       Descriptor (0 or 1) modified by this function.
  571:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *  addressIncrement: Address increment settings. Refer to the API bit field
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 89
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 89
 
 
  572:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *                    definitions in CyDMA_P4.h or the API description in the DMA
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  626:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *                   
  627:Generated_Source\PSoC4/USBFS_ep6_dma.h **** * Return:
  628:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *  None.
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 90
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 90
 
 
  629:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  683:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *  in the DMA transfer engine. This can be checked by calling CyDmaGetStatus(). 
  684:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *
  685:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *******************************************************************************/
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 91
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 91
 
 
  686:Generated_Source\PSoC4/USBFS_ep6_dma.h **** static CY_INLINE void USBFS_ep6_dma_SetTransferMode(int32 descriptor, uint32 transferMode)
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  740:Generated_Source\PSoC4/USBFS_ep6_dma.h **** 
  741:Generated_Source\PSoC4/USBFS_ep6_dma.h **** 
  742:Generated_Source\PSoC4/USBFS_ep6_dma.h **** /*******************************************************************************
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 92
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 92
 
 
  743:Generated_Source\PSoC4/USBFS_ep6_dma.h **** * Function Name: USBFS_ep6_dma_GetPreemptable
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  797:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *  USBFS_ep6_dma_SetPostCompletionActions() or USBFS_ep6_dma_SetConfiguration().
  798:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *
  799:Generated_Source\PSoC4/USBFS_ep6_dma.h **** * Parameters:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 93
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 93
 
 
  800:Generated_Source\PSoC4/USBFS_ep6_dma.h **** *  descriptor: Descriptor (0 or 1) modified by this function.
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 1047:Generated_Source\PSoC4/USBFS.c **** 
 1048:Generated_Source\PSoC4/USBFS.c ****         #if (USBFS_DMA2_ACTIVE)
 1049:Generated_Source\PSoC4/USBFS.c ****             (void) USBFS_ep2_dma_SetInterruptCallback(&USBFS_EP2_DMA_DONE_ISR);
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 94
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 94
 
 
 1050:Generated_Source\PSoC4/USBFS.c ****         #endif /* (USBFS_DMA2_ACTIVE) */
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  124              		@ frame_needed = 0, uses_anonymous_args = 0
  125 0000 10B5     		push	{r4, lr}
  126              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 95
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 95
 
 
  127              		.cfi_offset 4, -8
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  172              	.L5:
  241:Generated_Source\PSoC4/USBFS.c **** 
  173              		.loc 1 241 0 is_stmt 0 discriminator 4
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 96
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 96
 
 
  174 0046 1B4B     		ldr	r3, .L6+24
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  402:Generated_Source\PSoC4/USBFS.c **** #endif /* (USBFS_DP_ISR_ACTIVE) */
  219              		.loc 1 402 0 discriminator 4
  220 008e 1049     		ldr	r1, .L6+52
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 97
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 97
 
 
  221 0090 0520     		movs	r0, #5
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  271 0006 04E0     		b	.L9
  272              	.LVL19:
  273              	.L10:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 98
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 98
 
 
  471:Generated_Source\PSoC4/USBFS.c ****     }
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  316 003a FFF7FEFF 		bl	CyIntEnable
  317              	.LVL24:
  490:Generated_Source\PSoC4/USBFS.c ****     CyIntEnable(USBFS_INTR_LO_VECT_NUM);
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 99
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 99
 
 
  318              		.loc 1 490 0
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  362              		.loc 1 582 0
  363 007e 194A     		ldr	r2, .L16+44
  364 0080 1168     		ldr	r1, [r2]
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 100
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 100
 
 
  365 0082 0123     		movs	r3, #1
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  411 00d0 00000000 		.word	USBFS_deviceAddress
  412 00d4 00000000 		.word	USBFS_deviceStatus
  413 00d8 00000000 		.word	USBFS_lastPacketSize
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 101
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 101
 
 
  414 00dc 78022C40 		.word	1076626040
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  195:Generated_Source\PSoC4/USBFS.c **** 
  463              		.loc 1 195 0
  464              		@ sp needed
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 102
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 102
 
 
  465 0020 70BD     		pop	{r4, r5, r6, pc}
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  512 001a 1370     		strb	r3, [r2]
  688:Generated_Source\PSoC4/USBFS.c ****     USBFS_interfaceNumber = 0u;
  513              		.loc 1 688 0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 103
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 103
 
 
  514 001c 0B4A     		ldr	r2, .L25+12
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  561              	USBFS_CheckActivity:
  562              	.LFB166:
  850:Generated_Source\PSoC4/USBFS.c ****     uint32 cr1Reg = USBFS_CR1_REG;
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 104
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 104
 
 
  563              		.loc 1 850 0
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  611 0004 C0B2     		uxtb	r0, r0
  875:Generated_Source\PSoC4/USBFS.c **** 
  612              		.loc 1 875 0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 105
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 105
 
 
  613              		@ sp needed
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  661              	.L38:
  662 0018 00000000 		.word	USBFS_configurationChanged
  663              		.cfi_endproc
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 106
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 106
 
 
  664              	.LFE168:
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  713 0004 8300     		lsls	r3, r0, #2
  714 0006 024A     		ldr	r2, .L44
  715 0008 D318     		adds	r3, r2, r3
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 107
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 107
 
 
  716 000a 5878     		ldrb	r0, [r3, #1]
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  765 0022 80B2     		uxth	r0, r0
  766              	.LVL51:
  991:Generated_Source\PSoC4/USBFS.c ****     }
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 108
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 108
 
 
  767              		.loc 1 991 0
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 1099:Generated_Source\PSoC4/USBFS.c ****                                                                     
 1100:Generated_Source\PSoC4/USBFS.c ****     {
 1101:Generated_Source\PSoC4/USBFS.c ****         uint16 src;
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 109
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 109
 
 
 1102:Generated_Source\PSoC4/USBFS.c ****         uint16 dst;
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 1156:Generated_Source\PSoC4/USBFS.c ****                                                                                         USBFS_DMA_R
 1157:Generated_Source\PSoC4/USBFS.c ****             break;
 1158:Generated_Source\PSoC4/USBFS.c ****     #endif /* (USBFS_DMA5_ACTIVE) */
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 110
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 110
 
 
 1159:Generated_Source\PSoC4/USBFS.c **** 
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 1213:Generated_Source\PSoC4/USBFS.c ****     *  No.
 1214:Generated_Source\PSoC4/USBFS.c ****     *
 1215:Generated_Source\PSoC4/USBFS.c ****     ***************************************************************************/
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 111
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 111
 
 
 1216:Generated_Source\PSoC4/USBFS.c ****     void USBFS_Stop_DMA(uint8 epNumber) 
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 1237:Generated_Source\PSoC4/USBFS.c ****             #if (USBFS_EP_MANAGEMENT_DMA_AUTO && (USBFS_EP_DMA_AUTO_OPT == 0u))
 1238:Generated_Source\PSoC4/USBFS.c ****                 if(USBFS_DmaNextTd[i] != DMA_INVALID_TD)
 1239:Generated_Source\PSoC4/USBFS.c ****                 {
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 112
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 112
 
 
 1240:Generated_Source\PSoC4/USBFS.c ****                     CyDmaTdFree(USBFS_DmaNextTd[i]);
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  871              		.loc 1 738 0
  872 0008 FFF7FEFF 		bl	CyEnterCriticalSection
  873              	.LVL60:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 113
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 113
 
 
  741:Generated_Source\PSoC4/USBFS.c **** 
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  917              		.loc 1 821 0
  918 004e 094A     		ldr	r2, .L60+24
  919 0050 1370     		strb	r3, [r2]
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 114
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 114
 
 
  822:Generated_Source\PSoC4/USBFS.c **** 
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 1269:Generated_Source\PSoC4/USBFS.c ****     void USBFS_LoadNextInEP(uint8 epNumber, uint8 mode) 
 1270:Generated_Source\PSoC4/USBFS.c ****     {
 1271:Generated_Source\PSoC4/USBFS.c ****         reg16 *convert;
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 115
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 115
 
 
 1272:Generated_Source\PSoC4/USBFS.c **** 
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 1326:Generated_Source\PSoC4/USBFS.c **** *  prepares data in endpoint buffer.
 1327:Generated_Source\PSoC4/USBFS.c **** *
 1328:Generated_Source\PSoC4/USBFS.c **** *  \param epNumber Contains the data endpoint number.
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 116
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 116
 
 
 1329:Generated_Source\PSoC4/USBFS.c **** *            Valid values are between 1 and 8.
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 1356:Generated_Source\PSoC4/USBFS.c ****         USBFS_SIE_EP_BASE.sieEp[epNumber].epCnt0 = (uint32) HI8(length) | USBFS_EP[epNumber].epTogg
  979              		.loc 1 1356 0
  980 0014 130A     		lsrs	r3, r2, #8
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 117
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 117
 
 
  981 0016 4500     		lsls	r5, r0, #1
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 1396:Generated_Source\PSoC4/USBFS.c ****                 USBFS_CyDmaChDisable(channelNum);
 1397:Generated_Source\PSoC4/USBFS.c **** 
 1398:Generated_Source\PSoC4/USBFS.c ****                 /* Configure source and destination. */
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 118
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 118
 
 
 1399:Generated_Source\PSoC4/USBFS.c ****                 USBFS_CyDmaSetSrcAddress(channelNum, USBFS_DMA_DESCR0, (void*) pData);
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  1005 003a 8200     		lsls	r2, r0, #2
  1006              	.LVL67:
  1007 003c 5B4B     		ldr	r3, .L79+12
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 119
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 119
 
 
  1008 003e D150     		str	r1, [r2, r3]
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 1462:Generated_Source\PSoC4/USBFS.c **** 
 1463:Generated_Source\PSoC4/USBFS.c **** 
 1464:Generated_Source\PSoC4/USBFS.c ****                 /* Enable DMA channel: configuration complete. */
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 120
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 120
 
 
 1465:Generated_Source\PSoC4/USBFS.c ****                 USBFS_CyDmaChEnable(channelNum);
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 1509:Generated_Source\PSoC4/USBFS.c ****                 /* IN endpoint buffer (32 bytes) will shortly be preloaded by DMA. */
 1510:Generated_Source\PSoC4/USBFS.c ****                 USBFS_EP[epNumber].apiEpState = USBFS_NO_EVENT_PENDING;
  1054              		.loc 1 1510 0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 121
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 121
 
 
  1055 007e 4100     		lsls	r1, r0, #1
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 1526:Generated_Source\PSoC4/USBFS.c **** 
 1527:Generated_Source\PSoC4/USBFS.c ****                     /* Adjust number of data elements transferred in last burst. */
 1528:Generated_Source\PSoC4/USBFS.c ****                     USBFS_DmaEpLastBurstEl[epNumber] = (0u != USBFS_DmaEpLastBurstEl[epNumber]) ?
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 122
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 122
 
 
  1094              		.loc 1 1528 0 is_stmt 1 discriminator 4
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  1138              	.L77:
  1139 00e4 8023     		movs	r3, #128
  1140              	.L70:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 123
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 123
 
 
  1141              		.loc 1 1538 0 discriminator 4
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 1553:Generated_Source\PSoC4/USBFS.c ****                     /* Validate descriptor 0 and command to start with it. */
 1554:Generated_Source\PSoC4/USBFS.c ****                     USBFS_CyDmaValidateDescriptor(channelNum, USBFS_DMA_DESCR0);
  1181              		.loc 1 1554 0 discriminator 4
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 124
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 124
 
 
  1182 012a 8022     		movs	r2, #128
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  1223 0164 8900     		lsls	r1, r1, #2
  1224              	.LVL79:
  1225 0166 8B58     		ldr	r3, [r1, r2]
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 125
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 125
 
 
  1226 0168 8024     		movs	r4, #128
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  1249 0186 D318     		adds	r3, r2, r3
  1250 0188 5B79     		ldrb	r3, [r3, #5]
  1251 018a DBB2     		uxtb	r3, r3
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 126
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 126
 
 
  1252 018c 8001     		lsls	r0, r0, #6
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 1612:Generated_Source\PSoC4/USBFS.c **** *   configured Endpoint Buffer Management. This parameter is defined in the
 1613:Generated_Source\PSoC4/USBFS.c **** *   Descriptor Root in Component Configure window.
 1614:Generated_Source\PSoC4/USBFS.c **** *
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 127
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 127
 
 
 1615:Generated_Source\PSoC4/USBFS.c **** *   *Manual (Static/Dynamic Allocation):*
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  1306 0004 80B4     		push	{r7}
  1307              		.cfi_def_cfa_offset 24
  1308              		.cfi_offset 8, -24
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 128
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 128
 
 
 1656:Generated_Source\PSoC4/USBFS.c ****     if ((pData != NULL) && (epNumber > USBFS_EP0) && (epNumber < USBFS_MAX_EP))
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 1700:Generated_Source\PSoC4/USBFS.c **** 
 1701:Generated_Source\PSoC4/USBFS.c ****             /* Validate descriptor to execute on following DMA request. */
 1702:Generated_Source\PSoC4/USBFS.c ****             USBFS_CyDmaValidateDescriptor(channelNum, USBFS_DMA_DESCR0);
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 129
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 129
 
 
 1703:Generated_Source\PSoC4/USBFS.c **** 
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  1334 0026 01D0     		beq	.L94
  1335 0028 0126     		movs	r6, #1
  1336 002a 00E0     		b	.L83
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 130
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 130
 
 
  1337              	.L94:
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 1751:Generated_Source\PSoC4/USBFS.c **** 
 1752:Generated_Source\PSoC4/USBFS.c ****             /* Mark if revert number of data elements in descriptor after transfer completion. */
 1753:Generated_Source\PSoC4/USBFS.c ****             USBFS_DmaEpLastBurstEl[epNumber] |= (USBFS_DmaEpBurstCnt[epNumber] > 2u) ? USBFS_DMA_DE
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 131
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 131
 
 
  1382              		.loc 1 1753 0 is_stmt 1 discriminator 4
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  1425              	.L89:
  1426              		.loc 1 1764 0 discriminator 4
  1427 0092 204C     		ldr	r4, .L101+4
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 132
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 132
 
 
  1428 0094 2354     		strb	r3, [r4, r0]
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  1465 00c6 9E61     		str	r6, [r3, #24]
 1782:Generated_Source\PSoC4/USBFS.c ****                                                     CYDMA_BYTE | CYDMA_WORD_ELEMENT | CYDMA_INC_DST
 1783:Generated_Source\PSoC4/USBFS.c **** 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 133
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 133
 
 
 1784:Generated_Source\PSoC4/USBFS.c ****             /* Enable interrupt from DMA channel. */
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 1799:Generated_Source\PSoC4/USBFS.c ****             (void) CyDmaChDisable(USBFS_DmaChan[epNumber]);
 1800:Generated_Source\PSoC4/USBFS.c ****             (void) CyDmaTdSetConfiguration(USBFS_DmaTd[epNumber], length,  USBFS_DmaTd[epNumber], T
 1801:Generated_Source\PSoC4/USBFS.c ****             (void) CyDmaTdSetAddress(USBFS_DmaTd[epNumber], LO16((uint32) &USBFS_ARB_EP_BASE.arbEp[
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 134
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 134
 
 
 1802:Generated_Source\PSoC4/USBFS.c **** 
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  1535 0130 00006064 		.word	1684013056
  1536 0134 F8171040 		.word	1074796536
  1537              		.cfi_endproc
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 135
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 135
 
 
  1538              	.LFE175:
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  1550              		@ args = 0, pretend = 0, frame = 0
  1551              		@ frame_needed = 0, uses_anonymous_args = 0
  1552              	.LVL102:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 136
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 136
 
 
  1553 0000 F0B5     		push	{r4, r5, r6, r7, lr}
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  1592 002c 634A     		ldr	r2, .L121
  1593 002e D318     		adds	r3, r2, r3
  1594 0030 DA78     		ldrb	r2, [r3, #3]
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 137
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 137
 
 
  1595 0032 0A43     		orrs	r2, r1
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 1921:Generated_Source\PSoC4/USBFS.c ****                 USBFS_CyDmaSetSrcAddress(channelNum, USBFS_DMA_DESCR0, (void*) pData);
 1922:Generated_Source\PSoC4/USBFS.c ****                 USBFS_CyDmaSetDstAddress(channelNum, USBFS_DMA_DESCR0, (void*) &USBFS_ARB_EP16_BASE
 1923:Generated_Source\PSoC4/USBFS.c **** 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 138
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 138
 
 
 1924:Generated_Source\PSoC4/USBFS.c ****                 /* Configure DMA descriptor. */
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 1958:Generated_Source\PSoC4/USBFS.c **** 
 1959:Generated_Source\PSoC4/USBFS.c ****                 /* Set destination address. */
 1960:Generated_Source\PSoC4/USBFS.c ****                 USBFS_CyDmaSetDstAddress(channelNum, USBFS_DMA_DESCR0, (void*) &USBFS_ARB_EP16_BASE
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 139
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 139
 
 
  1630              		.loc 1 1960 0
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 1977:Generated_Source\PSoC4/USBFS.c ****             else
 1978:Generated_Source\PSoC4/USBFS.c ****             {
 1979:Generated_Source\PSoC4/USBFS.c ****                 /* IN endpoint buffer (32 bytes) will shortly be preloaded by DMA. */
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 140
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 140
 
 
 1980:Generated_Source\PSoC4/USBFS.c ****                 USBFS_EP[epNumber].apiEpState = USBFS_NO_EVENT_PENDING;
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  1707 00c8 4548     		ldr	r0, .L121+36
  1708 00ca 0355     		strb	r3, [r0, r4]
 1995:Generated_Source\PSoC4/USBFS.c **** 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 141
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 141
 
 
 1996:Generated_Source\PSoC4/USBFS.c ****                     /* Adjust number of data elements transferred in last burst. */
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  1752 00fa 0023     		movs	r3, #0
  1753 00fc 00E0     		b	.L112
  1754              	.L119:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 142
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 142
 
 
  1755 00fe 8023     		movs	r3, #128
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  1796 013e 5046     		mov	r0, r10
  1797 0140 0243     		orrs	r2, r0
  1798 0142 9A61     		str	r2, [r3, #24]
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 143
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 143
 
 
 2020:Generated_Source\PSoC4/USBFS.c **** 
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 2034:Generated_Source\PSoC4/USBFS.c ****                     /* Enable DMA channel: configuration complete. */
 2035:Generated_Source\PSoC4/USBFS.c ****                     USBFS_CyDmaChEnable(channelNum);
  1839              		.loc 1 2035 0 is_stmt 1 discriminator 4
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 144
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 144
 
 
  1840 017c 134A     		ldr	r2, .L121+16
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 2053:Generated_Source\PSoC4/USBFS.c **** }
  1877              		.loc 1 2053 0
  1878              		@ sp needed
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 145
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 145
 
 
  1879 01b0 1CBC     		pop	{r2, r3, r4}
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 2076:Generated_Source\PSoC4/USBFS.c **** *   \snippet /USBFS_sut_02.cydsn/main.c checking EPstatey
 2077:Generated_Source\PSoC4/USBFS.c **** *
 2078:Generated_Source\PSoC4/USBFS.c **** *   The USBFS_EnableOutEP() has to be called to allow host to write data into
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 146
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 146
 
 
 2079:Generated_Source\PSoC4/USBFS.c **** *   the endpoint buffer after DMA has completed transfer data from OUT endpoint
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  1934 0010 0020     		movs	r0, #0
  1935              	.LVL129:
  1936 0012 FFF7FEFF 		bl	CyHalt
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 147
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 147
 
 
  1937              	.LVL130:
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 2147:Generated_Source\PSoC4/USBFS.c ****             USBFS_CyDmaSetDstAddress(channelNum, USBFS_DMA_DESCR0, (void*) pData);
 2148:Generated_Source\PSoC4/USBFS.c **** 
 2149:Generated_Source\PSoC4/USBFS.c ****             /* Configure DMA descriptor. */
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 148
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 148
 
 
 2150:Generated_Source\PSoC4/USBFS.c ****             USBFS_CyDmaSetConfiguration(channelNum, USBFS_DMA_DESCR0, USBFS_DMA_COMMON_CFG | (uint1
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  1976 0042 1000     		movs	r0, r2
  1977              	.L126:
  1978              		.loc 1 2181 0 is_stmt 0 discriminator 4
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 149
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 149
 
 
  1979 0044 C318     		adds	r3, r0, r3
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2021              		.loc 1 2193 0 is_stmt 1 discriminator 4
  2022 0074 D807     		lsls	r0, r3, #31
  2023 0076 01D5     		bpl	.L141
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 150
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 150
 
 
  2024              		.loc 1 2193 0 is_stmt 0
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2064              	.L143:
  2065              		.loc 1 2207 0
  2066 00ac 0023     		movs	r3, #0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 151
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 151
 
 
  2067              	.L132:
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2104 00e0 1043     		orrs	r0, r2
  2105 00e2 9861     		str	r0, [r3, #24]
 2225:Generated_Source\PSoC4/USBFS.c ****                                                     CYDMA_HALFWORD | CYDMA_WORD_ELEMENT | CYDMA_INC
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 152
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 152
 
 
 2226:Generated_Source\PSoC4/USBFS.c **** 
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2145              	.L134:
 2240:Generated_Source\PSoC4/USBFS.c **** 
 2241:Generated_Source\PSoC4/USBFS.c ****             /* OUT endpoint has to be armed again by user when DMA transfers have been completed.
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 153
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 153
 
 
 2242:Generated_Source\PSoC4/USBFS.c ****             * NO_EVENT_PENDING: notifies that data has been copied from endpoint buffer.
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 2255:Generated_Source\PSoC4/USBFS.c **** #endif /* (USBFS_16BITS_EP_ACCESS_ENABLE) */
 2256:Generated_Source\PSoC4/USBFS.c **** 
 2257:Generated_Source\PSoC4/USBFS.c **** 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 154
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 154
 
 
 2258:Generated_Source\PSoC4/USBFS.c **** /*******************************************************************************
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2215              	.L146:
 2284:Generated_Source\PSoC4/USBFS.c ****         
 2285:Generated_Source\PSoC4/USBFS.c ****     }
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 155
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 155
 
 
 2286:Generated_Source\PSoC4/USBFS.c **** }
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2250 000c 9C46     		mov	ip, r3
  2251 000e 6044     		add	r0, r0, ip
  2252 0010 0823     		movs	r3, #8
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 156
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 156
 
 
  2253 0012 8360     		str	r3, [r0, #8]
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 2334:Generated_Source\PSoC4/USBFS.c ****     */
 2335:Generated_Source\PSoC4/USBFS.c ****     USBFS_USBIO_CR0_REG = bState;
  2279              		.loc 1 2335 0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 157
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 157
 
 
  2280 0000 014B     		ldr	r3, .L155
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2310 0006 07D8     		bhi	.L159
 2360:Generated_Source\PSoC4/USBFS.c ****     {
 2361:Generated_Source\PSoC4/USBFS.c ****         cr = USBFS_SIE_EP_BASE.sieEp[epNumber].epCr0 & USBFS_MODE_ACKD;
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 158
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 158
 
 
  2311              		.loc 1 2361 0
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 2377:Generated_Source\PSoC4/USBFS.c **** *  function any time your device changes from self powered to bus powered or
 2378:Generated_Source\PSoC4/USBFS.c **** *  vice versa, and set the status appropriately.
 2379:Generated_Source\PSoC4/USBFS.c **** *
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 159
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 159
 
 
 2380:Generated_Source\PSoC4/USBFS.c **** *  \param powerStatus: Contains the desired power status, one for self powered
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2376 001c 7047     		bx	lr
  2377              	.L166:
  2378 001e C046     		.align	2
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 160
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 160
 
 
  2379              	.L165:
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2410              	.L168:
  2411 0010 040D0440 		.word	1074007300
  2412              		.cfi_endproc
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 161
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 161
 
 
  2413              	.LFE183:
@@ -9658,7 +9658,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
 2458:Generated_Source\PSoC4/USBFS.c ****     {
 2459:Generated_Source\PSoC4/USBFS.c ****         result = USBFS_TRUE;
  2438              		.loc 1 2459 0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 162
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 162
 
 
  2439 000c 0120     		movs	r0, #1
@@ -9718,7 +9718,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2472 0008 7047     		bx	lr
  2473              	.L177:
  2474 000a C046     		.align	2
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 163
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 163
 
 
  2475              	.L176:
@@ -9778,7 +9778,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2507              	.LFE186:
  2508              		.size	USBFS_EnableSofInt, .-USBFS_EnableSofInt
  2509              		.section	.text.USBFS_DisableSofInt,"ax",%progbits
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 164
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 164
 
 
  2510              		.align	2
@@ -9838,7 +9838,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2542              		.comm	USBFS_DmaEpLastBurstEl,9,4
  2543              		.comm	USBFS_DmaEpBurstCnt,9,4
  2544              		.global	USBFS_DmaChan
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 165
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 165
 
 
  2545              		.global	USBFS_initVar
@@ -9898,7 +9898,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2599              		.file 11 "Generated_Source\\PSoC4\\CyLib.h"
  2600              		.section	.debug_info,"",%progbits
  2601              	.Ldebug_info0:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 166
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 166
 
 
  2602 0000 030F0000 		.4byte	0xf03
@@ -9909,38 +9909,38 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2607 000c 1A030000 		.4byte	.LASF137
  2608 0010 0C       		.byte	0xc
  2609 0011 3E010000 		.4byte	.LASF138
- 2610 0015 3A040000 		.4byte	.LASF139
+ 2610 0015 05040000 		.4byte	.LASF139
  2611 0019 00000000 		.4byte	.Ldebug_ranges0+0
  2612 001d 00000000 		.4byte	0
  2613 0021 00000000 		.4byte	.Ldebug_line0
  2614 0025 02       		.uleb128 0x2
  2615 0026 01       		.byte	0x1
  2616 0027 06       		.byte	0x6
- 2617 0028 61080000 		.4byte	.LASF0
+ 2617 0028 33080000 		.4byte	.LASF0
  2618 002c 02       		.uleb128 0x2
  2619 002d 01       		.byte	0x1
  2620 002e 08       		.byte	0x8
- 2621 002f F8070000 		.4byte	.LASF1
+ 2621 002f CA070000 		.4byte	.LASF1
  2622 0033 02       		.uleb128 0x2
  2623 0034 02       		.byte	0x2
  2624 0035 05       		.byte	0x5
- 2625 0036 2B070000 		.4byte	.LASF2
+ 2625 0036 FD060000 		.4byte	.LASF2
  2626 003a 02       		.uleb128 0x2
  2627 003b 02       		.byte	0x2
  2628 003c 07       		.byte	0x7
- 2629 003d 7F080000 		.4byte	.LASF3
+ 2629 003d 51080000 		.4byte	.LASF3
  2630 0041 02       		.uleb128 0x2
  2631 0042 04       		.byte	0x4
  2632 0043 05       		.byte	0x5
- 2633 0044 3C070000 		.4byte	.LASF4
+ 2633 0044 0E070000 		.4byte	.LASF4
  2634 0048 02       		.uleb128 0x2
  2635 0049 04       		.byte	0x4
  2636 004a 07       		.byte	0x7
- 2637 004b CA070000 		.4byte	.LASF5
+ 2637 004b 9C070000 		.4byte	.LASF5
  2638 004f 02       		.uleb128 0x2
  2639 0050 08       		.byte	0x8
  2640 0051 05       		.byte	0x5
- 2641 0052 8F050000 		.4byte	.LASF6
+ 2641 0052 61050000 		.4byte	.LASF6
  2642 0056 02       		.uleb128 0x2
  2643 0057 08       		.byte	0x8
  2644 0058 07       		.byte	0x7
@@ -9954,20 +9954,20 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2652 0066 07       		.byte	0x7
  2653 0067 C3000000 		.4byte	.LASF8
  2654 006b 04       		.uleb128 0x4
- 2655 006c 9B080000 		.4byte	.LASF9
+ 2655 006c 6D080000 		.4byte	.LASF9
  2656 0070 07       		.byte	0x7
  2657 0071 E401     		.2byte	0x1e4
  2658 0073 2C000000 		.4byte	0x2c
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 167
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 167
 
 
  2659 0077 04       		.uleb128 0x4
- 2660 0078 2C050000 		.4byte	.LASF10
+ 2660 0078 FE040000 		.4byte	.LASF10
  2661 007c 07       		.byte	0x7
  2662 007d E501     		.2byte	0x1e5
  2663 007f 3A000000 		.4byte	0x3a
  2664 0083 04       		.uleb128 0x4
- 2665 0084 6B060000 		.4byte	.LASF11
+ 2665 0084 3D060000 		.4byte	.LASF11
  2666 0088 07       		.byte	0x7
  2667 0089 E601     		.2byte	0x1e6
  2668 008b 48000000 		.4byte	0x48
@@ -9978,15 +9978,15 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2673 0096 02       		.uleb128 0x2
  2674 0097 08       		.byte	0x8
  2675 0098 04       		.byte	0x4
- 2676 0099 A1080000 		.4byte	.LASF13
+ 2676 0099 73080000 		.4byte	.LASF13
  2677 009d 02       		.uleb128 0x2
  2678 009e 01       		.byte	0x1
  2679 009f 08       		.byte	0x8
- 2680 00a0 F1040000 		.4byte	.LASF14
+ 2680 00a0 C3040000 		.4byte	.LASF14
  2681 00a4 05       		.uleb128 0x5
  2682 00a5 6B000000 		.4byte	0x6b
  2683 00a9 04       		.uleb128 0x4
- 2684 00aa F1060000 		.4byte	.LASF15
+ 2684 00aa C3060000 		.4byte	.LASF15
  2685 00ae 07       		.byte	0x7
  2686 00af 9002     		.2byte	0x290
  2687 00b1 B5000000 		.4byte	0xb5
@@ -9999,11 +9999,11 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2694 00c1 02       		.uleb128 0x2
  2695 00c2 08       		.byte	0x8
  2696 00c3 04       		.byte	0x4
- 2697 00c4 E5060000 		.4byte	.LASF16
+ 2697 00c4 B7060000 		.4byte	.LASF16
  2698 00c8 02       		.uleb128 0x2
  2699 00c9 04       		.byte	0x4
  2700 00ca 07       		.byte	0x7
- 2701 00cb A7070000 		.4byte	.LASF17
+ 2701 00cb 79070000 		.4byte	.LASF17
  2702 00cf 08       		.uleb128 0x8
  2703 00d0 04       		.byte	0x4
  2704 00d1 09       		.uleb128 0x9
@@ -10012,22 +10012,22 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2707 00d4 95       		.byte	0x95
  2708 00d5 46010000 		.4byte	0x146
  2709 00d9 0A       		.uleb128 0xa
- 2710 00da AF080000 		.4byte	.LASF18
+ 2710 00da 81080000 		.4byte	.LASF18
  2711 00de 08       		.byte	0x8
  2712 00df 97       		.byte	0x97
  2713 00e0 6B000000 		.4byte	0x6b
  2714 00e4 00       		.byte	0
  2715 00e5 0A       		.uleb128 0xa
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 168
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 168
 
 
- 2716 00e6 B6080000 		.4byte	.LASF19
+ 2716 00e6 88080000 		.4byte	.LASF19
  2717 00ea 08       		.byte	0x8
  2718 00eb 98       		.byte	0x98
  2719 00ec 6B000000 		.4byte	0x6b
  2720 00f0 01       		.byte	0x1
  2721 00f1 0A       		.uleb128 0xa
- 2722 00f2 4C060000 		.4byte	.LASF20
+ 2722 00f2 1E060000 		.4byte	.LASF20
  2723 00f6 08       		.byte	0x8
  2724 00f7 99       		.byte	0x99
  2725 00f8 6B000000 		.4byte	0x6b
@@ -10039,19 +10039,19 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2731 0104 6B000000 		.4byte	0x6b
  2732 0108 03       		.byte	0x3
  2733 0109 0A       		.uleb128 0xa
- 2734 010a 1A080000 		.4byte	.LASF22
+ 2734 010a EC070000 		.4byte	.LASF22
  2735 010e 08       		.byte	0x8
  2736 010f 9B       		.byte	0x9b
  2737 0110 6B000000 		.4byte	0x6b
  2738 0114 04       		.byte	0x4
  2739 0115 0A       		.uleb128 0xa
- 2740 0116 35070000 		.4byte	.LASF23
+ 2740 0116 07070000 		.4byte	.LASF23
  2741 011a 08       		.byte	0x8
  2742 011b 9C       		.byte	0x9c
  2743 011c 6B000000 		.4byte	0x6b
  2744 0120 05       		.byte	0x5
  2745 0121 0A       		.uleb128 0xa
- 2746 0122 70050000 		.4byte	.LASF24
+ 2746 0122 42050000 		.4byte	.LASF24
  2747 0126 08       		.byte	0x8
  2748 0127 9D       		.byte	0x9d
  2749 0128 77000000 		.4byte	0x77
@@ -10078,24 +10078,24 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2770 0152 40       		.byte	0x40
  2771 0153 08       		.byte	0x8
  2772 0154 DC       		.byte	0xdc
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 169
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 169
 
 
  2773 0155 8A010000 		.4byte	0x18a
  2774 0159 0A       		.uleb128 0xa
- 2775 015a E0050000 		.4byte	.LASF28
+ 2775 015a B2050000 		.4byte	.LASF28
  2776 015e 08       		.byte	0x8
  2777 015f DE       		.byte	0xde
  2778 0160 83000000 		.4byte	0x83
  2779 0164 00       		.byte	0
  2780 0165 0A       		.uleb128 0xa
- 2781 0166 E7050000 		.4byte	.LASF29
+ 2781 0166 B9050000 		.4byte	.LASF29
  2782 016a 08       		.byte	0x8
  2783 016b DF       		.byte	0xdf
  2784 016c 83000000 		.4byte	0x83
  2785 0170 04       		.byte	0x4
  2786 0171 0A       		.uleb128 0xa
- 2787 0172 7B050000 		.4byte	.LASF30
+ 2787 0172 4D050000 		.4byte	.LASF30
  2788 0176 08       		.byte	0x8
  2789 0177 E0       		.byte	0xe0
  2790 0178 83000000 		.4byte	0x83
@@ -10125,7 +10125,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2814 01a8 EE       		.byte	0xee
  2815 01a9 26020000 		.4byte	0x226
  2816 01ad 0A       		.uleb128 0xa
- 2817 01ae 7D070000 		.4byte	.LASF32
+ 2817 01ae 4F070000 		.4byte	.LASF32
  2818 01b2 08       		.byte	0x8
  2819 01b3 F0       		.byte	0xf0
  2820 01b4 83000000 		.4byte	0x83
@@ -10137,8 +10137,8 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2826 01c0 83000000 		.4byte	0x83
  2827 01c4 04       		.byte	0x4
  2828 01c5 0A       		.uleb128 0xa
- 2829 01c6 EB070000 		.4byte	.LASF34
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 170
+ 2829 01c6 BD070000 		.4byte	.LASF34
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 170
 
 
  2830 01ca 08       		.byte	0x8
@@ -10146,7 +10146,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2832 01cc 83000000 		.4byte	0x83
  2833 01d0 08       		.byte	0x8
  2834 01d1 0A       		.uleb128 0xa
- 2835 01d2 92080000 		.4byte	.LASF35
+ 2835 01d2 64080000 		.4byte	.LASF35
  2836 01d6 08       		.byte	0x8
  2837 01d7 F3       		.byte	0xf3
  2838 01d8 83000000 		.4byte	0x83
@@ -10158,19 +10158,19 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2844 01e4 83000000 		.4byte	0x83
  2845 01e8 10       		.byte	0x10
  2846 01e9 0A       		.uleb128 0xa
- 2847 01ea F0070000 		.4byte	.LASF37
+ 2847 01ea C2070000 		.4byte	.LASF37
  2848 01ee 08       		.byte	0x8
  2849 01ef F5       		.byte	0xf5
  2850 01f0 83000000 		.4byte	0x83
  2851 01f4 14       		.byte	0x14
  2852 01f5 0A       		.uleb128 0xa
- 2853 01f6 5C080000 		.4byte	.LASF38
+ 2853 01f6 2E080000 		.4byte	.LASF38
  2854 01fa 08       		.byte	0x8
  2855 01fb F6       		.byte	0xf6
  2856 01fc 83000000 		.4byte	0x83
  2857 0200 18       		.byte	0x18
  2858 0201 0A       		.uleb128 0xa
- 2859 0202 57070000 		.4byte	.LASF39
+ 2859 0202 29070000 		.4byte	.LASF39
  2860 0206 08       		.byte	0x8
  2861 0207 F7       		.byte	0xf7
  2862 0208 83000000 		.4byte	0x83
@@ -10198,7 +10198,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2884 0236 0B       		.uleb128 0xb
  2885 0237 E0000000 		.4byte	.LASF41
  2886 023b 08       		.byte	0x8
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 171
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 171
 
 
  2887 023c FA       		.byte	0xfa
@@ -10209,13 +10209,13 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2892 0244 0701     		.2byte	0x107
  2893 0246 99020000 		.4byte	0x299
  2894 024a 10       		.uleb128 0x10
- 2895 024b A8080000 		.4byte	.LASF42
+ 2895 024b 7A080000 		.4byte	.LASF42
  2896 024f 08       		.byte	0x8
  2897 0250 0901     		.2byte	0x109
  2898 0252 83000000 		.4byte	0x83
  2899 0256 00       		.byte	0
  2900 0257 10       		.uleb128 0x10
- 2901 0258 83070000 		.4byte	.LASF43
+ 2901 0258 55070000 		.4byte	.LASF43
  2902 025c 08       		.byte	0x8
  2903 025d 0A01     		.2byte	0x10a
  2904 025f 83000000 		.4byte	0x83
@@ -10227,13 +10227,13 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2910 026c 83000000 		.4byte	0x83
  2911 0270 08       		.byte	0x8
  2912 0271 10       		.uleb128 0x10
- 2913 0272 8D070000 		.4byte	.LASF45
+ 2913 0272 5F070000 		.4byte	.LASF45
  2914 0276 08       		.byte	0x8
  2915 0277 0C01     		.2byte	0x10c
  2916 0279 83000000 		.4byte	0x83
  2917 027d 0C       		.byte	0xc
  2918 027e 10       		.uleb128 0x10
- 2919 027f 5F070000 		.4byte	.LASF46
+ 2919 027f 31070000 		.4byte	.LASF46
  2920 0283 08       		.byte	0x8
  2921 0284 0D01     		.2byte	0x10d
  2922 0286 83000000 		.4byte	0x83
@@ -10253,12 +10253,12 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2936 02a7 0A       		.byte	0xa
  2937 02a8 00       		.byte	0
  2938 02a9 04       		.uleb128 0x4
- 2939 02aa B0070000 		.4byte	.LASF47
+ 2939 02aa 82070000 		.4byte	.LASF47
  2940 02ae 08       		.byte	0x8
  2941 02af 0F01     		.2byte	0x10f
  2942 02b1 41020000 		.4byte	0x241
  2943 02b5 12       		.uleb128 0x12
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 172
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 172
 
 
  2944 02b6 4002     		.2byte	0x240
@@ -10280,7 +10280,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2960 02db 08       		.byte	0x8
  2961 02dc 00       		.byte	0
  2962 02dd 04       		.uleb128 0x4
- 2963 02de 56060000 		.4byte	.LASF49
+ 2963 02de 28060000 		.4byte	.LASF49
  2964 02e2 08       		.byte	0x8
  2965 02e3 1901     		.2byte	0x119
  2966 02e5 B5020000 		.4byte	0x2b5
@@ -10290,7 +10290,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2970 02ed 1C01     		.2byte	0x11c
  2971 02ef 01030000 		.4byte	0x301
  2972 02f3 10       		.uleb128 0x10
- 2973 02f4 0C050000 		.4byte	.LASF50
+ 2973 02f4 DE040000 		.4byte	.LASF50
  2974 02f8 08       		.byte	0x8
  2975 02f9 1E01     		.2byte	0x11e
  2976 02fb 01030000 		.4byte	0x301
@@ -10314,11 +10314,11 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  2994 0321 2301     		.2byte	0x123
  2995 0323 35030000 		.4byte	0x335
  2996 0327 10       		.uleb128 0x10
- 2997 0328 0C050000 		.4byte	.LASF50
+ 2997 0328 DE040000 		.4byte	.LASF50
  2998 032c 08       		.byte	0x8
  2999 032d 2501     		.2byte	0x125
  3000 032f 35030000 		.4byte	0x335
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 173
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 173
 
 
  3001 0333 00       		.byte	0
@@ -10331,7 +10331,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3008 0343 08       		.byte	0x8
  3009 0344 00       		.byte	0
  3010 0345 04       		.uleb128 0x4
- 3011 0346 BA050000 		.4byte	.LASF52
+ 3011 0346 8C050000 		.4byte	.LASF52
  3012 034a 08       		.byte	0x8
  3013 034b 2601     		.2byte	0x126
  3014 034d 1D030000 		.4byte	0x31d
@@ -10378,7 +10378,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3055 03a0 04       		.byte	0x4
  3056 03a1 0C       		.uleb128 0xc
  3057 03a2 63746C00 		.ascii	"ctl\000"
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 174
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 174
 
 
  3058 03a6 09       		.byte	0x9
@@ -10386,7 +10386,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3060 03a8 83000000 		.4byte	0x83
  3061 03ac 08       		.byte	0x8
  3062 03ad 0A       		.uleb128 0xa
- 3063 03ae 57050000 		.4byte	.LASF54
+ 3063 03ae 29050000 		.4byte	.LASF54
  3064 03b2 09       		.byte	0x9
  3065 03b3 31       		.byte	0x31
  3066 03b4 83000000 		.4byte	0x83
@@ -10403,7 +10403,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3077 03c9 38       		.byte	0x38
  3078 03ca DB030000 		.4byte	0x3db
  3079 03ce 0A       		.uleb128 0xa
- 3080 03cf 8F040000 		.4byte	.LASF56
+ 3080 03cf 61040000 		.4byte	.LASF56
  3081 03d3 09       		.byte	0x9
  3082 03d4 3A       		.byte	0x3a
  3083 03d5 DB030000 		.4byte	0x3db
@@ -10430,15 +10430,15 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3104 0402 67       		.byte	0x67
  3105 0403 BA000000 		.4byte	0xba
  3106 0407 14       		.uleb128 0x14
- 3107 0408 D9080000 		.4byte	.LASF59
+ 3107 0408 AB080000 		.4byte	.LASF59
  3108 040c 06       		.byte	0x6
  3109 040d 3D03     		.2byte	0x33d
  3110 040f FC030000 		.4byte	0x3fc
  3111 0413 03       		.byte	0x3
  3112 0414 25040000 		.4byte	0x425
  3113 0418 15       		.uleb128 0x15
- 3114 0419 30080000 		.4byte	.LASF61
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 175
+ 3114 0419 02080000 		.4byte	.LASF61
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 175
 
 
  3115 041d 06       		.byte	0x6
@@ -10453,52 +10453,52 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3124 0431 03       		.byte	0x3
  3125 0432 43040000 		.4byte	0x443
  3126 0436 15       		.uleb128 0x15
- 3127 0437 30080000 		.4byte	.LASF61
+ 3127 0437 02080000 		.4byte	.LASF61
  3128 043b 05       		.byte	0x5
  3129 043c 3D03     		.2byte	0x33d
  3130 043e FC030000 		.4byte	0x3fc
  3131 0442 00       		.byte	0
  3132 0443 14       		.uleb128 0x14
- 3133 0444 05040000 		.4byte	.LASF62
+ 3133 0444 2C040000 		.4byte	.LASF62
  3134 0448 04       		.byte	0x4
  3135 0449 3D03     		.2byte	0x33d
  3136 044b FC030000 		.4byte	0x3fc
  3137 044f 03       		.byte	0x3
  3138 0450 61040000 		.4byte	0x461
  3139 0454 15       		.uleb128 0x15
- 3140 0455 30080000 		.4byte	.LASF61
+ 3140 0455 02080000 		.4byte	.LASF61
  3141 0459 04       		.byte	0x4
  3142 045a 3D03     		.2byte	0x33d
  3143 045c FC030000 		.4byte	0x3fc
  3144 0460 00       		.byte	0
  3145 0461 14       		.uleb128 0x14
- 3146 0462 AB040000 		.4byte	.LASF63
+ 3146 0462 7D040000 		.4byte	.LASF63
  3147 0466 03       		.byte	0x3
  3148 0467 3D03     		.2byte	0x33d
  3149 0469 FC030000 		.4byte	0x3fc
  3150 046d 03       		.byte	0x3
  3151 046e 7F040000 		.4byte	0x47f
  3152 0472 15       		.uleb128 0x15
- 3153 0473 30080000 		.4byte	.LASF61
+ 3153 0473 02080000 		.4byte	.LASF61
  3154 0477 03       		.byte	0x3
  3155 0478 3D03     		.2byte	0x33d
  3156 047a FC030000 		.4byte	0x3fc
  3157 047e 00       		.byte	0
  3158 047f 14       		.uleb128 0x14
- 3159 0480 0E060000 		.4byte	.LASF64
+ 3159 0480 E0050000 		.4byte	.LASF64
  3160 0484 02       		.byte	0x2
  3161 0485 3D03     		.2byte	0x33d
  3162 0487 FC030000 		.4byte	0x3fc
  3163 048b 03       		.byte	0x3
  3164 048c 9D040000 		.4byte	0x49d
  3165 0490 15       		.uleb128 0x15
- 3166 0491 30080000 		.4byte	.LASF61
+ 3166 0491 02080000 		.4byte	.LASF61
  3167 0495 02       		.byte	0x2
  3168 0496 3D03     		.2byte	0x33d
  3169 0498 FC030000 		.4byte	0x3fc
  3170 049c 00       		.byte	0
  3171 049d 16       		.uleb128 0x16
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 176
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 176
 
 
  3172 049e D5030000 		.4byte	.LASF140
@@ -10558,7 +10558,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3226 051a 54040000 		.4byte	0x454
  3227 051e 19       		.uleb128 0x19
  3228 051f 28000000 		.4byte	.LVL3
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 177
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 177
 
 
  3229 0523 8D0E0000 		.4byte	0xe8d
@@ -10618,7 +10618,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3283 058e 64060000 		.4byte	0x664
  3284 0592 1D       		.uleb128 0x1d
  3285 0593 34000000 		.4byte	.LVL6
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 178
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 178
 
 
  3286 0597 980E0000 		.4byte	0xe98
@@ -10678,7 +10678,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3340 05fa 04060000 		.4byte	0x604
  3341 05fe 1A       		.uleb128 0x1a
  3342 05ff 01       		.uleb128 0x1
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 179
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 179
 
 
  3343 0600 50       		.byte	0x50
@@ -10738,7 +10738,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3397 065a 1E       		.uleb128 0x1e
  3398 065b 9A000000 		.4byte	.LVL16
  3399 065f 9D040000 		.4byte	0x49d
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 180
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 180
 
 
  3400 0663 00       		.byte	0
@@ -10798,7 +10798,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3454 06dd 50       		.byte	0x50
  3455 06de 01       		.uleb128 0x1
  3456 06df 4F       		.byte	0x4f
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 181
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 181
 
 
  3457 06e0 00       		.byte	0
@@ -10858,7 +10858,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3511 074f 20000000 		.4byte	.LVL32
  3512 0753 64060000 		.4byte	0x664
  3513 0757 1A       		.uleb128 0x1a
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 182
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 182
 
 
  3514 0758 01       		.uleb128 0x1
@@ -10909,7 +10909,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3559 07b1 53       		.byte	0x53
  3560 07b2 00       		.byte	0
  3561 07b3 25       		.uleb128 0x25
- 3562 07b4 66070000 		.4byte	.LASF100
+ 3562 07b4 38070000 		.4byte	.LASF100
  3563 07b8 01       		.byte	0x1
  3564 07b9 6803     		.2byte	0x368
  3565 07bb 6B000000 		.4byte	0x6b
@@ -10918,10 +10918,10 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3568 07c7 01       		.uleb128 0x1
  3569 07c8 9C       		.byte	0x9c
  3570 07c9 23       		.uleb128 0x23
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 183
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 183
 
 
- 3571 07ca 9D050000 		.4byte	.LASF73
+ 3571 07ca 6F050000 		.4byte	.LASF73
  3572 07ce 01       		.byte	0x1
  3573 07cf 8203     		.2byte	0x382
  3574 07d1 6B000000 		.4byte	0x6b
@@ -10955,7 +10955,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3602 081a 0E010000 		.4byte	.LLST7
  3603 081e 00       		.byte	0
  3604 081f 23       		.uleb128 0x23
- 3605 0820 9A040000 		.4byte	.LASF76
+ 3605 0820 6C040000 		.4byte	.LASF76
  3606 0824 01       		.byte	0x1
  3607 0825 BF03     		.2byte	0x3bf
  3608 0827 6B000000 		.4byte	0x6b
@@ -10965,27 +10965,27 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3612 0834 9C       		.byte	0x9c
  3613 0835 4A080000 		.4byte	0x84a
  3614 0839 20       		.uleb128 0x20
- 3615 083a 05060000 		.4byte	.LASF77
+ 3615 083a D7050000 		.4byte	.LASF77
  3616 083e 01       		.byte	0x1
  3617 083f BF03     		.2byte	0x3bf
  3618 0841 6B000000 		.4byte	0x6b
  3619 0845 2F010000 		.4byte	.LLST8
  3620 0849 00       		.byte	0
  3621 084a 23       		.uleb128 0x23
- 3622 084b D4060000 		.4byte	.LASF78
+ 3622 084b A6060000 		.4byte	.LASF78
  3623 084f 01       		.byte	0x1
  3624 0850 D603     		.2byte	0x3d6
  3625 0852 77000000 		.4byte	0x77
  3626 0856 00000000 		.4byte	.LFB171
  3627 085a 34000000 		.4byte	.LFE171-.LFB171
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 184
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 184
 
 
  3628 085e 01       		.uleb128 0x1
  3629 085f 9C       		.byte	0x9c
  3630 0860 85080000 		.4byte	0x885
  3631 0864 20       		.uleb128 0x20
- 3632 0865 05060000 		.4byte	.LASF77
+ 3632 0865 D7050000 		.4byte	.LASF77
  3633 0869 01       		.byte	0x1
  3634 086a D603     		.2byte	0x3d6
  3635 086c 6B000000 		.4byte	0x6b
@@ -10998,7 +10998,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3642 0880 8A010000 		.4byte	.LLST10
  3643 0884 00       		.byte	0
  3644 0885 1F       		.uleb128 0x1f
- 3645 0886 DC070000 		.4byte	.LASF80
+ 3645 0886 AE070000 		.4byte	.LASF80
  3646 088a 01       		.byte	0x1
  3647 088b C004     		.2byte	0x4c0
  3648 088d 00000000 		.4byte	.LFB173
@@ -11007,7 +11007,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3651 0896 9C       		.byte	0x9c
  3652 0897 B6080000 		.4byte	0x8b6
  3653 089b 27       		.uleb128 0x27
- 3654 089c 05060000 		.4byte	.LASF77
+ 3654 089c D7050000 		.4byte	.LASF77
  3655 08a0 01       		.byte	0x1
  3656 08a1 C004     		.2byte	0x4c0
  3657 08a3 6B000000 		.4byte	0x6b
@@ -11022,7 +11022,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3666 08b4 53       		.byte	0x53
  3667 08b5 00       		.byte	0
  3668 08b6 1F       		.uleb128 0x1f
- 3669 08b7 4C070000 		.4byte	.LASF81
+ 3669 08b7 1E070000 		.4byte	.LASF81
  3670 08bb 01       		.byte	0x1
  3671 08bc D902     		.2byte	0x2d9
  3672 08be 00000000 		.4byte	.LFB165
@@ -11031,14 +11031,14 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3675 08c7 9C       		.byte	0x9c
  3676 08c8 37090000 		.4byte	0x937
  3677 08cc 26       		.uleb128 0x26
- 3678 08cd FC080000 		.4byte	.LASF82
+ 3678 08cd CE080000 		.4byte	.LASF82
  3679 08d1 01       		.byte	0x1
  3680 08d2 DB02     		.2byte	0x2db
  3681 08d4 6B000000 		.4byte	0x6b
  3682 08d8 E7010000 		.4byte	.LLST11
  3683 08dc 1D       		.uleb128 0x1d
  3684 08dd 08000000 		.4byte	.LVL59
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 185
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 185
 
 
  3685 08e1 85080000 		.4byte	0x885
@@ -11086,7 +11086,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3727 0935 00       		.byte	0
  3728 0936 00       		.byte	0
  3729 0937 1F       		.uleb128 0x1f
- 3730 0938 95060000 		.4byte	.LASF83
+ 3730 0938 67060000 		.4byte	.LASF83
  3731 093c 01       		.byte	0x1
  3732 093d 3E05     		.2byte	0x53e
  3733 093f 00000000 		.4byte	.LFB174
@@ -11095,10 +11095,10 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3736 0948 9C       		.byte	0x9c
  3737 0949 D6090000 		.4byte	0x9d6
  3738 094d 20       		.uleb128 0x20
- 3739 094e 05060000 		.4byte	.LASF77
+ 3739 094e D7050000 		.4byte	.LASF77
  3740 0952 01       		.byte	0x1
  3741 0953 3E05     		.2byte	0x53e
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 186
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 186
 
 
  3742 0955 6B000000 		.4byte	0x6b
@@ -11110,7 +11110,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3748 0965 D6090000 		.4byte	0x9d6
  3749 0969 4D020000 		.4byte	.LLST13
  3750 096d 20       		.uleb128 0x20
- 3751 096e 45070000 		.4byte	.LASF85
+ 3751 096e 17070000 		.4byte	.LASF85
  3752 0972 01       		.byte	0x1
  3753 0973 3E05     		.2byte	0x53e
  3754 0975 77000000 		.4byte	0x77
@@ -11120,7 +11120,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3758 0982 46000000 		.4byte	.LBE22-.LBB22
  3759 0986 9B090000 		.4byte	0x99b
  3760 098a 26       		.uleb128 0x26
- 3761 098b D5050000 		.4byte	.LASF86
+ 3761 098b A7050000 		.4byte	.LASF86
  3762 098f 01       		.byte	0x1
  3763 0990 A005     		.2byte	0x5a0
  3764 0992 83000000 		.4byte	0x83
@@ -11130,19 +11130,19 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3768 099c 90000000 		.4byte	.LBB23
  3769 09a0 EC000000 		.4byte	.LBE23-.LBB23
  3770 09a4 26       		.uleb128 0x26
- 3771 09a5 CE040000 		.4byte	.LASF87
+ 3771 09a5 A0040000 		.4byte	.LASF87
  3772 09a9 01       		.byte	0x1
  3773 09aa EB05     		.2byte	0x5eb
  3774 09ac 83000000 		.4byte	0x83
  3775 09b0 12030000 		.4byte	.LLST16
  3776 09b4 26       		.uleb128 0x26
- 3777 09b5 DB040000 		.4byte	.LASF88
+ 3777 09b5 AD040000 		.4byte	.LASF88
  3778 09b9 01       		.byte	0x1
  3779 09ba EB05     		.2byte	0x5eb
  3780 09bc 83000000 		.4byte	0x83
  3781 09c0 25030000 		.4byte	.LLST17
  3782 09c4 26       		.uleb128 0x26
- 3783 09c5 D5050000 		.4byte	.LASF86
+ 3783 09c5 A7050000 		.4byte	.LASF86
  3784 09c9 01       		.byte	0x1
  3785 09ca EC05     		.2byte	0x5ec
  3786 09cc 83000000 		.4byte	0x83
@@ -11158,7 +11158,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3796 09e2 32020000 		.4byte	.LASF89
  3797 09e6 01       		.byte	0x1
  3798 09e7 7506     		.2byte	0x675
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 187
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 187
 
 
  3799 09e9 77000000 		.4byte	0x77
@@ -11168,7 +11168,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3803 09f6 9C       		.byte	0x9c
  3804 09f7 660A0000 		.4byte	0xa66
  3805 09fb 20       		.uleb128 0x20
- 3806 09fc 05060000 		.4byte	.LASF77
+ 3806 09fc D7050000 		.4byte	.LASF77
  3807 0a00 01       		.byte	0x1
  3808 0a01 7506     		.2byte	0x675
  3809 0a03 6B000000 		.4byte	0x6b
@@ -11180,7 +11180,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3815 0a13 660A0000 		.4byte	0xa66
  3816 0a17 B3030000 		.4byte	.LLST20
  3817 0a1b 20       		.uleb128 0x20
- 3818 0a1c 45070000 		.4byte	.LASF85
+ 3818 0a1c 17070000 		.4byte	.LASF85
  3819 0a20 01       		.byte	0x1
  3820 0a21 7506     		.2byte	0x675
  3821 0a23 77000000 		.4byte	0x77
@@ -11189,19 +11189,19 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3824 0a2c 12000000 		.4byte	.LBB24
  3825 0a30 E8000000 		.4byte	.LBE24-.LBB24
  3826 0a34 26       		.uleb128 0x26
- 3827 0a35 D5050000 		.4byte	.LASF86
+ 3827 0a35 A7050000 		.4byte	.LASF86
  3828 0a39 01       		.byte	0x1
  3829 0a3a C306     		.2byte	0x6c3
  3830 0a3c 83000000 		.4byte	0x83
  3831 0a40 5C040000 		.4byte	.LLST22
  3832 0a44 26       		.uleb128 0x26
- 3833 0a45 CE040000 		.4byte	.LASF87
+ 3833 0a45 A0040000 		.4byte	.LASF87
  3834 0a49 01       		.byte	0x1
  3835 0a4a C406     		.2byte	0x6c4
  3836 0a4c 83000000 		.4byte	0x83
  3837 0a50 87040000 		.4byte	.LLST23
  3838 0a54 26       		.uleb128 0x26
- 3839 0a55 DB040000 		.4byte	.LASF88
+ 3839 0a55 AD040000 		.4byte	.LASF88
  3840 0a59 01       		.byte	0x1
  3841 0a5a C406     		.2byte	0x6c4
  3842 0a5c 83000000 		.4byte	0x83
@@ -11212,19 +11212,19 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3847 0a67 04       		.byte	0x4
  3848 0a68 6B000000 		.4byte	0x6b
  3849 0a6c 1F       		.uleb128 0x1f
- 3850 0a6d 1F080000 		.4byte	.LASF90
+ 3850 0a6d F1070000 		.4byte	.LASF90
  3851 0a71 01       		.byte	0x1
  3852 0a72 4907     		.2byte	0x749
  3853 0a74 00000000 		.4byte	.LFB176
  3854 0a78 F0010000 		.4byte	.LFE176-.LFB176
  3855 0a7c 01       		.uleb128 0x1
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 188
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 188
 
 
  3856 0a7d 9C       		.byte	0x9c
  3857 0a7e 1E0B0000 		.4byte	0xb1e
  3858 0a82 20       		.uleb128 0x20
- 3859 0a83 05060000 		.4byte	.LASF77
+ 3859 0a83 D7050000 		.4byte	.LASF77
  3860 0a87 01       		.byte	0x1
  3861 0a88 4907     		.2byte	0x749
  3862 0a8a 6B000000 		.4byte	0x6b
@@ -11236,7 +11236,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3868 0a9a D6090000 		.4byte	0x9d6
  3869 0a9e CE040000 		.4byte	.LLST26
  3870 0aa2 20       		.uleb128 0x20
- 3871 0aa3 45070000 		.4byte	.LASF85
+ 3871 0aa3 17070000 		.4byte	.LASF85
  3872 0aa7 01       		.byte	0x1
  3873 0aa8 4907     		.2byte	0x749
  3874 0aaa 77000000 		.4byte	0x77
@@ -11246,7 +11246,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3878 0ab7 46000000 		.4byte	.LBE25-.LBB25
  3879 0abb D00A0000 		.4byte	0xad0
  3880 0abf 26       		.uleb128 0x26
- 3881 0ac0 D5050000 		.4byte	.LASF86
+ 3881 0ac0 A7050000 		.4byte	.LASF86
  3882 0ac4 01       		.byte	0x1
  3883 0ac5 9F07     		.2byte	0x79f
  3884 0ac7 83000000 		.4byte	0x83
@@ -11257,19 +11257,19 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3889 0ad5 EE000000 		.4byte	.LBE26-.LBB26
  3890 0ad9 0E0B0000 		.4byte	0xb0e
  3891 0add 26       		.uleb128 0x26
- 3892 0ade CE040000 		.4byte	.LASF87
+ 3892 0ade A0040000 		.4byte	.LASF87
  3893 0ae2 01       		.byte	0x1
  3894 0ae3 C007     		.2byte	0x7c0
  3895 0ae5 83000000 		.4byte	0x83
  3896 0ae9 01060000 		.4byte	.LLST29
  3897 0aed 26       		.uleb128 0x26
- 3898 0aee DB040000 		.4byte	.LASF88
+ 3898 0aee AD040000 		.4byte	.LASF88
  3899 0af2 01       		.byte	0x1
  3900 0af3 C007     		.2byte	0x7c0
  3901 0af5 83000000 		.4byte	0x83
  3902 0af9 14060000 		.4byte	.LLST30
  3903 0afd 26       		.uleb128 0x26
- 3904 0afe D5050000 		.4byte	.LASF86
+ 3904 0afe A7050000 		.4byte	.LASF86
  3905 0b02 01       		.byte	0x1
  3906 0b03 C107     		.2byte	0x7c1
  3907 0b05 83000000 		.4byte	0x83
@@ -11278,7 +11278,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3910 0b0e 19       		.uleb128 0x19
  3911 0b0f 1A000000 		.4byte	.LVL104
  3912 0b13 FB0E0000 		.4byte	0xefb
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 189
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 189
 
 
  3913 0b17 1A       		.uleb128 0x1a
@@ -11289,7 +11289,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3918 0b1c 00       		.byte	0
  3919 0b1d 00       		.byte	0
  3920 0b1e 23       		.uleb128 0x23
- 3921 0b1f 6D080000 		.4byte	.LASF91
+ 3921 0b1f 3F080000 		.4byte	.LASF91
  3922 0b23 01       		.byte	0x1
  3923 0b24 3808     		.2byte	0x838
  3924 0b26 77000000 		.4byte	0x77
@@ -11299,7 +11299,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3928 0b33 9C       		.byte	0x9c
  3929 0b34 C60B0000 		.4byte	0xbc6
  3930 0b38 20       		.uleb128 0x20
- 3931 0b39 05060000 		.4byte	.LASF77
+ 3931 0b39 D7050000 		.4byte	.LASF77
  3932 0b3d 01       		.byte	0x1
  3933 0b3e 3808     		.2byte	0x838
  3934 0b40 6B000000 		.4byte	0x6b
@@ -11311,7 +11311,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3940 0b50 660A0000 		.4byte	0xa66
  3941 0b54 89060000 		.4byte	.LLST33
  3942 0b58 20       		.uleb128 0x20
- 3943 0b59 45070000 		.4byte	.LASF85
+ 3943 0b59 17070000 		.4byte	.LASF85
  3944 0b5d 01       		.byte	0x1
  3945 0b5e 3808     		.2byte	0x838
  3946 0b60 77000000 		.4byte	0x77
@@ -11327,22 +11327,22 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3956 0b7d EE000000 		.4byte	.LBE27-.LBB27
  3957 0b81 B60B0000 		.4byte	0xbb6
  3958 0b85 26       		.uleb128 0x26
- 3959 0b86 CE040000 		.4byte	.LASF87
+ 3959 0b86 A0040000 		.4byte	.LASF87
  3960 0b8a 01       		.byte	0x1
  3961 0b8b 7B08     		.2byte	0x87b
  3962 0b8d 83000000 		.4byte	0x83
  3963 0b91 82070000 		.4byte	.LLST36
  3964 0b95 26       		.uleb128 0x26
- 3965 0b96 DB040000 		.4byte	.LASF88
+ 3965 0b96 AD040000 		.4byte	.LASF88
  3966 0b9a 01       		.byte	0x1
  3967 0b9b 7B08     		.2byte	0x87b
  3968 0b9d 83000000 		.4byte	0x83
  3969 0ba1 95070000 		.4byte	.LLST37
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 190
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 190
 
 
  3970 0ba5 26       		.uleb128 0x26
- 3971 0ba6 D5050000 		.4byte	.LASF86
+ 3971 0ba6 A7050000 		.4byte	.LASF86
  3972 0baa 01       		.byte	0x1
  3973 0bab 7C08     		.2byte	0x87c
  3974 0bad 83000000 		.4byte	0x83
@@ -11359,7 +11359,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3985 0bc4 00       		.byte	0
  3986 0bc5 00       		.byte	0
  3987 0bc6 1F       		.uleb128 0x1f
- 3988 0bc7 28040000 		.4byte	.LASF93
+ 3988 0bc7 4F040000 		.4byte	.LASF93
  3989 0bcb 01       		.byte	0x1
  3990 0bcc E408     		.2byte	0x8e4
  3991 0bce 00000000 		.4byte	.LFB178
@@ -11368,7 +11368,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  3994 0bd7 9C       		.byte	0x9c
  3995 0bd8 ED0B0000 		.4byte	0xbed
  3996 0bdc 20       		.uleb128 0x20
- 3997 0bdd 05060000 		.4byte	.LASF77
+ 3997 0bdd D7050000 		.4byte	.LASF77
  3998 0be1 01       		.byte	0x1
  3999 0be2 E408     		.2byte	0x8e4
  4000 0be4 6B000000 		.4byte	0x6b
@@ -11384,7 +11384,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4010 0bfe 9C       		.byte	0x9c
  4011 0bff 140C0000 		.4byte	0xc14
  4012 0c03 20       		.uleb128 0x20
- 4013 0c04 05060000 		.4byte	.LASF77
+ 4013 0c04 D7050000 		.4byte	.LASF77
  4014 0c08 01       		.byte	0x1
  4015 0c09 FC08     		.2byte	0x8fc
  4016 0c0b 6B000000 		.4byte	0x6b
@@ -11398,12 +11398,12 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4024 0c20 0C000000 		.4byte	.LFE180-.LFB180
  4025 0c24 01       		.uleb128 0x1
  4026 0c25 9C       		.byte	0x9c
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 191
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 191
 
 
  4027 0c26 390C0000 		.4byte	0xc39
  4028 0c2a 27       		.uleb128 0x27
- 4029 0c2b D2080000 		.4byte	.LASF96
+ 4029 0c2b A4080000 		.4byte	.LASF96
  4030 0c2f 01       		.byte	0x1
  4031 0c30 1A09     		.2byte	0x91a
  4032 0c32 6B000000 		.4byte	0x6b
@@ -11411,7 +11411,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4034 0c37 50       		.byte	0x50
  4035 0c38 00       		.byte	0
  4036 0c39 23       		.uleb128 0x23
- 4037 0c3a 17070000 		.4byte	.LASF97
+ 4037 0c3a E9060000 		.4byte	.LASF97
  4038 0c3e 01       		.byte	0x1
  4039 0c3f 3309     		.2byte	0x933
  4040 0c41 6B000000 		.4byte	0x6b
@@ -11421,7 +11421,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4044 0c4e 9C       		.byte	0x9c
  4045 0c4f 730C0000 		.4byte	0xc73
  4046 0c53 20       		.uleb128 0x20
- 4047 0c54 05060000 		.4byte	.LASF77
+ 4047 0c54 D7050000 		.4byte	.LASF77
  4048 0c58 01       		.byte	0x1
  4049 0c59 3309     		.2byte	0x933
  4050 0c5b 6B000000 		.4byte	0x6b
@@ -11434,7 +11434,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4057 0c6e 4F080000 		.4byte	.LLST42
  4058 0c72 00       		.byte	0
  4059 0c73 1F       		.uleb128 0x1f
- 4060 0c74 42050000 		.4byte	.LASF98
+ 4060 0c74 14050000 		.4byte	.LASF98
  4061 0c78 01       		.byte	0x1
  4062 0c79 5C09     		.2byte	0x95c
  4063 0c7b 00000000 		.4byte	.LFB182
@@ -11443,7 +11443,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4066 0c84 9C       		.byte	0x9c
  4067 0c85 980C0000 		.4byte	0xc98
  4068 0c89 27       		.uleb128 0x27
- 4069 0c8a F7060000 		.4byte	.LASF99
+ 4069 0c8a C9060000 		.4byte	.LASF99
  4070 0c8e 01       		.byte	0x1
  4071 0c8f 5C09     		.2byte	0x95c
  4072 0c91 6B000000 		.4byte	0x6b
@@ -11458,12 +11458,12 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4081 0ca4 00000000 		.4byte	.LFB183
  4082 0ca8 14000000 		.4byte	.LFE183-.LFB183
  4083 0cac 01       		.uleb128 0x1
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 192
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 192
 
 
  4084 0cad 9C       		.byte	0x9c
  4085 0cae 23       		.uleb128 0x23
- 4086 0caf C1080000 		.4byte	.LASF102
+ 4086 0caf 93080000 		.4byte	.LASF102
  4087 0cb3 01       		.byte	0x1
  4088 0cb4 9509     		.2byte	0x995
  4089 0cb6 6B000000 		.4byte	0x6b
@@ -11480,7 +11480,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4100 0cd4 85080000 		.4byte	.LLST43
  4101 0cd8 00       		.byte	0
  4102 0cd9 25       		.uleb128 0x25
- 4103 0cda 72060000 		.4byte	.LASF104
+ 4103 0cda 44060000 		.4byte	.LASF104
  4104 0cde 01       		.byte	0x1
  4105 0cdf AD09     		.2byte	0x9ad
  4106 0ce1 6B000000 		.4byte	0x6b
@@ -11518,7 +11518,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4138 0d2a DA02     		.2byte	0x2da
  4139 0d2c A4000000 		.4byte	0xa4
  4140 0d30 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 193
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 193
 
 
  4141 0d31 82010000 		.4byte	.LASF109
@@ -11531,7 +11531,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4148 0d42 DC02     		.2byte	0x2dc
  4149 0d44 A4000000 		.4byte	0xa4
  4150 0d48 2E       		.uleb128 0x2e
- 4151 0d49 31060000 		.4byte	.LASF111
+ 4151 0d49 03060000 		.4byte	.LASF111
  4152 0d4d 08       		.byte	0x8
  4153 0d4e DD02     		.2byte	0x2dd
  4154 0d50 A4000000 		.4byte	0xa4
@@ -11548,26 +11548,26 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4165 0d6e 03       		.byte	0x3
  4166 0d6f 00       		.byte	0
  4167 0d70 2E       		.uleb128 0x2e
- 4168 0d71 5E050000 		.4byte	.LASF113
+ 4168 0d71 30050000 		.4byte	.LASF113
  4169 0d75 08       		.byte	0x8
  4170 0d76 E702     		.2byte	0x2e7
  4171 0d78 7C0D0000 		.4byte	0xd7c
  4172 0d7c 05       		.uleb128 0x5
  4173 0d7d 600D0000 		.4byte	0xd60
  4174 0d81 2F       		.uleb128 0x2f
- 4175 0d82 BE060000 		.4byte	.LASF114
+ 4175 0d82 90060000 		.4byte	.LASF114
  4176 0d86 0A       		.byte	0xa
  4177 0d87 79       		.byte	0x79
  4178 0d88 A4000000 		.4byte	0xa4
  4179 0d8c 2F       		.uleb128 0x2f
- 4180 0d8d EE050000 		.4byte	.LASF115
+ 4180 0d8d C0050000 		.4byte	.LASF115
  4181 0d91 0A       		.byte	0xa
  4182 0d92 7A       		.byte	0x7a
  4183 0d93 970D0000 		.4byte	0xd97
  4184 0d97 05       		.uleb128 0x5
  4185 0d98 600D0000 		.4byte	0xd60
  4186 0d9c 2F       		.uleb128 0x2f
- 4187 0d9d 06080000 		.4byte	.LASF116
+ 4187 0d9d D8070000 		.4byte	.LASF116
  4188 0da1 0A       		.byte	0xa
  4189 0da2 7C       		.byte	0x7c
  4190 0da3 A4000000 		.4byte	0xa4
@@ -11578,13 +11578,13 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4195 0db1 C8000000 		.4byte	0xc8
  4196 0db5 08       		.byte	0x8
  4197 0db6 00       		.byte	0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 194
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 194
 
 
  4198 0db7 05       		.uleb128 0x5
  4199 0db8 46010000 		.4byte	0x146
  4200 0dbc 2F       		.uleb128 0x2f
- 4201 0dbd E8040000 		.4byte	.LASF117
+ 4201 0dbd BA040000 		.4byte	.LASF117
  4202 0dc1 0A       		.byte	0xa
  4203 0dc2 80       		.byte	0x80
  4204 0dc3 C70D0000 		.4byte	0xdc7
@@ -11598,7 +11598,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4212 0dda 08       		.byte	0x8
  4213 0ddb 00       		.byte	0
  4214 0ddc 2D       		.uleb128 0x2d
- 4215 0ddd 81050000 		.4byte	.LASF118
+ 4215 0ddd 53050000 		.4byte	.LASF118
  4216 0de1 01       		.byte	0x1
  4217 0de2 2F       		.byte	0x2f
  4218 0de3 ED0D0000 		.4byte	0xded
@@ -11615,7 +11615,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4229 0e00 08       		.byte	0x8
  4230 0e01 00       		.byte	0
  4231 0e02 2D       		.uleb128 0x2d
- 4232 0e03 03070000 		.4byte	.LASF119
+ 4232 0e03 D5060000 		.4byte	.LASF119
  4233 0e07 01       		.byte	0x1
  4234 0e08 47       		.byte	0x47
  4235 0e09 F20D0000 		.4byte	0xdf2
@@ -11631,14 +11631,14 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4245 0e1f 03       		.byte	0x3
  4246 0e20 00000000 		.4byte	USBFS_DmaEpLastBurstEl
  4247 0e24 2D       		.uleb128 0x2d
- 4248 0e25 A4060000 		.4byte	.LASF121
+ 4248 0e25 76060000 		.4byte	.LASF121
  4249 0e29 01       		.byte	0x1
  4250 0e2a 4D       		.byte	0x4d
  4251 0e2b F20D0000 		.4byte	0xdf2
  4252 0e2f 05       		.uleb128 0x5
  4253 0e30 03       		.byte	0x3
  4254 0e31 00000000 		.4byte	USBFS_DmaEpBurstCntBackup
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 195
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 195
 
 
  4255 0e35 0D       		.uleb128 0xd
@@ -11657,7 +11657,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4268 0e51 03       		.byte	0x3
  4269 0e52 00000000 		.4byte	USBFS_DmaEpBufferAddrBackup
  4270 0e56 2D       		.uleb128 0x2d
- 4271 0e57 97070000 		.4byte	.LASF123
+ 4271 0e57 69070000 		.4byte	.LASF123
  4272 0e5b 01       		.byte	0x1
  4273 0e5c 51       		.byte	0x51
  4274 0e5d 670E0000 		.4byte	0xe67
@@ -11682,8 +11682,8 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4293 0e88 A2       		.byte	0xa2
  4294 0e89 A4000000 		.4byte	0xa4
  4295 0e8d 30       		.uleb128 0x30
- 4296 0e8e 12050000 		.4byte	.LASF126
- 4297 0e92 12050000 		.4byte	.LASF126
+ 4296 0e8e E4040000 		.4byte	.LASF126
+ 4297 0e92 E4040000 		.4byte	.LASF126
  4298 0e96 09       		.byte	0x9
  4299 0e97 7B       		.byte	0x7b
  4300 0e98 30       		.uleb128 0x30
@@ -11698,35 +11698,35 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4309 0ead 64       		.byte	0x64
  4310 0eae 30       		.uleb128 0x30
  4311 0eaf 19000000 		.4byte	.LASF129
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 196
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 196
 
 
  4312 0eb3 19000000 		.4byte	.LASF129
  4313 0eb7 0B       		.byte	0xb
  4314 0eb8 C0       		.byte	0xc0
  4315 0eb9 30       		.uleb128 0x30
- 4316 0eba 33050000 		.4byte	.LASF130
- 4317 0ebe 33050000 		.4byte	.LASF130
+ 4316 0eba 05050000 		.4byte	.LASF130
+ 4317 0ebe 05050000 		.4byte	.LASF130
  4318 0ec2 0B       		.byte	0xb
  4319 0ec3 BD       		.byte	0xbd
  4320 0ec4 30       		.uleb128 0x30
- 4321 0ec5 39080000 		.4byte	.LASF131
- 4322 0ec9 39080000 		.4byte	.LASF131
+ 4321 0ec5 0B080000 		.4byte	.LASF131
+ 4322 0ec9 0B080000 		.4byte	.LASF131
  4323 0ecd 0B       		.byte	0xb
  4324 0ece C3       		.byte	0xc3
  4325 0ecf 30       		.uleb128 0x30
- 4326 0ed0 89060000 		.4byte	.LASF132
- 4327 0ed4 89060000 		.4byte	.LASF132
+ 4326 0ed0 5B060000 		.4byte	.LASF132
+ 4327 0ed4 5B060000 		.4byte	.LASF132
  4328 0ed8 09       		.byte	0x9
  4329 0ed9 6D       		.byte	0x6d
  4330 0eda 30       		.uleb128 0x30
- 4331 0edb 45080000 		.4byte	.LASF133
- 4332 0edf 45080000 		.4byte	.LASF133
+ 4331 0edb 17080000 		.4byte	.LASF133
+ 4332 0edf 17080000 		.4byte	.LASF133
  4333 0ee3 0B       		.byte	0xb
  4334 0ee4 E5       		.byte	0xe5
  4335 0ee5 30       		.uleb128 0x30
- 4336 0ee6 F6040000 		.4byte	.LASF134
- 4337 0eea F6040000 		.4byte	.LASF134
+ 4336 0ee6 C8040000 		.4byte	.LASF134
+ 4337 0eea C8040000 		.4byte	.LASF134
  4338 0eee 0B       		.byte	0xb
  4339 0eef E6       		.byte	0xe6
  4340 0ef0 30       		.uleb128 0x30
@@ -11758,7 +11758,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4366 000d 11       		.uleb128 0x11
  4367 000e 01       		.uleb128 0x1
  4368 000f 10       		.uleb128 0x10
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 197
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 197
 
 
  4369 0010 17       		.uleb128 0x17
@@ -11818,7 +11818,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4423 0046 07       		.uleb128 0x7
  4424 0047 15       		.uleb128 0x15
  4425 0048 00       		.byte	0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 198
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 198
 
 
  4426 0049 27       		.uleb128 0x27
@@ -11878,7 +11878,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4480 007f 00       		.byte	0
  4481 0080 03       		.uleb128 0x3
  4482 0081 08       		.uleb128 0x8
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 199
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 199
 
 
  4483 0082 3A       		.uleb128 0x3a
@@ -11938,7 +11938,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4537 00b8 00       		.byte	0
  4538 00b9 00       		.byte	0
  4539 00ba 11       		.uleb128 0x11
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 200
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 200
 
 
  4540 00bb 0D       		.uleb128 0xd
@@ -11998,7 +11998,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4594 00f1 0B       		.uleb128 0xb
  4595 00f2 01       		.uleb128 0x1
  4596 00f3 13       		.uleb128 0x13
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 201
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 201
 
 
  4597 00f4 00       		.byte	0
@@ -12058,7 +12058,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4651 012b 00       		.byte	0
  4652 012c 18       		.uleb128 0x18
  4653 012d 05       		.uleb128 0x5
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 202
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 202
 
 
  4654 012e 00       		.byte	0
@@ -12118,7 +12118,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4708 0169 06       		.uleb128 0x6
  4709 016a 40       		.uleb128 0x40
  4710 016b 18       		.uleb128 0x18
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 203
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 203
 
 
  4711 016c 9742     		.uleb128 0x2117
@@ -12178,7 +12178,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4765 01a8 03       		.uleb128 0x3
  4766 01a9 0E       		.uleb128 0xe
  4767 01aa 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 204
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 204
 
 
  4768 01ab 0B       		.uleb128 0xb
@@ -12238,7 +12238,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4822 01e1 11       		.uleb128 0x11
  4823 01e2 01       		.uleb128 0x1
  4824 01e3 12       		.uleb128 0x12
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 205
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 205
 
 
  4825 01e4 06       		.uleb128 0x6
@@ -12298,7 +12298,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4879 021c 3A       		.uleb128 0x3a
  4880 021d 0B       		.uleb128 0xb
  4881 021e 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 206
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 206
 
 
  4882 021f 05       		.uleb128 0x5
@@ -12358,7 +12358,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4936 0255 06       		.uleb128 0x6
  4937 0256 00       		.byte	0
  4938 0257 00       		.byte	0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 207
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 207
 
 
  4939 0258 2B       		.uleb128 0x2b
@@ -12418,7 +12418,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  4993 028f 3B       		.uleb128 0x3b
  4994 0290 05       		.uleb128 0x5
  4995 0291 49       		.uleb128 0x49
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 208
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 208
 
 
  4996 0292 13       		.uleb128 0x13
@@ -12478,7 +12478,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  5050 0017 50       		.byte	0x50
  5051 0018 9F       		.byte	0x9f
  5052 0019 00000000 		.4byte	0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 209
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 209
 
 
  5053 001d 00000000 		.4byte	0
@@ -12538,7 +12538,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  5107 00a3 01       		.uleb128 0x1
  5108 00a4 51       		.byte	0x51
  5109 00a5 9F       		.byte	0x9f
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 210
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 210
 
 
  5110 00a6 00000000 		.4byte	0
@@ -12598,7 +12598,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  5164 012f 00000000 		.4byte	.LVL45
  5165 0133 04000000 		.4byte	.LVL46
  5166 0137 0100     		.2byte	0x1
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 211
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 211
 
 
  5167 0139 50       		.byte	0x50
@@ -12658,7 +12658,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  5221 01b4 28000000 		.4byte	.LVL53
  5222 01b8 0300     		.2byte	0x3
  5223 01ba 70       		.byte	0x70
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 212
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 212
 
 
  5224 01bb 02       		.sleb128 2
@@ -12718,7 +12718,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  5278 0241 F3       		.byte	0xf3
  5279 0242 01       		.uleb128 0x1
  5280 0243 50       		.byte	0x50
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 213
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 213
 
 
  5281 0244 9F       		.byte	0x9f
@@ -12778,7 +12778,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  5335 02bb 7E000000 		.4byte	.LVL72
  5336 02bf 0400     		.2byte	0x4
  5337 02c1 F3       		.byte	0xf3
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 214
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 214
 
 
  5338 02c2 01       		.uleb128 0x1
@@ -12838,7 +12838,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  5392 0346 00000000 		.4byte	0
  5393 034a 00000000 		.4byte	0
  5394              	.LLST18:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 215
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 215
 
 
  5395 034e 94000000 		.4byte	.LVL74
@@ -12898,7 +12898,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  5449 03c9 04       		.sleb128 4
  5450 03ca BC000000 		.4byte	.LVL90
  5451 03ce BE000000 		.4byte	.LVL91
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 216
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 216
 
 
  5452 03d2 0300     		.2byte	0x3
@@ -12958,7 +12958,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  5506 0446 01       		.uleb128 0x1
  5507 0447 52       		.byte	0x52
  5508 0448 9F       		.byte	0x9f
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 217
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 217
 
 
  5509 0449 04010000 		.4byte	.LVL100
@@ -13018,7 +13018,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  5563 04ca 00000000 		.4byte	0
  5564              	.LLST26:
  5565 04ce 00000000 		.4byte	.LVL102
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 218
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 218
 
 
  5566 04d2 19000000 		.4byte	.LVL104-1
@@ -13078,7 +13078,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  5620 0550 54000000 		.4byte	.LVL107
  5621 0554 84000000 		.4byte	.LVL109
  5622 0558 0800     		.2byte	0x8
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 219
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 219
 
 
  5623 055a 76       		.byte	0x76
@@ -13138,7 +13138,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  5677 05b3 76       		.byte	0x76
  5678 05b4 00       		.sleb128 0
  5679 05b5 22       		.byte	0x22
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 220
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 220
 
 
  5680 05b6 9F       		.byte	0x9f
@@ -13198,7 +13198,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  5734 0632 0100     		.2byte	0x1
  5735 0634 5A       		.byte	0x5a
  5736 0635 00000000 		.4byte	0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 221
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 221
 
 
  5737 0639 00000000 		.4byte	0
@@ -13258,7 +13258,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  5791 06b6 60       		.sleb128 -32
  5792 06b7 9F       		.byte	0x9f
  5793 06b8 E8000000 		.4byte	.LVL141
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 222
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 222
 
 
  5794 06bc 18010000 		.4byte	.LVL145
@@ -13318,7 +13318,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  5848 0734 42000000 		.4byte	.LVL135
  5849 0738 0900     		.2byte	0x9
  5850 073a 70       		.byte	0x70
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 223
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 223
 
 
  5851 073b 00       		.sleb128 0
@@ -13378,7 +13378,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  5905 079d 0100     		.2byte	0x1
  5906 079f 58       		.byte	0x58
  5907 07a0 00000000 		.4byte	0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 224
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 224
 
 
  5908 07a4 00000000 		.4byte	0
@@ -13438,7 +13438,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  5962 081f 50       		.byte	0x50
  5963 0820 0A000000 		.4byte	.LVL154
  5964 0824 18000000 		.4byte	.LVL156
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 225
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 225
 
 
  5965 0828 0400     		.2byte	0x4
@@ -13498,7 +13498,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  6019 0006 00000000 		.4byte	.Ldebug_info0
  6020 000a 04       		.byte	0x4
  6021 000b 00       		.byte	0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 226
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 226
 
 
  6022 000c 0000     		.2byte	0
@@ -13558,7 +13558,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  6076 00e0 00000000 		.4byte	.LFB187
  6077 00e4 10000000 		.4byte	.LFE187-.LFB187
  6078 00e8 00000000 		.4byte	0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 227
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 227
 
 
  6079 00ec 00000000 		.4byte	0
@@ -13618,7 +13618,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  6133 00cc 10000000 		.4byte	.LFE186
  6134 00d0 00000000 		.4byte	.LFB187
  6135 00d4 10000000 		.4byte	.LFE187
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 228
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 228
 
 
  6136 00d8 00000000 		.4byte	0
@@ -13678,7 +13678,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  6160      6573656E 
  6160      7400
  6161              	.LASF106:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 229
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 229
 
 
  6162 008a 55534246 		.ascii	"USBFS_DisableSofInt\000"
@@ -13738,7 +13738,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  6182      7200
  6183              	.LASF138:
  6184 013e 47656E65 		.ascii	"Generated_Source\\PSoC4\\USBFS.c\000"
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 230
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 230
 
 
  6184      72617465 
@@ -13798,7 +13798,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  6204      624C6F63 
  6205              	.LASF21:
  6206 020f 6570546F 		.ascii	"epToggle\000"
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 231
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 231
 
 
  6206      67676C65 
@@ -13858,7 +13858,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  6230      535F6172 
  6230      625F6570 
  6230      735F7374 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 232
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 232
 
 
  6230      72756374 
@@ -13918,7 +13918,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  6249              	.LASF33:
  6250 03cd 6570496E 		.ascii	"epIntEn\000"
  6250      74456E00 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 233
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 233
 
 
  6251              	.LASF140:
@@ -13935,416 +13935,411 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 1
  6255              	.LASF84:
  6256 03ff 70446174 		.ascii	"pData\000"
  6256      6100
- 6257              	.LASF62:
- 6258 0405 55534246 		.ascii	"USBFS_ep3_dma_SetInterruptCallback\000"
- 6258      535F6570 
- 6258      335F646D 
- 6258      615F5365 
- 6258      74496E74 
- 6259              	.LASF93:
- 6260 0428 55534246 		.ascii	"USBFS_EnableOutEP\000"
- 6260      535F456E 
- 6260      61626C65 
- 6260      4F757445 
- 6260      5000
- 6261              	.LASF139:
- 6262 043a 433A5C55 		.ascii	"C:\\Users\\Terence Kim\\Documents\\PSoC Creator\\CY"
- 6262      73657273 
- 6262      5C546572 
- 6262      656E6365 
- 6262      204B696D 
- 6263 0468 38434B49 		.ascii	"8CKIT_046_USB_Audio01\\Icebreaker.cydsn\000"
- 6263      545F3034 
- 6263      365F5553 
- 6263      425F4175 
- 6263      64696F30 
- 6264              	.LASF56:
- 6265 048f 64657363 		.ascii	"descriptor\000"
- 6265      72697074 
- 6265      6F7200
- 6266              	.LASF76:
- 6267 049a 55534246 		.ascii	"USBFS_GetEPState\000"
- 6267      535F4765 
- 6267      74455053 
- 6267      74617465 
- 6267      00
- 6268              	.LASF63:
- 6269 04ab 55534246 		.ascii	"USBFS_ep2_dma_SetInterruptCallback\000"
- 6269      535F6570 
- 6269      325F646D 
- 6269      615F5365 
- 6269      74496E74 
- 6270              	.LASF87:
- 6271 04ce 6C656E67 		.ascii	"lengthDescr0\000"
- 6271      74684465 
- 6271      73637230 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 234
+ 6257              	.LASF139:
+ 6258 0405 433A5C64 		.ascii	"C:\\dev\\git\\Icebreaker\\Icebreaker.cydsn\000"
+ 6258      65765C67 
+ 6258      69745C49 
+ 6258      63656272 
+ 6258      65616B65 
+ 6259              	.LASF62:
+ 6260 042c 55534246 		.ascii	"USBFS_ep3_dma_SetInterruptCallback\000"
+ 6260      535F6570 
+ 6260      335F646D 
+ 6260      615F5365 
+ 6260      74496E74 
+ 6261              	.LASF93:
+ 6262 044f 55534246 		.ascii	"USBFS_EnableOutEP\000"
+ 6262      535F456E 
+ 6262      61626C65 
+ 6262      4F757445 
+ 6262      5000
+ 6263              	.LASF56:
+ 6264 0461 64657363 		.ascii	"descriptor\000"
+ 6264      72697074 
+ 6264      6F7200
+ 6265              	.LASF76:
+ 6266 046c 55534246 		.ascii	"USBFS_GetEPState\000"
+ 6266      535F4765 
+ 6266      74455053 
+ 6266      74617465 
+ 6266      00
+ 6267              	.LASF63:
+ 6268 047d 55534246 		.ascii	"USBFS_ep2_dma_SetInterruptCallback\000"
+ 6268      535F6570 
+ 6268      325F646D 
+ 6268      615F5365 
+ 6268      74496E74 
+ 6269              	.LASF87:
+ 6270 04a0 6C656E67 		.ascii	"lengthDescr0\000"
+ 6270      74684465 
+ 6270      73637230 
+ 6270      00
+ 6271              	.LASF88:
+ 6272 04ad 6C656E67 		.ascii	"lengthDescr1\000"
+ 6272      74684465 
+ 6272      73637231 
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 234
 
 
- 6271      00
- 6272              	.LASF88:
- 6273 04db 6C656E67 		.ascii	"lengthDescr1\000"
- 6273      74684465 
- 6273      73637231 
- 6273      00
- 6274              	.LASF117:
- 6275 04e8 55534246 		.ascii	"USBFS_EP\000"
- 6275      535F4550 
- 6275      00
- 6276              	.LASF14:
- 6277 04f1 63686172 		.ascii	"char\000"
- 6277      00
- 6278              	.LASF134:
- 6279 04f6 43794578 		.ascii	"CyExitCriticalSection\000"
- 6279      69744372 
- 6279      69746963 
- 6279      616C5365 
- 6279      6374696F 
- 6280              	.LASF50:
- 6281 050c 61726245 		.ascii	"arbEp\000"
- 6281      7000
- 6282              	.LASF126:
- 6283 0512 4379446D 		.ascii	"CyDmaSetInterruptCallback\000"
- 6283      61536574 
- 6283      496E7465 
- 6283      72727570 
- 6283      7443616C 
- 6284              	.LASF10:
- 6285 052c 75696E74 		.ascii	"uint16\000"
- 6285      313600
- 6286              	.LASF130:
- 6287 0533 4379496E 		.ascii	"CyIntSetVector\000"
- 6287      74536574 
- 6287      56656374 
- 6287      6F7200
- 6288              	.LASF98:
- 6289 0542 55534246 		.ascii	"USBFS_SetPowerStatus\000"
- 6289      535F5365 
- 6289      74506F77 
- 6289      65725374 
- 6289      61747573 
- 6290              	.LASF54:
- 6291 0557 73746174 		.ascii	"status\000"
- 6291      757300
- 6292              	.LASF113:
- 6293 055e 55534246 		.ascii	"USBFS_hidProtocol\000"
- 6293      535F6869 
- 6293      6450726F 
- 6293      746F636F 
- 6293      6C00
- 6294              	.LASF24:
- 6295 0570 62756666 		.ascii	"buffOffset\000"
- 6295      4F666673 
- 6295      657400
- 6296              	.LASF30:
- 6297 057b 65704372 		.ascii	"epCr0\000"
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 235
+ 6272      00
+ 6273              	.LASF117:
+ 6274 04ba 55534246 		.ascii	"USBFS_EP\000"
+ 6274      535F4550 
+ 6274      00
+ 6275              	.LASF14:
+ 6276 04c3 63686172 		.ascii	"char\000"
+ 6276      00
+ 6277              	.LASF134:
+ 6278 04c8 43794578 		.ascii	"CyExitCriticalSection\000"
+ 6278      69744372 
+ 6278      69746963 
+ 6278      616C5365 
+ 6278      6374696F 
+ 6279              	.LASF50:
+ 6280 04de 61726245 		.ascii	"arbEp\000"
+ 6280      7000
+ 6281              	.LASF126:
+ 6282 04e4 4379446D 		.ascii	"CyDmaSetInterruptCallback\000"
+ 6282      61536574 
+ 6282      496E7465 
+ 6282      72727570 
+ 6282      7443616C 
+ 6283              	.LASF10:
+ 6284 04fe 75696E74 		.ascii	"uint16\000"
+ 6284      313600
+ 6285              	.LASF130:
+ 6286 0505 4379496E 		.ascii	"CyIntSetVector\000"
+ 6286      74536574 
+ 6286      56656374 
+ 6286      6F7200
+ 6287              	.LASF98:
+ 6288 0514 55534246 		.ascii	"USBFS_SetPowerStatus\000"
+ 6288      535F5365 
+ 6288      74506F77 
+ 6288      65725374 
+ 6288      61747573 
+ 6289              	.LASF54:
+ 6290 0529 73746174 		.ascii	"status\000"
+ 6290      757300
+ 6291              	.LASF113:
+ 6292 0530 55534246 		.ascii	"USBFS_hidProtocol\000"
+ 6292      535F6869 
+ 6292      6450726F 
+ 6292      746F636F 
+ 6292      6C00
+ 6293              	.LASF24:
+ 6294 0542 62756666 		.ascii	"buffOffset\000"
+ 6294      4F666673 
+ 6294      657400
+ 6295              	.LASF30:
+ 6296 054d 65704372 		.ascii	"epCr0\000"
+ 6296      3000
+ 6297              	.LASF118:
+ 6298 0553 55534246 		.ascii	"USBFS_DmaChan\000"
+ 6298      535F446D 
+ 6298      61436861 
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 235
 
 
- 6297      3000
- 6298              	.LASF118:
- 6299 0581 55534246 		.ascii	"USBFS_DmaChan\000"
- 6299      535F446D 
- 6299      61436861 
- 6299      6E00
- 6300              	.LASF6:
- 6301 058f 6C6F6E67 		.ascii	"long long int\000"
- 6301      206C6F6E 
- 6301      6720696E 
- 6301      7400
- 6302              	.LASF73:
- 6303 059d 55534246 		.ascii	"USBFS_IsConfigurationChanged\000"
- 6303      535F4973 
- 6303      436F6E66 
- 6303      69677572 
- 6303      6174696F 
- 6304              	.LASF52:
- 6305 05ba 55534246 		.ascii	"USBFS_arb_eps_reg16_struct\000"
- 6305      535F6172 
- 6305      625F6570 
- 6305      735F7265 
- 6305      6731365F 
- 6306              	.LASF86:
- 6307 05d5 6368616E 		.ascii	"channelNum\000"
- 6307      6E656C4E 
- 6307      756D00
- 6308              	.LASF28:
- 6309 05e0 6570436E 		.ascii	"epCnt0\000"
- 6309      743000
- 6310              	.LASF29:
- 6311 05e7 6570436E 		.ascii	"epCnt1\000"
- 6311      743100
- 6312              	.LASF115:
- 6313 05ee 55534246 		.ascii	"USBFS_interfaceSetting\000"
- 6313      535F696E 
- 6313      74657266 
- 6313      61636553 
- 6313      65747469 
- 6314              	.LASF77:
- 6315 0605 65704E75 		.ascii	"epNumber\000"
- 6315      6D626572 
- 6315      00
- 6316              	.LASF64:
- 6317 060e 55534246 		.ascii	"USBFS_ep1_dma_SetInterruptCallback\000"
- 6317      535F6570 
- 6317      315F646D 
- 6317      615F5365 
- 6317      74496E74 
- 6318              	.LASF111:
- 6319 0631 55534246 		.ascii	"USBFS_configurationChanged\000"
- 6319      535F636F 
- 6319      6E666967 
- 6319      75726174 
- 6319      696F6E43 
- 6320              	.LASF20:
- 6321 064c 68774570 		.ascii	"hwEpState\000"
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 236
+ 6298      6E00
+ 6299              	.LASF6:
+ 6300 0561 6C6F6E67 		.ascii	"long long int\000"
+ 6300      206C6F6E 
+ 6300      6720696E 
+ 6300      7400
+ 6301              	.LASF73:
+ 6302 056f 55534246 		.ascii	"USBFS_IsConfigurationChanged\000"
+ 6302      535F4973 
+ 6302      436F6E66 
+ 6302      69677572 
+ 6302      6174696F 
+ 6303              	.LASF52:
+ 6304 058c 55534246 		.ascii	"USBFS_arb_eps_reg16_struct\000"
+ 6304      535F6172 
+ 6304      625F6570 
+ 6304      735F7265 
+ 6304      6731365F 
+ 6305              	.LASF86:
+ 6306 05a7 6368616E 		.ascii	"channelNum\000"
+ 6306      6E656C4E 
+ 6306      756D00
+ 6307              	.LASF28:
+ 6308 05b2 6570436E 		.ascii	"epCnt0\000"
+ 6308      743000
+ 6309              	.LASF29:
+ 6310 05b9 6570436E 		.ascii	"epCnt1\000"
+ 6310      743100
+ 6311              	.LASF115:
+ 6312 05c0 55534246 		.ascii	"USBFS_interfaceSetting\000"
+ 6312      535F696E 
+ 6312      74657266 
+ 6312      61636553 
+ 6312      65747469 
+ 6313              	.LASF77:
+ 6314 05d7 65704E75 		.ascii	"epNumber\000"
+ 6314      6D626572 
+ 6314      00
+ 6315              	.LASF64:
+ 6316 05e0 55534246 		.ascii	"USBFS_ep1_dma_SetInterruptCallback\000"
+ 6316      535F6570 
+ 6316      315F646D 
+ 6316      615F5365 
+ 6316      74496E74 
+ 6317              	.LASF111:
+ 6318 0603 55534246 		.ascii	"USBFS_configurationChanged\000"
+ 6318      535F636F 
+ 6318      6E666967 
+ 6318      75726174 
+ 6318      696F6E43 
+ 6319              	.LASF20:
+ 6320 061e 68774570 		.ascii	"hwEpState\000"
+ 6320      53746174 
+ 6320      6500
+ 6321              	.LASF49:
+ 6322 0628 55534246 		.ascii	"USBFS_sie_eps_struct\000"
+ 6322      535F7369 
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 236
 
 
- 6321      53746174 
- 6321      6500
- 6322              	.LASF49:
- 6323 0656 55534246 		.ascii	"USBFS_sie_eps_struct\000"
- 6323      535F7369 
- 6323      655F6570 
- 6323      735F7374 
- 6323      72756374 
- 6324              	.LASF11:
- 6325 066b 75696E74 		.ascii	"uint32\000"
- 6325      333200
- 6326              	.LASF104:
- 6327 0672 55534246 		.ascii	"USBFS_GetDeviceAddress\000"
- 6327      535F4765 
- 6327      74446576 
- 6327      69636541 
- 6327      64647265 
- 6328              	.LASF132:
- 6329 0689 4379446D 		.ascii	"CyDmaEnable\000"
- 6329      61456E61 
- 6329      626C6500 
- 6330              	.LASF83:
- 6331 0695 55534246 		.ascii	"USBFS_LoadInEP\000"
- 6331      535F4C6F 
- 6331      6164496E 
- 6331      455000
- 6332              	.LASF121:
- 6333 06a4 55534246 		.ascii	"USBFS_DmaEpBurstCntBackup\000"
- 6333      535F446D 
- 6333      61457042 
- 6333      75727374 
- 6333      436E7442 
- 6334              	.LASF114:
- 6335 06be 55534246 		.ascii	"USBFS_interfaceNumber\000"
- 6335      535F696E 
- 6335      74657266 
- 6335      6163654E 
- 6335      756D6265 
- 6336              	.LASF78:
- 6337 06d4 55534246 		.ascii	"USBFS_GetEPCount\000"
- 6337      535F4765 
- 6337      74455043 
- 6337      6F756E74 
- 6337      00
- 6338              	.LASF16:
- 6339 06e5 6C6F6E67 		.ascii	"long double\000"
- 6339      20646F75 
- 6339      626C6500 
- 6340              	.LASF15:
- 6341 06f1 72656733 		.ascii	"reg32\000"
- 6341      3200
- 6342              	.LASF99:
- 6343 06f7 706F7765 		.ascii	"powerStatus\000"
- 6343      72537461 
- 6343      74757300 
- 6344              	.LASF119:
- 6345 0703 55534246 		.ascii	"USBFS_DmaEpBurstCnt\000"
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 237
+ 6322      655F6570 
+ 6322      735F7374 
+ 6322      72756374 
+ 6323              	.LASF11:
+ 6324 063d 75696E74 		.ascii	"uint32\000"
+ 6324      333200
+ 6325              	.LASF104:
+ 6326 0644 55534246 		.ascii	"USBFS_GetDeviceAddress\000"
+ 6326      535F4765 
+ 6326      74446576 
+ 6326      69636541 
+ 6326      64647265 
+ 6327              	.LASF132:
+ 6328 065b 4379446D 		.ascii	"CyDmaEnable\000"
+ 6328      61456E61 
+ 6328      626C6500 
+ 6329              	.LASF83:
+ 6330 0667 55534246 		.ascii	"USBFS_LoadInEP\000"
+ 6330      535F4C6F 
+ 6330      6164496E 
+ 6330      455000
+ 6331              	.LASF121:
+ 6332 0676 55534246 		.ascii	"USBFS_DmaEpBurstCntBackup\000"
+ 6332      535F446D 
+ 6332      61457042 
+ 6332      75727374 
+ 6332      436E7442 
+ 6333              	.LASF114:
+ 6334 0690 55534246 		.ascii	"USBFS_interfaceNumber\000"
+ 6334      535F696E 
+ 6334      74657266 
+ 6334      6163654E 
+ 6334      756D6265 
+ 6335              	.LASF78:
+ 6336 06a6 55534246 		.ascii	"USBFS_GetEPCount\000"
+ 6336      535F4765 
+ 6336      74455043 
+ 6336      6F756E74 
+ 6336      00
+ 6337              	.LASF16:
+ 6338 06b7 6C6F6E67 		.ascii	"long double\000"
+ 6338      20646F75 
+ 6338      626C6500 
+ 6339              	.LASF15:
+ 6340 06c3 72656733 		.ascii	"reg32\000"
+ 6340      3200
+ 6341              	.LASF99:
+ 6342 06c9 706F7765 		.ascii	"powerStatus\000"
+ 6342      72537461 
+ 6342      74757300 
+ 6343              	.LASF119:
+ 6344 06d5 55534246 		.ascii	"USBFS_DmaEpBurstCnt\000"
+ 6344      535F446D 
+ 6344      61457042 
+ 6344      75727374 
+ 6344      436E7400 
+ 6345              	.LASF97:
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 237
 
 
- 6345      535F446D 
- 6345      61457042 
- 6345      75727374 
- 6345      436E7400 
- 6346              	.LASF97:
- 6347 0717 55534246 		.ascii	"USBFS_GetEPAckState\000"
- 6347      535F4765 
- 6347      74455041 
- 6347      636B5374 
- 6347      61746500 
- 6348              	.LASF2:
- 6349 072b 73686F72 		.ascii	"short int\000"
- 6349      7420696E 
- 6349      7400
- 6350              	.LASF23:
- 6351 0735 65704D6F 		.ascii	"epMode\000"
- 6351      646500
- 6352              	.LASF4:
- 6353 073c 6C6F6E67 		.ascii	"long int\000"
- 6353      20696E74 
- 6353      00
- 6354              	.LASF85:
- 6355 0745 6C656E67 		.ascii	"length\000"
- 6355      746800
- 6356              	.LASF81:
- 6357 074c 55534246 		.ascii	"USBFS_Stop\000"
- 6357      535F5374 
- 6357      6F7000
- 6358              	.LASF39:
- 6359 0757 72775261 		.ascii	"rwRaMsb\000"
- 6359      4D736200 
- 6360              	.LASF46:
- 6361 075f 72774472 		.ascii	"rwDr16\000"
- 6361      313600
- 6362              	.LASF100:
- 6363 0766 55534246 		.ascii	"USBFS_GetConfiguration\000"
- 6363      535F4765 
- 6363      74436F6E 
- 6363      66696775 
- 6363      72617469 
- 6364              	.LASF32:
- 6365 077d 65704366 		.ascii	"epCfg\000"
- 6365      6700
- 6366              	.LASF43:
- 6367 0783 72657365 		.ascii	"reserved0\000"
- 6367      72766564 
- 6367      3000
- 6368              	.LASF45:
- 6369 078d 72657365 		.ascii	"reserved1\000"
- 6369      72766564 
- 6369      3100
- 6370              	.LASF123:
- 6371 0797 55534246 		.ascii	"USBFS_DmaReqOut\000"
- 6371      535F446D 
- 6371      61526571 
- 6371      4F757400 
- 6372              	.LASF17:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 238
+ 6346 06e9 55534246 		.ascii	"USBFS_GetEPAckState\000"
+ 6346      535F4765 
+ 6346      74455041 
+ 6346      636B5374 
+ 6346      61746500 
+ 6347              	.LASF2:
+ 6348 06fd 73686F72 		.ascii	"short int\000"
+ 6348      7420696E 
+ 6348      7400
+ 6349              	.LASF23:
+ 6350 0707 65704D6F 		.ascii	"epMode\000"
+ 6350      646500
+ 6351              	.LASF4:
+ 6352 070e 6C6F6E67 		.ascii	"long int\000"
+ 6352      20696E74 
+ 6352      00
+ 6353              	.LASF85:
+ 6354 0717 6C656E67 		.ascii	"length\000"
+ 6354      746800
+ 6355              	.LASF81:
+ 6356 071e 55534246 		.ascii	"USBFS_Stop\000"
+ 6356      535F5374 
+ 6356      6F7000
+ 6357              	.LASF39:
+ 6358 0729 72775261 		.ascii	"rwRaMsb\000"
+ 6358      4D736200 
+ 6359              	.LASF46:
+ 6360 0731 72774472 		.ascii	"rwDr16\000"
+ 6360      313600
+ 6361              	.LASF100:
+ 6362 0738 55534246 		.ascii	"USBFS_GetConfiguration\000"
+ 6362      535F4765 
+ 6362      74436F6E 
+ 6362      66696775 
+ 6362      72617469 
+ 6363              	.LASF32:
+ 6364 074f 65704366 		.ascii	"epCfg\000"
+ 6364      6700
+ 6365              	.LASF43:
+ 6366 0755 72657365 		.ascii	"reserved0\000"
+ 6366      72766564 
+ 6366      3000
+ 6367              	.LASF45:
+ 6368 075f 72657365 		.ascii	"reserved1\000"
+ 6368      72766564 
+ 6368      3100
+ 6369              	.LASF123:
+ 6370 0769 55534246 		.ascii	"USBFS_DmaReqOut\000"
+ 6370      535F446D 
+ 6370      61526571 
+ 6370      4F757400 
+ 6371              	.LASF17:
+ 6372 0779 73697A65 		.ascii	"sizetype\000"
+ 6372      74797065 
+ 6372      00
+ 6373              	.LASF47:
+ 6374 0782 55534246 		.ascii	"USBFS_arb_ep_reg16_struct\000"
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 238
 
 
- 6373 07a7 73697A65 		.ascii	"sizetype\000"
- 6373      74797065 
- 6373      00
- 6374              	.LASF47:
- 6375 07b0 55534246 		.ascii	"USBFS_arb_ep_reg16_struct\000"
- 6375      535F6172 
- 6375      625F6570 
- 6375      5F726567 
- 6375      31365F73 
- 6376              	.LASF5:
- 6377 07ca 6C6F6E67 		.ascii	"long unsigned int\000"
- 6377      20756E73 
- 6377      69676E65 
- 6377      6420696E 
- 6377      7400
- 6378              	.LASF80:
- 6379 07dc 55534246 		.ascii	"USBFS_Stop_DMA\000"
- 6379      535F5374 
- 6379      6F705F44 
- 6379      4D4100
- 6380              	.LASF34:
- 6381 07eb 65705372 		.ascii	"epSr\000"
- 6381      00
- 6382              	.LASF37:
- 6383 07f0 72775761 		.ascii	"rwWaMsb\000"
- 6383      4D736200 
- 6384              	.LASF1:
- 6385 07f8 756E7369 		.ascii	"unsigned char\000"
- 6385      676E6564 
- 6385      20636861 
- 6385      7200
- 6386              	.LASF116:
- 6387 0806 55534246 		.ascii	"USBFS_deviceAddress\000"
- 6387      535F6465 
- 6387      76696365 
- 6387      41646472 
- 6387      65737300 
- 6388              	.LASF22:
- 6389 081a 61646472 		.ascii	"addr\000"
- 6389      00
- 6390              	.LASF90:
- 6391 081f 55534246 		.ascii	"USBFS_LoadInEP16\000"
- 6391      535F4C6F 
- 6391      6164496E 
- 6391      45503136 
- 6391      00
- 6392              	.LASF61:
- 6393 0830 63616C6C 		.ascii	"callback\000"
- 6393      6261636B 
- 6393      00
- 6394              	.LASF131:
- 6395 0839 4379496E 		.ascii	"CyIntEnable\000"
- 6395      74456E61 
- 6395      626C6500 
- 6396              	.LASF133:
- 6397 0845 4379456E 		.ascii	"CyEnterCriticalSection\000"
- 6397      74657243 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 239
+ 6374      535F6172 
+ 6374      625F6570 
+ 6374      5F726567 
+ 6374      31365F73 
+ 6375              	.LASF5:
+ 6376 079c 6C6F6E67 		.ascii	"long unsigned int\000"
+ 6376      20756E73 
+ 6376      69676E65 
+ 6376      6420696E 
+ 6376      7400
+ 6377              	.LASF80:
+ 6378 07ae 55534246 		.ascii	"USBFS_Stop_DMA\000"
+ 6378      535F5374 
+ 6378      6F705F44 
+ 6378      4D4100
+ 6379              	.LASF34:
+ 6380 07bd 65705372 		.ascii	"epSr\000"
+ 6380      00
+ 6381              	.LASF37:
+ 6382 07c2 72775761 		.ascii	"rwWaMsb\000"
+ 6382      4D736200 
+ 6383              	.LASF1:
+ 6384 07ca 756E7369 		.ascii	"unsigned char\000"
+ 6384      676E6564 
+ 6384      20636861 
+ 6384      7200
+ 6385              	.LASF116:
+ 6386 07d8 55534246 		.ascii	"USBFS_deviceAddress\000"
+ 6386      535F6465 
+ 6386      76696365 
+ 6386      41646472 
+ 6386      65737300 
+ 6387              	.LASF22:
+ 6388 07ec 61646472 		.ascii	"addr\000"
+ 6388      00
+ 6389              	.LASF90:
+ 6390 07f1 55534246 		.ascii	"USBFS_LoadInEP16\000"
+ 6390      535F4C6F 
+ 6390      6164496E 
+ 6390      45503136 
+ 6390      00
+ 6391              	.LASF61:
+ 6392 0802 63616C6C 		.ascii	"callback\000"
+ 6392      6261636B 
+ 6392      00
+ 6393              	.LASF131:
+ 6394 080b 4379496E 		.ascii	"CyIntEnable\000"
+ 6394      74456E61 
+ 6394      626C6500 
+ 6395              	.LASF133:
+ 6396 0817 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 6396      74657243 
+ 6396      72697469 
+ 6396      63616C53 
+ 6396      65637469 
+ 6397              	.LASF38:
+ 6398 082e 72775261 		.ascii	"rwRa\000"
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 239
 
 
- 6397      72697469 
- 6397      63616C53 
- 6397      65637469 
- 6398              	.LASF38:
- 6399 085c 72775261 		.ascii	"rwRa\000"
- 6399      00
- 6400              	.LASF0:
- 6401 0861 7369676E 		.ascii	"signed char\000"
- 6401      65642063 
- 6401      68617200 
- 6402              	.LASF91:
- 6403 086d 55534246 		.ascii	"USBFS_ReadOutEP16\000"
- 6403      535F5265 
- 6403      61644F75 
- 6403      74455031 
- 6403      3600
- 6404              	.LASF3:
- 6405 087f 73686F72 		.ascii	"short unsigned int\000"
- 6405      7420756E 
- 6405      7369676E 
- 6405      65642069 
- 6405      6E7400
- 6406              	.LASF35:
- 6407 0892 72657365 		.ascii	"reserved\000"
- 6407      72766564 
- 6407      00
- 6408              	.LASF9:
- 6409 089b 75696E74 		.ascii	"uint8\000"
- 6409      3800
- 6410              	.LASF13:
- 6411 08a1 646F7562 		.ascii	"double\000"
- 6411      6C6500
- 6412              	.LASF42:
- 6413 08a8 72775761 		.ascii	"rwWa16\000"
- 6413      313600
- 6414              	.LASF18:
- 6415 08af 61747472 		.ascii	"attrib\000"
- 6415      696200
- 6416              	.LASF19:
- 6417 08b6 61706945 		.ascii	"apiEpState\000"
- 6417      70537461 
- 6417      746500
- 6418              	.LASF102:
- 6419 08c1 55534246 		.ascii	"USBFS_RWUEnabled\000"
- 6419      535F5257 
- 6419      55456E61 
- 6419      626C6564 
- 6419      00
- 6420              	.LASF96:
- 6421 08d2 62537461 		.ascii	"bState\000"
- 6421      746500
- 6422              	.LASF59:
- 6423 08d9 55534246 		.ascii	"USBFS_ep6_dma_SetInterruptCallback\000"
- 6423      535F6570 
- 6423      365F646D 
- 6423      615F5365 
- 6423      74496E74 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccNB5sKR.s 			page 240
+ 6398      00
+ 6399              	.LASF0:
+ 6400 0833 7369676E 		.ascii	"signed char\000"
+ 6400      65642063 
+ 6400      68617200 
+ 6401              	.LASF91:
+ 6402 083f 55534246 		.ascii	"USBFS_ReadOutEP16\000"
+ 6402      535F5265 
+ 6402      61644F75 
+ 6402      74455031 
+ 6402      3600
+ 6403              	.LASF3:
+ 6404 0851 73686F72 		.ascii	"short unsigned int\000"
+ 6404      7420756E 
+ 6404      7369676E 
+ 6404      65642069 
+ 6404      6E7400
+ 6405              	.LASF35:
+ 6406 0864 72657365 		.ascii	"reserved\000"
+ 6406      72766564 
+ 6406      00
+ 6407              	.LASF9:
+ 6408 086d 75696E74 		.ascii	"uint8\000"
+ 6408      3800
+ 6409              	.LASF13:
+ 6410 0873 646F7562 		.ascii	"double\000"
+ 6410      6C6500
+ 6411              	.LASF42:
+ 6412 087a 72775761 		.ascii	"rwWa16\000"
+ 6412      313600
+ 6413              	.LASF18:
+ 6414 0881 61747472 		.ascii	"attrib\000"
+ 6414      696200
+ 6415              	.LASF19:
+ 6416 0888 61706945 		.ascii	"apiEpState\000"
+ 6416      70537461 
+ 6416      746500
+ 6417              	.LASF102:
+ 6418 0893 55534246 		.ascii	"USBFS_RWUEnabled\000"
+ 6418      535F5257 
+ 6418      55456E61 
+ 6418      626C6564 
+ 6418      00
+ 6419              	.LASF96:
+ 6420 08a4 62537461 		.ascii	"bState\000"
+ 6420      746500
+ 6421              	.LASF59:
+ 6422 08ab 55534246 		.ascii	"USBFS_ep6_dma_SetInterruptCallback\000"
+ 6422      535F6570 
+ 6422      365F646D 
+ 6422      615F5365 
+ 6422      74496E74 
+ 6423              	.LASF82:
+ 6424 08ce 656E6162 		.ascii	"enableInterrupts\000"
+ 6424      6C65496E 
+ 6424      74657272 
+ 6424      75707473 
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccK5DgWc.s 			page 240
 
 
- 6424              	.LASF82:
- 6425 08fc 656E6162 		.ascii	"enableInterrupts\000"
- 6425      6C65496E 
- 6425      74657272 
- 6425      75707473 
- 6425      00
- 6426              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 6424      00
+ 6425              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

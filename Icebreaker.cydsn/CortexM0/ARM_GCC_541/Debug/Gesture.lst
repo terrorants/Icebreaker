@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
   29:Gesture.c     **** * reserves the right to make changes to the Software without notice. Cypress 
   30:Gesture.c     **** * does not assume any liability arising out of the application or use of the 
   31:Gesture.c     **** * Software or any product or circuit described in the Software. Cypress does 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 2
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 2
 
 
   32:Gesture.c     **** * not authorize its products for use in any products where a malfunction or 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
   86:Gesture.c     **** 120,
   87:Gesture.c     **** 128,
   88:Gesture.c     **** 136,
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 3
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 3
 
 
   89:Gesture.c     **** 143,
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  143:Gesture.c     **** * Summary:
  144:Gesture.c     **** * This function implements the gesture detection logic. 
  145:Gesture.c     **** *
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 4
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 4
 
 
  146:Gesture.c     **** * Parameters:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  200:Gesture.c     **** 	theta = Gestures_CalculateTheta(buttonStatus, sliderPos);
  201:Gesture.c     **** 	
  202:Gesture.c     **** 	/* Obtain the gesture from theta and radius */
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 5
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 5
 
 
  203:Gesture.c     **** 	gestureId = Gestures_Process(radius, theta);
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  257:Gesture.c     **** 		if(buttonStatus & SLIDER_ACT_MASK)
  258:Gesture.c     **** 		{
  259:Gesture.c     **** 			if((sliderSector & SLIDER_4_SECTOR_MASK) == SECTOR_LEFT) 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 6
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 6
 
 
  260:Gesture.c     **** 			/* Clear Right button mask if slider sector is left */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  314:Gesture.c     **** 		else
  315:Gesture.c     **** 		{
  316:Gesture.c     **** 			if(GetSignal(UP_BTN_ID) > GetSignal(DOWN_BTN_ID))
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 7
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 7
 
 
  317:Gesture.c     **** 			{
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  362:Gesture.c     **** 		/* If slider is active then 
  363:Gesture.c     ****             1. radius = 3, if any of the LEFT/RIGHT/UP/DOWN buttons are active
  364:Gesture.c     ****             2. radius = 4, if ONLY slider is active */
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 8
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 8
 
 
  365:Gesture.c     **** 		if(buttonStatus & (LEFT_BTN_MASK | RIGHT_BTN_MASK | UP_BTN_MASK | DOWN_BTN_MASK))
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
   64              	.LVL6:
   65              	.L5:
  371:Gesture.c     **** 		}
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 9
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 9
 
 
   66              		.loc 1 371 0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  414:Gesture.c     **** int32 Gestures_CalculateTheta(uint32 buttonStatus, int32 sliderPos)
  415:Gesture.c     **** {
   95              		.loc 1 415 0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 10
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 10
 
 
   96              		.cfi_startproc
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  129 0008 2E000000 		.word	.L15
  130 000c 40000000 		.word	.L12
  131 0010 26000000 		.word	.L16
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 11
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 11
 
 
  132 0014 22000000 		.word	.L17
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  162              	.LVL21:
  461:Gesture.c     **** 			break;
  163              		.loc 1 461 0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 12
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 12
 
 
  164 002c 11E0     		b	.L10
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  482:Gesture.c     **** 		}
  483:Gesture.c     **** 		
  484:Gesture.c     **** 	}
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 13
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 13
 
 
  485:Gesture.c     **** 	/* If only CENTRE button is active, theta = 0 */
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  499:Gesture.c     **** * This function calculates the sine theta of a given angle 
  500:Gesture.c     **** *
  501:Gesture.c     **** * Parameters:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 14
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 14
 
 
  502:Gesture.c     **** *  theta - angle for which sine needs to be calculated (-90 to 90);
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  556:Gesture.c     **** *
  557:Gesture.c     **** * Parameters:
  558:Gesture.c     **** *  theta - angle for which cosine needs to be calculated (-90 to 90);
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 15
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 15
 
 
  559:Gesture.c     **** *			1 count = 2 degrees;
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  613:Gesture.c     **** 	
  614:Gesture.c     **** 	/* Shifting theta by 45 degree to provide a proper x offset */
  615:Gesture.c     **** 	theta += ANGLE_45;
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 16
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 16
 
 
  616:Gesture.c     **** 	
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  670:Gesture.c     **** ********************************************************************************
  671:Gesture.c     **** *
  672:Gesture.c     **** * Summary:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 17
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 17
 
 
  673:Gesture.c     **** * This function calculates the sector in which finger is present. There are a 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  727:Gesture.c     **** * Parameters:
  728:Gesture.c     **** * sectorHistorySum - unique sum term for each gesture (combination of 3 previous 
  729:Gesture.c     **** *						sector states and sector weights)
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 18
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 18
 
 
  730:Gesture.c     **** * firstRadius - radius value when the sector was first touched during the activity
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  266 002a 5023     		movs	r3, #80
  267 002c FF33     		adds	r3, r3, #255
  268 002e 9842     		cmp	r0, r3
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 19
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 19
 
 
  269 0030 1CD0     		beq	.L27
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  310 0066 16E0     		b	.L32
  311              	.LVL43:
  312              	.L33:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 20
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 20
 
 
  766:Gesture.c     **** 		
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  795:Gesture.c     **** 				{
  796:Gesture.c     **** 					gesture = GESTURE_INNER_CLKWISE;
  338              		.loc 1 796 0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 21
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 21
 
 
  339 0080 0A20     		movs	r0, #10
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  375              		.cfi_endproc
  376              	.LFE42:
  377              		.size	Gestures_LookUpGesture, .-Gestures_LookUpGesture
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 22
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 22
 
 
  378              		.section	.text.Gestures_ValidateButtons,"ax",%progbits
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  425 002a 29E0     		b	.L43
  426              	.L45:
  264:Gesture.c     **** 			/* Clear Left button mask if slider sector is Right */
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 23
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 23
 
 
  427              		.loc 1 264 0
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  474              		.loc 1 285 0
  475 006e 0123     		movs	r3, #1
  476 0070 9C43     		bics	r4, r3
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 24
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 24
 
 
  477              	.LVL70:
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  522 00a6 9C43     		bics	r4, r3
  523              	.LVL76:
  311:Gesture.c     **** 			}
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 25
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 25
 
 
  524              		.loc 1 311 0
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  572 00e8 1268     		ldr	r2, [r2]
  573 00ea 1340     		ands	r3, r2
  574 00ec 1C43     		orrs	r4, r3
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 26
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 26
 
 
  575              	.LVL87:
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  621 0012 0C4B     		ldr	r3, .L63
  622              	.LVL91:
  623 0014 C05E     		ldrsh	r0, [r0, r3]
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 27
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 27
 
 
  624 0016 4042     		rsbs	r0, r0, #0
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  672              	.L64:
  673 0042 C046     		.align	2
  674              	.L63:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 28
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 28
 
 
  675 0044 4C000000 		.word	.LANCHOR1
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  722 001e 4000     		lsls	r0, r0, #1
  723 0020 024B     		ldr	r3, .L70
  724 0022 C05E     		ldrsh	r0, [r0, r3]
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 29
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 29
 
 
  725              	.LVL113:
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  773 000e 0800     		movs	r0, r1
  774              	.LVL120:
  775              	.L73:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 30
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 30
 
 
  627:Gesture.c     **** 
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  823              	.LVL128:
  824 0014 6043     		muls	r0, r4
  825 0016 4000     		lsls	r0, r0, #1
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 31
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 31
 
 
  826 0018 0012     		asrs	r0, r0, #8
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  874              	.LVL137:
  875              	.L78:
  711:Gesture.c     **** 			}			
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 32
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 32
 
 
  876              		.loc 1 711 0
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  827:Gesture.c     **** *
  828:Gesture.c     **** *******************************************************************************/
  829:Gesture.c     **** tGestureId Gestures_Process(uint32 radius, int32 theta)
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 33
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 33
 
 
  830:Gesture.c     **** {
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  844:Gesture.c     **** 		/* Stay in IDLE state if no finger is present or theta is invalid */
  845:Gesture.c     **** 		case GESTURE_STATE_IDLE:
  846:Gesture.c     **** 			if(theta != INVALID_ANGLE)
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 34
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 34
 
 
  951              		.loc 1 846 0
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  984              		.loc 1 866 0
  985 0044 B84B     		ldr	r3, .L126
  986 0046 5B68     		ldr	r3, [r3, #4]
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 35
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 35
 
 
  987 0048 9B00     		lsls	r3, r3, #2
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  886:Gesture.c     **** 				
  887:Gesture.c     **** 				if((thetaChange >= THETA_CHANGE_THRESHOLD) || (radiusChange >= RADIUS_CHANGE_THRESHOLD))
  1022              		.loc 1 887 0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 36
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 36
 
 
  1023 0070 152B     		cmp	r3, #21
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  1063 009e 07D8     		bhi	.L98
  901:Gesture.c     **** 				{
  902:Gesture.c     **** 					capsenseButtonStatus = sectorToButtonLookup[Gesture_sectorHistory[FIRST_SECTOR_INDEX]];
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 37
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 37
 
 
  1064              		.loc 1 902 0
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  1099              	.L100:
  921:Gesture.c     **** 				}
  922:Gesture.c     **** 				else if(thetaChange < -ANGLE_90)
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 38
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 38
 
 
  1100              		.loc 1 922 0
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  938:Gesture.c     **** 				{
  939:Gesture.c     **** 					/* sector change is accepted only after a debounce */
  940:Gesture.c     **** 					debounceCounter++;
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 39
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 39
 
 
  1139              		.loc 1 940 0
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  957:Gesture.c     **** 				}
  958:Gesture.c     **** 				else
  959:Gesture.c     **** 				{
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 40
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 40
 
 
  960:Gesture.c     **** 					debounceCounter = 0;
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  981:Gesture.c     **** 					thetaChange = thetaChange - 2*ANGLE_180;
  1207              		.loc 1 981 0
  1208 014e B43B     		subs	r3, r3, #180
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 41
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 41
 
 
  1209              	.LVL179:
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  1247 017c 6A4B     		ldr	r3, .L126
  1248 017e 9B68     		ldr	r3, [r3, #8]
  1249 0180 9842     		cmp	r0, r3
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 42
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 42
 
 
  1250 0182 2FD0     		beq	.L108
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  1288 01bc 1B6F     		ldr	r3, [r3, #112]
  1289 01be 5800     		lsls	r0, r3, #1
  1290 01c0 C018     		adds	r0, r0, r3
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 43
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 43
 
 
  1291 01c2 8000     		lsls	r0, r0, #2
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
 1030:Gesture.c     **** 				}
 1031:Gesture.c     **** 			}
 1032:Gesture.c     **** 			else
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 44
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 44
 
 
 1033:Gesture.c     **** 			{
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
 1052:Gesture.c     **** 				}
 1053:Gesture.c     **** 				
 1054:Gesture.c     **** 				accTheta += thetaChange;
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 45
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 45
 
 
  1361              		.loc 1 1054 0
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  1403 024a 374A     		ldr	r2, .L126
  1404 024c 9168     		ldr	r1, [r2, #8]
  1405 024e 5160     		str	r1, [r2, #4]
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 46
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 46
 
 
 1067:Gesture.c     **** 						Gesture_sectorHistory[SECOND_SECTOR_INDEX] = Gesture_sectorHistory[THIRD_SECTOR_INDEX];						
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
 1078:Gesture.c     **** 							stickyGesture = gesture;
  1448              		.loc 1 1078 0
  1449 0290 274B     		ldr	r3, .L126+8
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 47
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 47
 
 
  1450 0292 1877     		strb	r0, [r3, #28]
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  1481              	.LVL210:
  1482 02b6 46E0     		b	.L82
  1483              	.LVL211:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 48
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 48
 
 
  1484              	.L89:
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  1516              	.LVL217:
  1517 02da 1360     		str	r3, [r2]
 1109:Gesture.c     **** 				
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 49
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 49
 
 
  1518              		.loc 1 1109 0
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  1553 02fe 0538     		subs	r0, r0, #5
  1554 0300 9060     		str	r0, [r2, #8]
 1141:Gesture.c     **** 			
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 50
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 50
 
 
 1142:Gesture.c     **** 			accRadius = 0;
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  1598 032c 2C000000 		.word	.L84
  1599 0330 00000000 		.word	.LANCHOR0
  1600 0334 4C000000 		.word	.LANCHOR1
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 51
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 51
 
 
  1601 0338 00000000 		.word	capsenseButtonStatus
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  1638              		.global	__aeabi_uidiv
  1639              		.section	.text.DetectGesture,"ax",%progbits
  1640              		.align	2
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 52
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 52
 
 
  1641              		.global	DetectGesture
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  1688 0022 2023     		movs	r3, #32
  1689 0024 1D43     		orrs	r5, r3
  1690              	.LVL244:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 53
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 53
 
 
  181:Gesture.c     **** 		
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  1736              	.LVL255:
  1737              	.LVL256:
  1738 005e 70BD     		pop	{r4, r5, r6, pc}
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 54
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 54
 
 
  1739              	.L136:
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  1793 0082 CF00     		.short	207
  1794 0084 D400     		.short	212
  1795 0086 D900     		.short	217
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 55
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 55
 
 
  1796 0088 DE00     		.short	222
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  1850              	firstRadius.5875:
  1851 0004 00000000 		.space	4
  1852              		.type	firstTheta.5877, %object
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 56
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 56
 
 
  1853              		.size	firstTheta.5877, 4
@@ -3339,7 +3339,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  1888 000c 4E000000 		.4byte	.LASF84
  1889 0010 0C       		.byte	0xc
  1890 0011 4E010000 		.4byte	.LASF85
- 1891 0015 9C020000 		.4byte	.LASF86
+ 1891 0015 94040000 		.4byte	.LASF86
  1892 0019 00000000 		.4byte	.Ldebug_ranges0+0
  1893 001d 00000000 		.4byte	0
  1894 0021 00000000 		.4byte	.Ldebug_line0
@@ -3350,15 +3350,15 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  1899 002c 02       		.uleb128 0x2
  1900 002d 01       		.byte	0x1
  1901 002e 08       		.byte	0x8
- 1902 002f 56040000 		.4byte	.LASF1
+ 1902 002f 01040000 		.4byte	.LASF1
  1903 0033 02       		.uleb128 0x2
  1904 0034 02       		.byte	0x2
  1905 0035 05       		.byte	0x5
- 1906 0036 71040000 		.4byte	.LASF2
+ 1906 0036 1C040000 		.4byte	.LASF2
  1907 003a 02       		.uleb128 0x2
  1908 003b 02       		.byte	0x2
  1909 003c 07       		.byte	0x7
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 57
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 57
 
 
  1910 003d 76020000 		.4byte	.LASF3
@@ -3402,7 +3402,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  1948 0089 E601     		.2byte	0x1e6
  1949 008b 48000000 		.4byte	0x48
  1950 008f 04       		.uleb128 0x4
- 1951 0090 44050000 		.4byte	.LASF12
+ 1951 0090 16050000 		.4byte	.LASF12
  1952 0094 02       		.byte	0x2
  1953 0095 E801     		.2byte	0x1e8
  1954 0097 33000000 		.4byte	0x33
@@ -3414,26 +3414,26 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  1960 00a7 02       		.uleb128 0x2
  1961 00a8 04       		.byte	0x4
  1962 00a9 04       		.byte	0x4
- 1963 00aa 0B040000 		.4byte	.LASF14
+ 1963 00aa B6030000 		.4byte	.LASF14
  1964 00ae 02       		.uleb128 0x2
  1965 00af 08       		.byte	0x8
  1966 00b0 04       		.byte	0x4
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 58
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 58
 
 
  1967 00b1 83010000 		.4byte	.LASF15
  1968 00b5 02       		.uleb128 0x2
  1969 00b6 01       		.byte	0x1
  1970 00b7 08       		.byte	0x8
- 1971 00b8 E9040000 		.4byte	.LASF16
+ 1971 00b8 BB040000 		.4byte	.LASF16
  1972 00bc 02       		.uleb128 0x2
  1973 00bd 04       		.byte	0x4
  1974 00be 07       		.byte	0x7
- 1975 00bf 81030000 		.4byte	.LASF17
+ 1975 00bf 2C030000 		.4byte	.LASF17
  1976 00c3 02       		.uleb128 0x2
  1977 00c4 08       		.byte	0x8
  1978 00c5 04       		.byte	0x4
- 1979 00c6 8A030000 		.4byte	.LASF18
+ 1979 00c6 35030000 		.4byte	.LASF18
  1980 00ca 05       		.uleb128 0x5
  1981 00cb 01       		.byte	0x1
  1982 00cc 2C000000 		.4byte	0x2c
@@ -3441,34 +3441,34 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  1984 00d1 9E       		.byte	0x9e
  1985 00d2 3D010000 		.4byte	0x13d
  1986 00d6 06       		.uleb128 0x6
- 1987 00d7 AE050000 		.4byte	.LASF19
+ 1987 00d7 80050000 		.4byte	.LASF19
  1988 00db 00       		.byte	0
  1989 00dc 06       		.uleb128 0x6
- 1990 00dd 3D030000 		.4byte	.LASF20
+ 1990 00dd E8020000 		.4byte	.LASF20
  1991 00e1 01       		.byte	0x1
  1992 00e2 06       		.uleb128 0x6
- 1993 00e3 77050000 		.4byte	.LASF21
+ 1993 00e3 49050000 		.4byte	.LASF21
  1994 00e7 02       		.byte	0x2
  1995 00e8 06       		.uleb128 0x6
- 1996 00e9 A6040000 		.4byte	.LASF22
+ 1996 00e9 51040000 		.4byte	.LASF22
  1997 00ed 03       		.byte	0x3
  1998 00ee 06       		.uleb128 0x6
- 1999 00ef 03050000 		.4byte	.LASF23
+ 1999 00ef D5040000 		.4byte	.LASF23
  2000 00f3 04       		.byte	0x4
  2001 00f4 06       		.uleb128 0x6
- 2002 00f5 6E030000 		.4byte	.LASF24
+ 2002 00f5 19030000 		.4byte	.LASF24
  2003 00f9 05       		.byte	0x5
  2004 00fa 06       		.uleb128 0x6
  2005 00fb 6F010000 		.4byte	.LASF25
  2006 00ff 06       		.byte	0x6
  2007 0100 06       		.uleb128 0x6
- 2008 0101 18050000 		.4byte	.LASF26
+ 2008 0101 EA040000 		.4byte	.LASF26
  2009 0105 07       		.byte	0x7
  2010 0106 06       		.uleb128 0x6
- 2011 0107 25040000 		.4byte	.LASF27
+ 2011 0107 D0030000 		.4byte	.LASF27
  2012 010b 08       		.byte	0x8
  2013 010c 06       		.uleb128 0x6
- 2014 010d DB030000 		.4byte	.LASF28
+ 2014 010d 86030000 		.4byte	.LASF28
  2015 0111 09       		.byte	0x9
  2016 0112 06       		.uleb128 0x6
  2017 0113 60020000 		.4byte	.LASF29
@@ -3477,8 +3477,8 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2020 0119 A1010000 		.4byte	.LASF30
  2021 011d 0B       		.byte	0xb
  2022 011e 06       		.uleb128 0x6
- 2023 011f BA040000 		.4byte	.LASF31
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 59
+ 2023 011f 65040000 		.4byte	.LASF31
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 59
 
 
  2024 0123 0C       		.byte	0xc
@@ -3496,12 +3496,12 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2036 013b 10       		.byte	0x10
  2037 013c 00       		.byte	0
  2038 013d 07       		.uleb128 0x7
- 2039 013e D0040000 		.4byte	.LASF36
+ 2039 013e 7B040000 		.4byte	.LASF36
  2040 0142 03       		.byte	0x3
  2041 0143 B0       		.byte	0xb0
  2042 0144 CA000000 		.4byte	0xca
  2043 0148 08       		.uleb128 0x8
- 2044 0149 59050000 		.4byte	.LASF37
+ 2044 0149 2B050000 		.4byte	.LASF37
  2045 014d 01       		.byte	0x1
  2046 014e 6301     		.2byte	0x163
  2047 0150 83000000 		.4byte	0x83
@@ -3511,13 +3511,13 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2051 015d 9C       		.byte	0x9c
  2052 015e 83010000 		.4byte	0x183
  2053 0162 09       		.uleb128 0x9
- 2054 0163 BB050000 		.4byte	.LASF39
+ 2054 0163 8D050000 		.4byte	.LASF39
  2055 0167 01       		.byte	0x1
  2056 0168 6301     		.2byte	0x163
  2057 016a 83000000 		.4byte	0x83
  2058 016e 00000000 		.4byte	.LLST0
  2059 0172 0A       		.uleb128 0xa
- 2060 0173 4D030000 		.4byte	.LASF41
+ 2060 0173 F8020000 		.4byte	.LASF41
  2061 0177 01       		.byte	0x1
  2062 0178 6501     		.2byte	0x165
  2063 017a 83000000 		.4byte	0x83
@@ -3534,11 +3534,11 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2074 0198 9C       		.byte	0x9c
  2075 0199 CE010000 		.4byte	0x1ce
  2076 019d 09       		.uleb128 0x9
- 2077 019e BB050000 		.4byte	.LASF39
+ 2077 019e 8D050000 		.4byte	.LASF39
  2078 01a2 01       		.byte	0x1
  2079 01a3 9E01     		.2byte	0x19e
  2080 01a5 83000000 		.4byte	0x83
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 60
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 60
 
 
  2081 01a9 BE000000 		.4byte	.LLST2
@@ -3556,7 +3556,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2093 01c9 13020000 		.4byte	.LLST4
  2094 01cd 00       		.byte	0
  2095 01ce 08       		.uleb128 0x8
- 2096 01cf 8F040000 		.4byte	.LASF43
+ 2096 01cf 3A040000 		.4byte	.LASF43
  2097 01d3 01       		.byte	0x1
  2098 01d4 E002     		.2byte	0x2e0
  2099 01d6 3D010000 		.4byte	0x13d
@@ -3566,13 +3566,13 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2103 01e3 9C       		.byte	0x9c
  2104 01e4 17020000 		.4byte	0x217
  2105 01e8 09       		.uleb128 0x9
- 2106 01e9 A1030000 		.4byte	.LASF44
+ 2106 01e9 4C030000 		.4byte	.LASF44
  2107 01ed 01       		.byte	0x1
  2108 01ee E002     		.2byte	0x2e0
  2109 01f0 83000000 		.4byte	0x83
  2110 01f4 A4020000 		.4byte	.LLST5
  2111 01f8 0B       		.uleb128 0xb
- 2112 01f9 EE040000 		.4byte	.LASF45
+ 2112 01f9 C0040000 		.4byte	.LASF45
  2113 01fd 01       		.byte	0x1
  2114 01fe E002     		.2byte	0x2e0
  2115 0200 83000000 		.4byte	0x83
@@ -3586,7 +3586,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2123 0212 BF030000 		.4byte	.LLST6
  2124 0216 00       		.byte	0
  2125 0217 0C       		.uleb128 0xc
- 2126 0218 12030000 		.4byte	.LASF47
+ 2126 0218 BD020000 		.4byte	.LASF47
  2127 021c 01       		.byte	0x1
  2128 021d F0       		.byte	0xf0
  2129 021e 83000000 		.4byte	0x83
@@ -3596,9 +3596,9 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2133 022b 9C       		.byte	0x9c
  2134 022c F4020000 		.4byte	0x2f4
  2135 0230 0D       		.uleb128 0xd
- 2136 0231 BB050000 		.4byte	.LASF39
+ 2136 0231 8D050000 		.4byte	.LASF39
  2137 0235 01       		.byte	0x1
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 61
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 61
 
 
  2138 0236 F0       		.byte	0xf0
@@ -3611,7 +3611,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2145 0246 83000000 		.4byte	0x83
  2146 024a 37040000 		.4byte	.LLST8
  2147 024e 0E       		.uleb128 0xe
- 2148 024f 01030000 		.4byte	.LASF49
+ 2148 024f AC020000 		.4byte	.LASF49
  2149 0253 01       		.byte	0x1
  2150 0254 F2       		.byte	0xf2
  2151 0255 83000000 		.4byte	0x83
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2192 02a8 01       		.uleb128 0x1
  2193 02a9 31       		.byte	0x31
  2194 02aa 00       		.byte	0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 62
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 62
 
 
  2195 02ab 0F       		.uleb128 0xf
@@ -3718,17 +3718,17 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2249 0316 9B000000 		.4byte	0x9b
  2250 031a 7C040000 		.4byte	.LLST9
  2251 031e 0A       		.uleb128 0xa
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 63
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 63
 
 
- 2252 031f 11040000 		.4byte	.LASF50
+ 2252 031f BC030000 		.4byte	.LASF50
  2253 0323 01       		.byte	0x1
  2254 0324 FF01     		.2byte	0x1ff
  2255 0326 9B000000 		.4byte	0x9b
  2256 032a 1C050000 		.4byte	.LLST10
  2257 032e 00       		.byte	0
  2258 032f 12       		.uleb128 0x12
- 2259 0330 FF030000 		.4byte	.LASF52
+ 2259 0330 AA030000 		.4byte	.LASF52
  2260 0334 01       		.byte	0x1
  2261 0335 3502     		.2byte	0x235
  2262 0337 9B000000 		.4byte	0x9b
@@ -3751,7 +3751,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2279 0365 F0050000 		.4byte	.LLST12
  2280 0369 00       		.byte	0
  2281 036a 12       		.uleb128 0x12
- 2282 036b B2030000 		.4byte	.LASF54
+ 2282 036b 5D030000 		.4byte	.LASF54
  2283 036f 01       		.byte	0x1
  2284 0370 6202     		.2byte	0x262
  2285 0372 9B000000 		.4byte	0x9b
@@ -3761,7 +3761,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2289 037f 9C       		.byte	0x9c
  2290 0380 BA030000 		.4byte	0x3ba
  2291 0384 09       		.uleb128 0x9
- 2292 0385 4D030000 		.4byte	.LASF41
+ 2292 0385 F8020000 		.4byte	.LASF41
  2293 0389 01       		.byte	0x1
  2294 038a 6202     		.2byte	0x262
  2295 038c 83000000 		.4byte	0x83
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2306 03a8 6402     		.2byte	0x264
  2307 03aa 9B000000 		.4byte	0x9b
  2308 03ae 01       		.uleb128 0x1
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 64
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 64
 
 
  2309 03af 50       		.byte	0x50
@@ -3787,7 +3787,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2312 03b5 2F030000 		.4byte	0x32f
  2313 03b9 00       		.byte	0
  2314 03ba 12       		.uleb128 0x12
- 2315 03bb 7B040000 		.4byte	.LASF55
+ 2315 03bb 26040000 		.4byte	.LASF55
  2316 03bf 01       		.byte	0x1
  2317 03c0 8902     		.2byte	0x289
  2318 03c2 9B000000 		.4byte	0x9b
@@ -3797,7 +3797,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2322 03cf 9C       		.byte	0x9c
  2323 03d0 0A040000 		.4byte	0x40a
  2324 03d4 09       		.uleb128 0x9
- 2325 03d5 4D030000 		.4byte	.LASF41
+ 2325 03d5 F8020000 		.4byte	.LASF41
  2326 03d9 01       		.byte	0x1
  2327 03da 8902     		.2byte	0x289
  2328 03dc 83000000 		.4byte	0x83
@@ -3820,7 +3820,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2345 0405 F4020000 		.4byte	0x2f4
  2346 0409 00       		.byte	0
  2347 040a 15       		.uleb128 0x15
- 2348 040b 9B050000 		.4byte	.LASF56
+ 2348 040b 6D050000 		.4byte	.LASF56
  2349 040f 01       		.byte	0x1
  2350 0410 B202     		.2byte	0x2b2
  2351 0412 83000000 		.4byte	0x83
@@ -3830,7 +3830,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2355 041f 9C       		.byte	0x9c
  2356 0420 55040000 		.4byte	0x455
  2357 0424 09       		.uleb128 0x9
- 2358 0425 4D030000 		.4byte	.LASF41
+ 2358 0425 F8020000 		.4byte	.LASF41
  2359 0429 01       		.byte	0x1
  2360 042a B202     		.2byte	0x2b2
  2361 042c 83000000 		.4byte	0x83
@@ -3838,21 +3838,21 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2363 0434 09       		.uleb128 0x9
  2364 0435 96020000 		.4byte	.LASF42
  2365 0439 01       		.byte	0x1
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 65
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 65
 
 
  2366 043a B202     		.2byte	0x2b2
  2367 043c 9B000000 		.4byte	0x9b
  2368 0440 43070000 		.4byte	.LLST18
  2369 0444 0A       		.uleb128 0xa
- 2370 0445 2B030000 		.4byte	.LASF57
+ 2370 0445 D6020000 		.4byte	.LASF57
  2371 0449 01       		.byte	0x1
  2372 044a B402     		.2byte	0x2b4
  2373 044c 83000000 		.4byte	0x83
  2374 0450 AC070000 		.4byte	.LLST19
  2375 0454 00       		.byte	0
  2376 0455 08       		.uleb128 0x8
- 2377 0456 8A050000 		.4byte	.LASF58
+ 2377 0456 5C050000 		.4byte	.LASF58
  2378 045a 01       		.byte	0x1
  2379 045b 3D03     		.2byte	0x33d
  2380 045d 3D010000 		.4byte	0x13d
@@ -3862,7 +3862,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2384 046a 9C       		.byte	0x9c
  2385 046b FC050000 		.4byte	0x5fc
  2386 046f 09       		.uleb128 0x9
- 2387 0470 4D030000 		.4byte	.LASF41
+ 2387 0470 F8020000 		.4byte	.LASF41
  2388 0474 01       		.byte	0x1
  2389 0475 3D03     		.2byte	0x33d
  2390 0477 83000000 		.4byte	0x83
@@ -3880,7 +3880,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2402 0497 3D010000 		.4byte	0x13d
  2403 049b 0E0A0000 		.4byte	.LLST22
  2404 049f 16       		.uleb128 0x16
- 2405 04a0 DB040000 		.4byte	.LASF59
+ 2405 04a0 86040000 		.4byte	.LASF59
  2406 04a4 01       		.byte	0x1
  2407 04a5 4003     		.2byte	0x340
  2408 04a7 3D010000 		.4byte	0x13d
@@ -3888,7 +3888,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2410 04ac 03       		.byte	0x3
  2411 04ad 1C000000 		.4byte	stickyGesture.5873
  2412 04b1 16       		.uleb128 0x16
- 2413 04b2 96030000 		.4byte	.LASF60
+ 2413 04b2 41030000 		.4byte	.LASF60
  2414 04b6 01       		.byte	0x1
  2415 04b7 4103     		.2byte	0x341
  2416 04b9 83000000 		.4byte	0x83
@@ -3896,9 +3896,9 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2418 04be 03       		.byte	0x3
  2419 04bf 0C000000 		.4byte	tapCounter.5874
  2420 04c3 16       		.uleb128 0x16
- 2421 04c4 EE040000 		.4byte	.LASF45
+ 2421 04c4 C0040000 		.4byte	.LASF45
  2422 04c8 01       		.byte	0x1
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 66
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 66
 
 
  2423 04c9 4103     		.2byte	0x341
@@ -3907,7 +3907,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2426 04d0 03       		.byte	0x3
  2427 04d1 04000000 		.4byte	firstRadius.5875
  2428 04d5 16       		.uleb128 0x16
- 2429 04d6 1A040000 		.4byte	.LASF61
+ 2429 04d6 C5030000 		.4byte	.LASF61
  2430 04da 01       		.byte	0x1
  2431 04db 4103     		.2byte	0x341
  2432 04dd 83000000 		.4byte	0x83
@@ -3915,7 +3915,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2434 04e2 03       		.byte	0x3
  2435 04e3 10000000 		.4byte	prevRadius.5876
  2436 04e7 16       		.uleb128 0x16
- 2437 04e8 32030000 		.4byte	.LASF62
+ 2437 04e8 DD020000 		.4byte	.LASF62
  2438 04ec 01       		.byte	0x1
  2439 04ed 4203     		.2byte	0x342
  2440 04ef 9B000000 		.4byte	0x9b
@@ -3931,7 +3931,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2450 0506 03       		.byte	0x3
  2451 0507 14000000 		.4byte	prevTheta.5878
  2452 050b 16       		.uleb128 0x16
- 2453 050c 64040000 		.4byte	.LASF64
+ 2453 050c 0F040000 		.4byte	.LASF64
  2454 0510 01       		.byte	0x1
  2455 0511 4303     		.2byte	0x343
  2456 0513 83000000 		.4byte	0x83
@@ -3939,7 +3939,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2458 0518 03       		.byte	0x3
  2459 0519 00000000 		.4byte	processState.5879
  2460 051d 16       		.uleb128 0x16
- 2461 051e F1020000 		.4byte	.LASF65
+ 2461 051e 9C020000 		.4byte	.LASF65
  2462 0522 01       		.byte	0x1
  2463 0523 4303     		.2byte	0x343
  2464 0525 83000000 		.4byte	0x83
@@ -3958,25 +3958,25 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2477 0542 13000000 		.4byte	.LASF67
  2478 0546 01       		.byte	0x1
  2479 0547 4603     		.2byte	0x346
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 67
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 67
 
 
  2480 0549 9B000000 		.4byte	0x9b
  2481 054d 730A0000 		.4byte	.LLST23
  2482 0551 0A       		.uleb128 0xa
- 2483 0552 2E050000 		.4byte	.LASF68
+ 2483 0552 00050000 		.4byte	.LASF68
  2484 0556 01       		.byte	0x1
  2485 0557 4603     		.2byte	0x346
  2486 0559 9B000000 		.4byte	0x9b
  2487 055d 160B0000 		.4byte	.LLST24
  2488 0561 0A       		.uleb128 0xa
- 2489 0562 2B030000 		.4byte	.LASF57
+ 2489 0562 D6020000 		.4byte	.LASF57
  2490 0566 01       		.byte	0x1
  2491 0567 4703     		.2byte	0x347
  2492 0569 83000000 		.4byte	0x83
  2493 056d 550B0000 		.4byte	.LLST25
  2494 0571 0A       		.uleb128 0xa
- 2495 0572 A1030000 		.4byte	.LASF44
+ 2495 0572 4C030000 		.4byte	.LASF44
  2496 0576 01       		.byte	0x1
  2497 0577 4703     		.2byte	0x347
  2498 0579 83000000 		.4byte	0x83
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2534 05b5 0F       		.uleb128 0xf
  2535 05b6 7C010000 		.4byte	.LVL186
  2536 05ba 0A040000 		.4byte	0x40a
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 68
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 68
 
 
  2537 05be CF050000 		.4byte	0x5cf
@@ -4067,7 +4067,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2580 060a 02       		.byte	0x2
  2581 060b 00       		.byte	0
  2582 060c 19       		.uleb128 0x19
- 2583 060d F1030000 		.4byte	.LASF69
+ 2583 060d 9C030000 		.4byte	.LASF69
  2584 0611 01       		.byte	0x1
  2585 0612 9F       		.byte	0x9f
  2586 0613 3D010000 		.4byte	0x13d
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2591 0621 D4060000 		.4byte	0x6d4
  2592 0625 0D       		.uleb128 0xd
  2593 0626 4E020000 		.4byte	.LASF70
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 69
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 69
 
 
  2594 062a 01       		.byte	0x1
@@ -4093,7 +4093,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2603 063f 01       		.uleb128 0x1
  2604 0640 50       		.byte	0x50
  2605 0641 1A       		.uleb128 0x1a
- 2606 0642 BB050000 		.4byte	.LASF39
+ 2606 0642 8D050000 		.4byte	.LASF39
  2607 0646 01       		.byte	0x1
  2608 0647 A2       		.byte	0xa2
  2609 0648 83000000 		.4byte	0x83
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2648 06a2 10       		.uleb128 0x10
  2649 06a3 01       		.uleb128 0x1
  2650 06a4 50       		.byte	0x50
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 70
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 70
 
 
  2651 06a5 02       		.uleb128 0x2
@@ -4182,7 +4182,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2689 06e0 03       		.byte	0x3
  2690 06e1 00000000 		.4byte	capsenseButtonStatus
  2691 06e5 1B       		.uleb128 0x1b
- 2692 06e6 3A050000 		.4byte	.LASF73
+ 2692 06e6 0C050000 		.4byte	.LASF73
  2693 06ea 01       		.byte	0x1
  2694 06eb 37       		.byte	0x37
  2695 06ec 9B000000 		.4byte	0x9b
@@ -4190,7 +4190,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2697 06f1 03       		.byte	0x3
  2698 06f2 00000000 		.4byte	accRadius
  2699 06f6 1B       		.uleb128 0x1b
- 2700 06f7 FA040000 		.4byte	.LASF74
+ 2700 06f7 CC040000 		.4byte	.LASF74
  2701 06fb 01       		.byte	0x1
  2702 06fc 37       		.byte	0x37
  2703 06fd 9B000000 		.4byte	0x9b
@@ -4198,10 +4198,10 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2705 0702 03       		.byte	0x3
  2706 0703 00000000 		.4byte	accTheta
  2707 0707 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 71
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 71
 
 
- 2708 0708 4D030000 		.4byte	.LASF41
+ 2708 0708 F8020000 		.4byte	.LASF41
  2709 070c 01       		.byte	0x1
  2710 070d 40       		.byte	0x40
  2711 070e 83000000 		.4byte	0x83
@@ -4229,7 +4229,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2733 073f 2C01     		.2byte	0x12c
  2734 0741 29070000 		.4byte	0x729
  2735 0745 1B       		.uleb128 0x1b
- 2736 0746 4A050000 		.4byte	.LASF76
+ 2736 0746 1C050000 		.4byte	.LASF76
  2737 074a 01       		.byte	0x1
  2738 074b 34       		.byte	0x34
  2739 074c 77000000 		.4byte	0x77
@@ -4237,7 +4237,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2741 0751 03       		.byte	0x3
  2742 0752 00000000 		.4byte	sliderCentroid
  2743 0756 1B       		.uleb128 0x1b
- 2744 0757 72050000 		.4byte	.LASF77
+ 2744 0757 44050000 		.4byte	.LASF77
  2745 075b 01       		.byte	0x1
  2746 075c 3D       		.byte	0x3d
  2747 075d 9B000000 		.4byte	0x9b
@@ -4245,7 +4245,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2749 0762 03       		.byte	0x3
  2750 0763 00000000 		.4byte	xPos
  2751 0767 1B       		.uleb128 0x1b
- 2752 0768 29050000 		.4byte	.LASF78
+ 2752 0768 FB040000 		.4byte	.LASF78
  2753 076c 01       		.byte	0x1
  2754 076d 3D       		.byte	0x3d
  2755 076e 9B000000 		.4byte	0x9b
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2762 0781 18       		.uleb128 0x18
  2763 0782 BC000000 		.4byte	0xbc
  2764 0786 2D       		.byte	0x2d
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 72
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 72
 
 
  2765 0787 00       		.byte	0
@@ -4294,7 +4294,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2795 07c9 1D       		.uleb128 0x1d
  2796 07ca A3070000 		.4byte	0x7a3
  2797 07ce 1B       		.uleb128 0x1b
- 2798 07cf C6030000 		.4byte	.LASF81
+ 2798 07cf 71030000 		.4byte	.LASF81
  2799 07d3 01       		.byte	0x1
  2800 07d4 78       		.byte	0x78
  2801 07d5 DF070000 		.4byte	0x7df
@@ -4304,13 +4304,13 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2805 07df 1D       		.uleb128 0x1d
  2806 07e0 A3070000 		.4byte	0x7a3
  2807 07e4 1E       		.uleb128 0x1e
- 2808 07e5 54030000 		.4byte	.LASF82
- 2809 07e9 54030000 		.4byte	.LASF82
+ 2808 07e5 FF020000 		.4byte	.LASF82
+ 2809 07e9 FF020000 		.4byte	.LASF82
  2810 07ed 04       		.byte	0x4
  2811 07ee D7       		.byte	0xd7
  2812 07ef 1E       		.uleb128 0x1e
- 2813 07f0 38040000 		.4byte	.LASF83
- 2814 07f4 38040000 		.4byte	.LASF83
+ 2813 07f0 E3030000 		.4byte	.LASF83
+ 2814 07f4 E3030000 		.4byte	.LASF83
  2815 07f8 04       		.byte	0x4
  2816 07f9 EA       		.byte	0xea
  2817 07fa 00       		.byte	0
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2819              	.Ldebug_abbrev0:
  2820 0000 01       		.uleb128 0x1
  2821 0001 11       		.uleb128 0x11
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 73
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 73
 
 
  2822 0002 01       		.byte	0x1
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2876 0038 01       		.byte	0x1
  2877 0039 0B       		.uleb128 0xb
  2878 003a 0B       		.uleb128 0xb
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 74
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 74
 
 
  2879 003b 49       		.uleb128 0x49
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2933 0072 13       		.uleb128 0x13
  2934 0073 00       		.byte	0
  2935 0074 00       		.byte	0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 75
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 75
 
 
  2936 0075 09       		.uleb128 0x9
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  2990 00ab 27       		.uleb128 0x27
  2991 00ac 19       		.uleb128 0x19
  2992 00ad 49       		.uleb128 0x49
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 76
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 76
 
 
  2993 00ae 13       		.uleb128 0x13
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  3047 00e7 10       		.uleb128 0x10
  3048 00e8 8A8201   		.uleb128 0x410a
  3049 00eb 00       		.byte	0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 77
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 77
 
 
  3050 00ec 02       		.uleb128 0x2
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  3104 0126 18       		.uleb128 0x18
  3105 0127 00       		.byte	0
  3106 0128 00       		.byte	0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 78
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 78
 
 
  3107 0129 14       		.uleb128 0x14
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  3161 0162 49       		.uleb128 0x49
  3162 0163 13       		.uleb128 0x13
  3163 0164 01       		.uleb128 0x1
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 79
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 79
 
 
  3164 0165 13       		.uleb128 0x13
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  3218 019c 1B       		.uleb128 0x1b
  3219 019d 34       		.uleb128 0x34
  3220 019e 00       		.byte	0
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 80
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 80
 
 
  3221 019f 03       		.uleb128 0x3
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  3275 01d5 00       		.byte	0
  3276 01d6 00       		.byte	0
  3277              		.section	.debug_loc,"",%progbits
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 81
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 81
 
 
  3278              	.Ldebug_loc0:
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  3332 007b 50       		.byte	0x50
  3333 007c 9F       		.byte	0x9f
  3334 007d 28000000 		.4byte	.LVL10
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 82
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 82
 
 
  3335 0081 2A000000 		.4byte	.LVL11
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  3389 0103 20000000 		.4byte	.LVL15
  3390 0107 22000000 		.4byte	.LVL16
  3391 010b 0400     		.2byte	0x4
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 83
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 83
 
 
  3392 010d F3       		.byte	0xf3
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  3446 0188 0400     		.2byte	0x4
  3447 018a F3       		.byte	0xf3
  3448 018b 01       		.uleb128 0x1
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 84
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 84
 
 
  3449 018c 51       		.byte	0x51
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  3503 0208 01       		.uleb128 0x1
  3504 0209 51       		.byte	0x51
  3505 020a 9F       		.byte	0x9f
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 85
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 85
 
 
  3506 020b 00000000 		.4byte	0
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  3560 0288 52000000 		.4byte	.LVL35
  3561 028c 0300     		.2byte	0x3
  3562 028e 08       		.byte	0x8
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 86
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 86
 
 
  3563 028f FA       		.byte	0xfa
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  3617 030c 76000000 		.4byte	.LVL46
  3618 0310 0100     		.2byte	0x1
  3619 0312 50       		.byte	0x50
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 87
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 87
 
 
  3620 0313 76000000 		.4byte	.LVL46
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  3674 038f 50       		.byte	0x50
  3675 0390 92000000 		.4byte	.LVL56
  3676 0394 94000000 		.4byte	.LVL57
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 88
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 88
 
 
  3677 0398 0400     		.2byte	0x4
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  3731 0418 50       		.byte	0x50
  3732 0419 12000000 		.4byte	.LVL60
  3733 041d F4000000 		.4byte	.LVL88
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 89
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 89
 
 
  3734 0421 0100     		.2byte	0x1
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  3788 04a1 1A000000 		.4byte	.LVL93
  3789 04a5 1C000000 		.4byte	.LVL94
  3790 04a9 0100     		.2byte	0x1
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 90
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 90
 
 
  3791 04ab 53       		.byte	0x53
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  3845 0524 0400     		.2byte	0x4
  3846 0526 0A       		.byte	0xa
  3847 0527 E803     		.2byte	0x3e8
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 91
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 91
 
 
  3848 0529 9F       		.byte	0x9f
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  3902 05b4 0100     		.2byte	0x1
  3903 05b6 50       		.byte	0x50
  3904 05b7 10000000 		.4byte	.LVL108
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 92
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 92
 
 
  3905 05bb 12000000 		.4byte	.LVL109
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  3959 063f 00000000 		.4byte	0
  3960              	.LLST13:
  3961 0643 00000000 		.4byte	.LVL117
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 93
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 93
 
 
  3962 0647 06000000 		.4byte	.LVL118
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  4016 06cf 00000000 		.4byte	0
  4017 06d3 00000000 		.4byte	0
  4018              	.LLST17:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 94
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 94
 
 
  4019 06d7 00000000 		.4byte	.LVL131
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  4073 0758 53       		.byte	0x53
  4074 0759 17000000 		.4byte	.LVL135-1
  4075 075d 1C000000 		.4byte	.LVL137
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 95
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 95
 
 
  4076 0761 0400     		.2byte	0x4
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  4130 07dc 28000000 		.4byte	.LVL142
  4131 07e0 2E000000 		.4byte	.LVL145
  4132 07e4 0300     		.2byte	0x3
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 96
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 96
 
 
  4133 07e6 08       		.byte	0x8
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  4187 0875 78010000 		.4byte	.LVL185
  4188 0879 EE010000 		.4byte	.LVL192
  4189 087d 0100     		.2byte	0x1
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 97
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 97
 
 
  4190 087f 55       		.byte	0x55
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  4244 0913 1C030000 		.4byte	.LVL226
  4245 0917 0100     		.2byte	0x1
  4246 0919 55       		.byte	0x55
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 98
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 98
 
 
  4247 091a 1C030000 		.4byte	.LVL226
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  4301 09b2 0100     		.2byte	0x1
  4302 09b4 54       		.byte	0x54
  4303 09b5 AE020000 		.4byte	.LVL209
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 99
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 99
 
 
  4304 09b9 D6020000 		.4byte	.LVL216
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  4358 0a48 BC020000 		.4byte	.LVL212
  4359 0a4c E0020000 		.4byte	.LVL219
  4360 0a50 0200     		.2byte	0x2
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 100
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 100
 
 
  4361 0a52 39       		.byte	0x39
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  4415 0ace 1C       		.byte	0x1c
  4416 0acf 9F       		.byte	0x9f
  4417 0ad0 6A010000 		.4byte	.LVL183
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 101
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 101
 
 
  4418 0ad4 72010000 		.4byte	.LVL184
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  4472 0b59 2A010000 		.4byte	.LVL172
  4473 0b5d 0100     		.2byte	0x1
  4474 0b5f 50       		.byte	0x50
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 102
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 102
 
 
  4475 0b60 2A010000 		.4byte	.LVL172
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  4529 0bf8 80020000 		.4byte	.LVL205
  4530 0bfc 87020000 		.4byte	.LVL206-1
  4531 0c00 0100     		.2byte	0x1
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 103
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 103
 
 
  4532 0c02 50       		.byte	0x50
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  4586 0c8c 0100     		.2byte	0x1
  4587 0c8e 50       		.byte	0x50
  4588 0c8f 36000000 		.4byte	.LVL248
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 104
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 104
 
 
  4589 0c93 38000000 		.4byte	.LVL249
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  4643 0040 00000000 		.4byte	.LFB39
  4644 0044 1C000000 		.4byte	.LFE39-.LFB39
  4645 0048 00000000 		.4byte	.LFB40
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 105
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 105
 
 
  4646 004c 1C000000 		.4byte	.LFE40-.LFB40
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  4690              	.LASF75:
  4691 0020 43617053 		.ascii	"CapSense_sensorOnMask\000"
  4691      656E7365 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 106
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 106
 
 
  4691      5F73656E 
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  4709      6720696E 
  4709      7400
  4710              	.LASF0:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 107
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 107
 
 
  4711 013c 7369676E 		.ascii	"signed char\000"
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  4737      5552455F 
  4737      55505F43 
  4737      4C49434B 
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 108
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 108
 
 
  4737      00
@@ -6478,269 +6478,264 @@ ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 1
  4757      00
  4758              	.LASF42:
  4759 0296 74686574 		.ascii	"theta\000"
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 109
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 109
 
 
  4759      6100
- 4760              	.LASF86:
- 4761 029c 433A5C55 		.ascii	"C:\\Users\\Terence Kim\\Documents\\PSoC Creator\\CY"
- 4761      73657273 
- 4761      5C546572 
- 4761      656E6365 
- 4761      204B696D 
- 4762 02ca 38434B49 		.ascii	"8CKIT_046_USB_Audio01\\Icebreaker.cydsn\000"
- 4762      545F3034 
- 4762      365F5553 
- 4762      425F4175 
- 4762      64696F30 
- 4763              	.LASF65:
- 4764 02f1 6465626F 		.ascii	"debounceCounter\000"
- 4764      756E6365 
- 4764      436F756E 
- 4764      74657200 
- 4765              	.LASF49:
- 4766 0301 70726576 		.ascii	"prevButtonStatus\000"
- 4766      42757474 
- 4766      6F6E5374 
- 4766      61747573 
- 4766      00
- 4767              	.LASF47:
- 4768 0312 47657374 		.ascii	"Gestures_ValidateButtons\000"
- 4768      75726573 
- 4768      5F56616C 
- 4768      69646174 
- 4768      65427574 
- 4769              	.LASF57:
- 4770 032b 73656374 		.ascii	"sector\000"
- 4770      6F7200
- 4771              	.LASF62:
- 4772 0332 66697273 		.ascii	"firstTheta\000"
- 4772      74546865 
- 4772      746100
- 4773              	.LASF20:
- 4774 033d 47455354 		.ascii	"GESTURE_RELEASE\000"
- 4774      5552455F 
- 4774      52454C45 
- 4774      41534500 
- 4775              	.LASF41:
- 4776 034d 72616469 		.ascii	"radius\000"
- 4776      757300
- 4777              	.LASF82:
- 4778 0354 43617053 		.ascii	"CapSense_GetDiffCountData\000"
- 4778      656E7365 
- 4778      5F476574 
- 4778      44696666 
- 4778      436F756E 
- 4779              	.LASF24:
- 4780 036e 47455354 		.ascii	"GESTURE_LEFT_SWIPE\000"
- 4780      5552455F 
- 4780      4C454654 
- 4780      5F535749 
- 4780      504500
- 4781              	.LASF17:
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 110
+ 4760              	.LASF65:
+ 4761 029c 6465626F 		.ascii	"debounceCounter\000"
+ 4761      756E6365 
+ 4761      436F756E 
+ 4761      74657200 
+ 4762              	.LASF49:
+ 4763 02ac 70726576 		.ascii	"prevButtonStatus\000"
+ 4763      42757474 
+ 4763      6F6E5374 
+ 4763      61747573 
+ 4763      00
+ 4764              	.LASF47:
+ 4765 02bd 47657374 		.ascii	"Gestures_ValidateButtons\000"
+ 4765      75726573 
+ 4765      5F56616C 
+ 4765      69646174 
+ 4765      65427574 
+ 4766              	.LASF57:
+ 4767 02d6 73656374 		.ascii	"sector\000"
+ 4767      6F7200
+ 4768              	.LASF62:
+ 4769 02dd 66697273 		.ascii	"firstTheta\000"
+ 4769      74546865 
+ 4769      746100
+ 4770              	.LASF20:
+ 4771 02e8 47455354 		.ascii	"GESTURE_RELEASE\000"
+ 4771      5552455F 
+ 4771      52454C45 
+ 4771      41534500 
+ 4772              	.LASF41:
+ 4773 02f8 72616469 		.ascii	"radius\000"
+ 4773      757300
+ 4774              	.LASF82:
+ 4775 02ff 43617053 		.ascii	"CapSense_GetDiffCountData\000"
+ 4775      656E7365 
+ 4775      5F476574 
+ 4775      44696666 
+ 4775      436F756E 
+ 4776              	.LASF24:
+ 4777 0319 47455354 		.ascii	"GESTURE_LEFT_SWIPE\000"
+ 4777      5552455F 
+ 4777      4C454654 
+ 4777      5F535749 
+ 4777      504500
+ 4778              	.LASF17:
+ 4779 032c 73697A65 		.ascii	"sizetype\000"
+ 4779      74797065 
+ 4779      00
+ 4780              	.LASF18:
+ 4781 0335 6C6F6E67 		.ascii	"long double\000"
+ 4781      20646F75 
+ 4781      626C6500 
+ 4782              	.LASF60:
+ 4783 0341 74617043 		.ascii	"tapCounter\000"
+ 4783      6F756E74 
+ 4783      657200
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 110
 
 
- 4782 0381 73697A65 		.ascii	"sizetype\000"
- 4782      74797065 
- 4782      00
- 4783              	.LASF18:
- 4784 038a 6C6F6E67 		.ascii	"long double\000"
- 4784      20646F75 
- 4784      626C6500 
- 4785              	.LASF60:
- 4786 0396 74617043 		.ascii	"tapCounter\000"
- 4786      6F756E74 
- 4786      657200
- 4787              	.LASF44:
- 4788 03a1 73656374 		.ascii	"sectorHistorySum\000"
- 4788      6F724869 
- 4788      73746F72 
- 4788      7953756D 
- 4788      00
- 4789              	.LASF54:
- 4790 03b2 47657374 		.ascii	"Gestures_CalculateX\000"
- 4790      75726573 
- 4790      5F43616C 
- 4790      63756C61 
- 4790      74655800 
- 4791              	.LASF81:
- 4792 03c6 73656374 		.ascii	"sectorToButtonLookup\000"
- 4792      6F72546F 
- 4792      42757474 
- 4792      6F6E4C6F 
- 4792      6F6B7570 
- 4793              	.LASF28:
- 4794 03db 47455354 		.ascii	"GESTURE_OUTWARD_SWIPE\000"
- 4794      5552455F 
- 4794      4F555457 
- 4794      4152445F 
- 4794      53574950 
- 4795              	.LASF69:
- 4796 03f1 44657465 		.ascii	"DetectGesture\000"
- 4796      63744765 
- 4796      73747572 
- 4796      6500
- 4797              	.LASF52:
- 4798 03ff 47657443 		.ascii	"GetCosTheta\000"
- 4798      6F735468 
- 4798      65746100 
- 4799              	.LASF14:
- 4800 040b 666C6F61 		.ascii	"float\000"
- 4800      7400
- 4801              	.LASF50:
- 4802 0411 73696E54 		.ascii	"sinTheta\000"
- 4802      68657461 
- 4802      00
- 4803              	.LASF61:
- 4804 041a 70726576 		.ascii	"prevRadius\000"
- 4804      52616469 
- 4804      757300
- 4805              	.LASF27:
- 4806 0425 47455354 		.ascii	"GESTURE_DOWN_SWIPE\000"
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 111
+ 4784              	.LASF44:
+ 4785 034c 73656374 		.ascii	"sectorHistorySum\000"
+ 4785      6F724869 
+ 4785      73746F72 
+ 4785      7953756D 
+ 4785      00
+ 4786              	.LASF54:
+ 4787 035d 47657374 		.ascii	"Gestures_CalculateX\000"
+ 4787      75726573 
+ 4787      5F43616C 
+ 4787      63756C61 
+ 4787      74655800 
+ 4788              	.LASF81:
+ 4789 0371 73656374 		.ascii	"sectorToButtonLookup\000"
+ 4789      6F72546F 
+ 4789      42757474 
+ 4789      6F6E4C6F 
+ 4789      6F6B7570 
+ 4790              	.LASF28:
+ 4791 0386 47455354 		.ascii	"GESTURE_OUTWARD_SWIPE\000"
+ 4791      5552455F 
+ 4791      4F555457 
+ 4791      4152445F 
+ 4791      53574950 
+ 4792              	.LASF69:
+ 4793 039c 44657465 		.ascii	"DetectGesture\000"
+ 4793      63744765 
+ 4793      73747572 
+ 4793      6500
+ 4794              	.LASF52:
+ 4795 03aa 47657443 		.ascii	"GetCosTheta\000"
+ 4795      6F735468 
+ 4795      65746100 
+ 4796              	.LASF14:
+ 4797 03b6 666C6F61 		.ascii	"float\000"
+ 4797      7400
+ 4798              	.LASF50:
+ 4799 03bc 73696E54 		.ascii	"sinTheta\000"
+ 4799      68657461 
+ 4799      00
+ 4800              	.LASF61:
+ 4801 03c5 70726576 		.ascii	"prevRadius\000"
+ 4801      52616469 
+ 4801      757300
+ 4802              	.LASF27:
+ 4803 03d0 47455354 		.ascii	"GESTURE_DOWN_SWIPE\000"
+ 4803      5552455F 
+ 4803      444F574E 
+ 4803      5F535749 
+ 4803      504500
+ 4804              	.LASF83:
+ 4805 03e3 43617053 		.ascii	"CapSense_GetRadialCentroidPos\000"
+ 4805      656E7365 
+ 4805      5F476574 
+ 4805      52616469 
+ 4805      616C4365 
+ 4806              	.LASF1:
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 111
 
 
- 4806      5552455F 
- 4806      444F574E 
- 4806      5F535749 
- 4806      504500
- 4807              	.LASF83:
- 4808 0438 43617053 		.ascii	"CapSense_GetRadialCentroidPos\000"
- 4808      656E7365 
- 4808      5F476574 
- 4808      52616469 
- 4808      616C4365 
- 4809              	.LASF1:
- 4810 0456 756E7369 		.ascii	"unsigned char\000"
- 4810      676E6564 
- 4810      20636861 
- 4810      7200
- 4811              	.LASF64:
- 4812 0464 70726F63 		.ascii	"processState\000"
- 4812      65737353 
- 4812      74617465 
- 4812      00
- 4813              	.LASF2:
- 4814 0471 73686F72 		.ascii	"short int\000"
- 4814      7420696E 
- 4814      7400
- 4815              	.LASF55:
- 4816 047b 47657374 		.ascii	"Gestures_CalculateY\000"
- 4816      75726573 
- 4816      5F43616C 
- 4816      63756C61 
- 4816      74655900 
- 4817              	.LASF43:
- 4818 048f 47657374 		.ascii	"Gestures_LookUpGesture\000"
- 4818      75726573 
- 4818      5F4C6F6F 
- 4818      6B557047 
- 4818      65737475 
- 4819              	.LASF22:
- 4820 04a6 47455354 		.ascii	"GESTURE_RIGHT_CLICK\000"
- 4820      5552455F 
- 4820      52494748 
- 4820      545F434C 
- 4820      49434B00 
- 4821              	.LASF31:
- 4822 04ba 47455354 		.ascii	"GESTURE_OUTER_CLKWISE\000"
- 4822      5552455F 
- 4822      4F555445 
- 4822      525F434C 
- 4822      4B574953 
- 4823              	.LASF36:
- 4824 04d0 74476573 		.ascii	"tGestureId\000"
- 4824      74757265 
- 4824      496400
- 4825              	.LASF59:
- 4826 04db 73746963 		.ascii	"stickyGesture\000"
- 4826      6B794765 
- 4826      73747572 
- 4826      6500
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 112
+ 4807 0401 756E7369 		.ascii	"unsigned char\000"
+ 4807      676E6564 
+ 4807      20636861 
+ 4807      7200
+ 4808              	.LASF64:
+ 4809 040f 70726F63 		.ascii	"processState\000"
+ 4809      65737353 
+ 4809      74617465 
+ 4809      00
+ 4810              	.LASF2:
+ 4811 041c 73686F72 		.ascii	"short int\000"
+ 4811      7420696E 
+ 4811      7400
+ 4812              	.LASF55:
+ 4813 0426 47657374 		.ascii	"Gestures_CalculateY\000"
+ 4813      75726573 
+ 4813      5F43616C 
+ 4813      63756C61 
+ 4813      74655900 
+ 4814              	.LASF43:
+ 4815 043a 47657374 		.ascii	"Gestures_LookUpGesture\000"
+ 4815      75726573 
+ 4815      5F4C6F6F 
+ 4815      6B557047 
+ 4815      65737475 
+ 4816              	.LASF22:
+ 4817 0451 47455354 		.ascii	"GESTURE_RIGHT_CLICK\000"
+ 4817      5552455F 
+ 4817      52494748 
+ 4817      545F434C 
+ 4817      49434B00 
+ 4818              	.LASF31:
+ 4819 0465 47455354 		.ascii	"GESTURE_OUTER_CLKWISE\000"
+ 4819      5552455F 
+ 4819      4F555445 
+ 4819      525F434C 
+ 4819      4B574953 
+ 4820              	.LASF36:
+ 4821 047b 74476573 		.ascii	"tGestureId\000"
+ 4821      74757265 
+ 4821      496400
+ 4822              	.LASF59:
+ 4823 0486 73746963 		.ascii	"stickyGesture\000"
+ 4823      6B794765 
+ 4823      73747572 
+ 4823      6500
+ 4824              	.LASF86:
+ 4825 0494 433A5C64 		.ascii	"C:\\dev\\git\\Icebreaker\\Icebreaker.cydsn\000"
+ 4825      65765C67 
+ 4825      69745C49 
+ 4825      63656272 
+ 4825      65616B65 
+ 4826              	.LASF16:
+ 4827 04bb 63686172 		.ascii	"char\000"
+ 4827      00
+ 4828              	.LASF45:
+ 4829 04c0 66697273 		.ascii	"firstRadius\000"
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 112
 
 
- 4827              	.LASF16:
- 4828 04e9 63686172 		.ascii	"char\000"
- 4828      00
- 4829              	.LASF45:
- 4830 04ee 66697273 		.ascii	"firstRadius\000"
- 4830      74526164 
- 4830      69757300 
- 4831              	.LASF74:
- 4832 04fa 61636354 		.ascii	"accTheta\000"
- 4832      68657461 
- 4832      00
- 4833              	.LASF23:
- 4834 0503 47455354 		.ascii	"GESTURE_MIDDLE_CLICK\000"
- 4834      5552455F 
- 4834      4D494444 
- 4834      4C455F43 
- 4834      4C49434B 
- 4835              	.LASF26:
- 4836 0518 47455354 		.ascii	"GESTURE_UP_SWIPE\000"
- 4836      5552455F 
- 4836      55505F53 
- 4836      57495045 
- 4836      00
- 4837              	.LASF78:
- 4838 0529 79506F73 		.ascii	"yPos\000"
- 4838      00
- 4839              	.LASF68:
- 4840 052e 74686574 		.ascii	"thetaChange\000"
- 4840      61436861 
- 4840      6E676500 
- 4841              	.LASF73:
- 4842 053a 61636352 		.ascii	"accRadius\000"
- 4842      61646975 
- 4842      7300
- 4843              	.LASF12:
- 4844 0544 696E7431 		.ascii	"int16\000"
- 4844      3600
- 4845              	.LASF76:
- 4846 054a 736C6964 		.ascii	"sliderCentroid\000"
- 4846      65724365 
- 4846      6E74726F 
- 4846      696400
- 4847              	.LASF37:
- 4848 0559 47657374 		.ascii	"Gestures_CalculateRadius\000"
- 4848      75726573 
- 4848      5F43616C 
- 4848      63756C61 
- 4848      74655261 
- 4849              	.LASF77:
- 4850 0572 78506F73 		.ascii	"xPos\000"
- 4850      00
- 4851              	.LASF21:
- 4852 0577 47455354 		.ascii	"GESTURE_LEFT_CLICK\000"
- 4852      5552455F 
- 4852      4C454654 
- 4852      5F434C49 
- 4852      434B00
-ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccsh3cI7.s 			page 113
+ 4829      74526164 
+ 4829      69757300 
+ 4830              	.LASF74:
+ 4831 04cc 61636354 		.ascii	"accTheta\000"
+ 4831      68657461 
+ 4831      00
+ 4832              	.LASF23:
+ 4833 04d5 47455354 		.ascii	"GESTURE_MIDDLE_CLICK\000"
+ 4833      5552455F 
+ 4833      4D494444 
+ 4833      4C455F43 
+ 4833      4C49434B 
+ 4834              	.LASF26:
+ 4835 04ea 47455354 		.ascii	"GESTURE_UP_SWIPE\000"
+ 4835      5552455F 
+ 4835      55505F53 
+ 4835      57495045 
+ 4835      00
+ 4836              	.LASF78:
+ 4837 04fb 79506F73 		.ascii	"yPos\000"
+ 4837      00
+ 4838              	.LASF68:
+ 4839 0500 74686574 		.ascii	"thetaChange\000"
+ 4839      61436861 
+ 4839      6E676500 
+ 4840              	.LASF73:
+ 4841 050c 61636352 		.ascii	"accRadius\000"
+ 4841      61646975 
+ 4841      7300
+ 4842              	.LASF12:
+ 4843 0516 696E7431 		.ascii	"int16\000"
+ 4843      3600
+ 4844              	.LASF76:
+ 4845 051c 736C6964 		.ascii	"sliderCentroid\000"
+ 4845      65724365 
+ 4845      6E74726F 
+ 4845      696400
+ 4846              	.LASF37:
+ 4847 052b 47657374 		.ascii	"Gestures_CalculateRadius\000"
+ 4847      75726573 
+ 4847      5F43616C 
+ 4847      63756C61 
+ 4847      74655261 
+ 4848              	.LASF77:
+ 4849 0544 78506F73 		.ascii	"xPos\000"
+ 4849      00
+ 4850              	.LASF21:
+ 4851 0549 47455354 		.ascii	"GESTURE_LEFT_CLICK\000"
+ 4851      5552455F 
+ 4851      4C454654 
+ 4851      5F434C49 
+ 4851      434B00
+ 4852              	.LASF58:
+ 4853 055c 47657374 		.ascii	"Gestures_Process\000"
+ 4853      75726573 
+ 4853      5F50726F 
+ 4853      63657373 
+ARM GAS  C:\Users\TERENC~1\AppData\Local\Temp\ccXA9Ace.s 			page 113
 
 
- 4853              	.LASF58:
- 4854 058a 47657374 		.ascii	"Gestures_Process\000"
- 4854      75726573 
- 4854      5F50726F 
- 4854      63657373 
- 4854      00
- 4855              	.LASF56:
- 4856 059b 47657374 		.ascii	"Gestures_GetSector\000"
- 4856      75726573 
- 4856      5F476574 
- 4856      53656374 
- 4856      6F7200
- 4857              	.LASF19:
- 4858 05ae 47455354 		.ascii	"GESTURE_NONE\000"
- 4858      5552455F 
- 4858      4E4F4E45 
- 4858      00
- 4859              	.LASF39:
- 4860 05bb 62757474 		.ascii	"buttonStatus\000"
- 4860      6F6E5374 
- 4860      61747573 
- 4860      00
- 4861              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 4853      00
+ 4854              	.LASF56:
+ 4855 056d 47657374 		.ascii	"Gestures_GetSector\000"
+ 4855      75726573 
+ 4855      5F476574 
+ 4855      53656374 
+ 4855      6F7200
+ 4856              	.LASF19:
+ 4857 0580 47455354 		.ascii	"GESTURE_NONE\000"
+ 4857      5552455F 
+ 4857      4E4F4E45 
+ 4857      00
+ 4858              	.LASF39:
+ 4859 058d 62757474 		.ascii	"buttonStatus\000"
+ 4859      6F6E5374 
+ 4859      61747573 
+ 4859      00
+ 4860              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

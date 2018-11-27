@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Icebreaker">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>Icebreaker</v>
 <v>Icebreaker\Icebreaker</v>
@@ -35,7 +35,6 @@
 <v>Icebreaker\Icebreaker\Header Files\Codec.h</v>
 <v>Icebreaker\Icebreaker\Header Files\Config.h</v>
 <v>Icebreaker\Icebreaker\Header Files\cyapicallbacks.h</v>
-<v>Icebreaker\Icebreaker\Header Files\Gesture.h</v>
 <v>Icebreaker\Icebreaker\Header Files\Interrupts.h</v>
 <v>Icebreaker\Icebreaker\Header Files\USBInterface.h</v>
 <v>Icebreaker\Icebreaker\Source Files</v>
@@ -44,7 +43,6 @@
 <v>Icebreaker\Icebreaker\Source Files\AudioIn.c</v>
 <v>Icebreaker\Icebreaker\Source Files\AudioOut.c</v>
 <v>Icebreaker\Icebreaker\Source Files\Codec.c</v>
-<v>Icebreaker\Icebreaker\Source Files\Gesture.c</v>
 <v>Icebreaker\Icebreaker\Source Files\Interrupts.c</v>
 <v>Icebreaker\Icebreaker\Source Files\main.c</v>
 <v>Icebreaker\Icebreaker\Source Files\USBInterface.c</v>
@@ -72,7 +70,6 @@
 <v>Icebreaker\Icebreaker\Header Files\Codec.h</v>
 <v>Icebreaker\Icebreaker\Header Files\Config.h</v>
 <v>Icebreaker\Icebreaker\Header Files\cyapicallbacks.h</v>
-<v>Icebreaker\Icebreaker\Header Files\Gesture.h</v>
 <v>Icebreaker\Icebreaker\Header Files\Interrupts.h</v>
 <v>Icebreaker\Icebreaker\Header Files\USBInterface.h</v>
 <v>Icebreaker\Icebreaker\Source Files</v>
@@ -81,7 +78,6 @@
 <v>Icebreaker\Icebreaker\Source Files\AudioIn.c</v>
 <v>Icebreaker\Icebreaker\Source Files\AudioOut.c</v>
 <v>Icebreaker\Icebreaker\Source Files\Codec.c</v>
-<v>Icebreaker\Icebreaker\Source Files\Gesture.c</v>
 <v>Icebreaker\Icebreaker\Source Files\Interrupts.c</v>
 <v>Icebreaker\Icebreaker\Source Files\main.c</v>
 <v>Icebreaker\Icebreaker\Source Files\USBInterface.c</v>
@@ -91,13 +87,12 @@
 <v>Icebreaker\Icebreaker\Generated_Source\PSoC4\AudioClkSel</v>
 <v>Icebreaker\Icebreaker\Generated_Source\PSoC4\ByteCounter_Rx</v>
 <v>Icebreaker\Icebreaker\Generated_Source\PSoC4\ByteCounter_Tx</v>
-<v>Icebreaker\Icebreaker\Generated_Source\PSoC4\CapSense</v>
-<v>Icebreaker\Icebreaker\Generated_Source\PSoC4\CapSense_SampleClk</v>
-<v>Icebreaker\Icebreaker\Generated_Source\PSoC4\CapSense_SenseClk</v>
-<v>Icebreaker\Icebreaker\Generated_Source\PSoC4\CapSense_Sns</v>
 <v>Icebreaker\Icebreaker\Generated_Source\PSoC4\Clk_Counter</v>
 <v>Icebreaker\Icebreaker\Generated_Source\PSoC4\Codec_BCLK</v>
 <v>Icebreaker\Icebreaker\Generated_Source\PSoC4\Codec_DACDAT</v>
+<v>Icebreaker\Icebreaker\Generated_Source\PSoC4\Codec_LRC</v>
+<v>Icebreaker\Icebreaker\Generated_Source\PSoC4\Codec_MCLK</v>
+<v>Icebreaker\Icebreaker\Generated_Source\PSoC4\CodecI2CM</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -134,14 +129,6 @@
 <v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\ByteCounter_Rx_PM.lst</v>
 <v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\ByteCounter_Tx.lst</v>
 <v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\ByteCounter_Tx_PM.lst</v>
-<v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense.lst</v>
-<v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_CSHL.lst</v>
-<v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_INT.lst</v>
-<v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_PM.lst</v>
-<v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_SampleClk.lst</v>
-<v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_SenseClk.lst</v>
-<v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_SMS.lst</v>
-<v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_TunerHelper.lst</v>
 <v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\Clk_Counter.lst</v>
 <v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
 <v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\Codec.lst</v>
@@ -176,7 +163,6 @@
 <v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
 <v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
 <v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\Gesture.lst</v>
 <v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\I2S.lst</v>
 <v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\I2S_PM.lst</v>
 <v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\Interrupts.lst</v>
@@ -188,6 +174,8 @@
 <v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
 <v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_BOOT.lst</v>
 <v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_PM.lst</v>
+<v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_rx.lst</v>
+<v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_rx_PM.lst</v>
 <v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SCBCLK.lst</v>
 <v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SPI_UART.lst</v>
 <v>Icebreaker\Icebreaker\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SPI_UART_INT.lst</v>
@@ -248,7 +236,6 @@
 <v>Icebreaker\Icebreaker\System Reference Guides\cy_boot_v5_70</v>
 <v>Icebreaker\Icebreaker\System Reference Guides\cy_dmac_v1_10</v>
 <v>Icebreaker\Icebreaker\System Reference Guides\cy_lfclk_v1_20</v>
-<v>Icebreaker\Icebreaker\CapSense_CSD_P4_v2_60.pdf</v>
 <v>Icebreaker\Icebreaker\cy_clock_v2_20</v>
 <v>Icebreaker\Icebreaker\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
 <v>Icebreaker\Icebreaker\cy_isr_v1_70</v>
@@ -281,7 +268,6 @@
 <v>Icebreaker\Icebreaker\System Reference Guides\cy_boot_v5_70</v>
 <v>Icebreaker\Icebreaker\System Reference Guides\cy_dmac_v1_10</v>
 <v>Icebreaker\Icebreaker\System Reference Guides\cy_lfclk_v1_20</v>
-<v>Icebreaker\Icebreaker\CapSense_CSD_P4_v2_60.pdf</v>
 <v>Icebreaker\Icebreaker\cy_clock_v2_20</v>
 <v>Icebreaker\Icebreaker\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
 <v>Icebreaker\Icebreaker\cy_isr_v1_70</v>
@@ -317,7 +303,17 @@
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs />
+<OpenDocs>
+<name v=".\Icebreaker.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\Icebreaker.cydsn\Icebreaker.cydwr" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1199, 616" SelectedTabbedMdiWindow="81fed8e1-7173-4050-9b0c-959c9cf62244"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="7371d0b3-f93e-4607-b792-9c3ea25bd20b" /><DocumentWindow Key="C:\dev\git\Icebreaker\Icebreaker.cydsn\TopDesign\TopDesign.cysch" Guid="81fed8e1-7173-4050-9b0c-959c9cf62244" /><DocumentWindow Key="C:\dev\git\Icebreaker\Icebreaker.cydsn\Icebreaker.cydwr" Guid="4426db13-7491-4ca5-b6ea-708264a3609e" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

@@ -44,11 +44,7 @@
 #include <Interrupts.h>
 #include <stdio.h>
 #include <USBInterface.h>
-#include <Gesture.h>
 #include <Codec.h>
-
-static void HandleUserInputs(uint32 gesture);
-
 
 extern CYPDATA uint8 audioSource;
 extern CYDATA uint8 auxConfigured;
@@ -63,7 +59,6 @@ uint8 reportClearFlag;
 extern volatile uint8 USBFS_currentVolume[];
 extern volatile uint8 USBFS_currentMute;
 extern CYPDATA uint8 newRate;
-
 
 /*******************************************************************************
 * Function Name: InitApp
@@ -129,10 +124,6 @@ void InitApp(void)
 	USBFS_LoadInEP(MAC_PC_HID_CONTROL_ENDPOINT, USBFS_NULL, sizeof(playlistControlReport) );	
 	
 	Async_Feedback_Counter_Start();
-	
-	CapSense_Start();
-	CapSense_InitializeAllBaselines();
-	CapSense_ScanEnabledWidgets();
 }
 
 
@@ -151,222 +142,12 @@ void InitApp(void)
 *
 *******************************************************************************/
 void RunApplication(void)
-{
-    uint32 gesture = 0;
-	           
-    if(!CapSense_IsBusy()) /* scan all CapSense buttons and sliders */
-    {
-        CapSense_UpdateEnabledBaselines(); /* update the baseline for the CapSense algorithm */
-		gesture = DetectGesture(CapSense_CheckIsAnyWidgetActive());
-        CapSense_ScanEnabledWidgets();
-		
-		if(USBFS_GetConfiguration() == TRUE)
-		{
-			/* Handle CapSense button and slider user inputs */
-	   	 	HandleUserInputs(gesture); 
-		}
-    }
-    
+{  
 	if(USBFS_GetConfiguration() == TRUE)
 	{
 		/* Update the volume data */
 		Update_VolumeAudioOut();		
 	}
-}
-
-
-/*******************************************************************************
-* Function Name: HandleUserInputs
-********************************************************************************
-* Summary:  Handles CapSense button user inputs for next/previous/play track 
-*           functions.
-*
-* Parameters:
-*  void
-*
-* Return:
-*  void
-*
-*******************************************************************************/
-static void HandleUserInputs(uint32 gesture)
-{    
-	static uint32 volUpdateThreshold = 0;
-	static uint8 prevReport;	
-	static bool volumeReport = false;
-	#if (UP_BUTTON_FUNCTION == MIC_MUTE)
-		static bool micMute;
-	#endif
-	#ifndef VOLUME_BTN_UPDATE
-		int32 volume;
-	#endif
-	
-	switch(capsenseButtonStatus)
-	{
-		case LEFT_BTN_MASK:		
-			audioControlStatus |= MAC_PC_PREVIOUS_TRACK_MASK; 
-			PRINT("Prev Track\n\r");
-		break; 
-		
-		case RIGHT_BTN_MASK:
-			audioControlStatus |= MAC_PC_NEXT_TRACK_MASK; 
-			PRINT("Next Track\n\r");
-			break;
-			
-		case UP_BTN_MASK:
-			
-			#if (UP_BUTTON_FUNCTION == VOLUME_MUTE)
-				audioControlStatus |= MAC_PC_MUTE_MASK; 
-				PRINT("Mute\n\r");
-			#else
-				if(micMute == true)
-				{
-					Codec_MuteMic(false);
-					micMute = false;
-					PRINT("MIC Unmute \n\r");
-				}
-				else
-				{
-					Codec_MuteMic(true);
-					micMute = true;
-					PRINT("MIC Mute \n\r");
-				}
-			#endif
-			break; 
-			
-		case DOWN_BTN_MASK:
-			audioControlStatus |= MAC_PC_STOP_MASK; 
-			PRINT("Stop \n\r");
-			break;
-			
-		case CENTRE_BTN_MASK:
-			audioControlStatus |= MAC_PC_PLAY_PAUSE_MASK; 
-			PRINT("Play/Pause\n\r");
-			break;
-			
-		default:
-			break;
-	}
-	
-	switch(gesture)
-	{	
-		case GESTURE_LEFT_SWIPE:
-			/* Left swipe sends out Previous Track command to computer */
-			PRINT("Left Swipe - Prev Track\n\r");
-			audioControlStatus |= MAC_PC_PREVIOUS_TRACK_MASK; 
-			break;
-			
-		case GESTURE_RIGHT_SWIPE:
-			/* Right swipe sends out Next Track command to computer */
-			PRINT("Right Swipe - Next Track\n\r");
-			audioControlStatus |= MAC_PC_NEXT_TRACK_MASK; 
-			break;
-			
-		case GESTURE_UP_SWIPE:
-			/* Up swipe sends out Volume up command to computer */
-			if(volUpdateThreshold == 0)
-			{
-				/* Send a Volume up command every time the volUpdateThreshold crosses threshold 
-				- This is done to reduce sudden increase in volume because of the gesture */
-				PRINT("Up Swipe - Vol Up\n\r");
-				audioControlStatus |= MAC_PC_VOL_UP_MASK;
-			}
-			
-			volUpdateThreshold++;
-			
-			if(volUpdateThreshold >= VOL_CHANGE_UPDATE_FREQ)
-			{				
-				volUpdateThreshold = 0;				
-			}
-			
-			break;
-			
-		case GESTURE_DOWN_SWIPE:
-			/* Down swipe sends out Volume down command to computer */
-			if(volUpdateThreshold == 0)
-			{
-				/* Send a Volume down command every time the volUpdateThreshold crosses threshold 
-				- This is done to reduce sudden decrease in volume because of the gesture */
-				PRINT("Down Swipe - Vol Down\n\r");
-				audioControlStatus |= MAC_PC_VOL_DOWN_MASK;
-			}
-			
-			volUpdateThreshold++;
-			
-			if(volUpdateThreshold >= VOL_CHANGE_UPDATE_FREQ)
-			{				
-				volUpdateThreshold = 0;				
-			}
-		break;			
-		
-		case GESTURE_OUTER_CLKWISE:
-		case GESTURE_OUTER_COUNTER_CLKWISE:
-			if(volumeReport == false)
-			{
-				volumeReport = true;
-				accTheta = 0;
-			}
-			
-		break;
-			
-			
-		default:
-			volUpdateThreshold = 0;
-			break;
-	}	
-	
-    /* Volume update for circular gestures - Outer clockwise and counter-clockwise */
-	/* Check the volume report flag - this flag is set only when a circular gesture is detected on the slider */
-	if(volumeReport == true)
-	{
-		/* Process the gestures only if the slider is active ==> radius > 2 */
-		if((radius != INVALID_RADIUS) && (radius > 2))
-		{						
-			/* Check accumulated theta value
-				Accumulated theta is positive for counter-clockwise
-				Once accumulated theta crosses a set threshold send a Volume down command */
-			if(accTheta > VOL_CHANGE_THRESHOLD)
-			{
-				accTheta -= VOL_CHANGE_THRESHOLD;
-				audioControlStatus |= MAC_PC_VOL_DOWN_MASK;
-			}
-			
-			/* Accumulated theta is negative for clockwise
-				Once accumulated theta crosses a set threshold send a Volume up command */
-			else if(accTheta < -VOL_CHANGE_THRESHOLD)
-			{
-				accTheta += VOL_CHANGE_THRESHOLD;
-				audioControlStatus |= MAC_PC_VOL_UP_MASK;
-			}			
-		}
-		/* If slider is not active, then clear the volumeReport flag */
-		else
-		{
-			volumeReport = false;
-		}
-	}
-	
-	
-
-	/* If USB is configured and there is an event pending on the HID endpoint, send the HID report */
-    if((IsUSBConfigured()) && (USBFS_GetEPState(MAC_PC_HID_CONTROL_ENDPOINT) == USBFS_EVENT_PENDING) )
-    {
-        /* Send report only if there is a change in data or if data is available */
-		if((prevReport != audioControlStatus) || (audioControlStatus != 0))
-		{			
-			/* Update the report buffer with the data */
-			playlistControlReport = audioControlStatus;
-			
-			/* Store the current data for next comparison */
-			prevReport = audioControlStatus;				
-			
-			/* Clear the report once sent */
-			audioControlStatus = 0;
-			
-			/* Arm the endpoint */			
-			USBFS_LoadInEP(MAC_PC_HID_CONTROL_ENDPOINT, USBFS_NULL, sizeof(playlistControlReport));
-		}
-    }		
-	
 }
 
 /*******************************************************************************
