@@ -1,0 +1,6 @@
+C:\Users\Terence Kim\Documents\PSoC Creator\CY8CKIT_046_USB_Audio01\Icebreaker.cydsn\Icebreaker.cyprj|c2073c52-0a23-49a9-9f55-b164c7ca9100
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|20c3027d-39d6-489b-bd81-20d6d69333e9
+C:\Users\Terence Kim\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|965657bd-e243-45a8-a5b1-28d09881cf2c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|c9945328-4dd3-448e-829e-9d05722ecb69
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|3e9b96bd-ebe0-470c-a937-4e9fad4303f8
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|d307b518-452d-4788-8bb6-c86c270eb25d
