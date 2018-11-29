@@ -45,6 +45,7 @@
 #include <stdio.h>
 #include <USBInterface.h>
 #include <Codec.h>
+#include <TkShell.h>
 
 extern CYPDATA uint8 audioSource;
 extern CYDATA uint8 auxConfigured;
@@ -55,6 +56,8 @@ uint8 playlistControlReport;
 uint8 prevReport = 0;
 uint8 audioControlStatus;
 uint8 reportClearFlag;
+
+char gbuf[256];
 
 extern volatile uint8 USBFS_currentVolume[];
 extern volatile uint8 USBFS_currentMute;
@@ -86,11 +89,11 @@ void InitApp(void)
 		UART_Start();
 		if(CySysGetResetReason(CY_SYS_RESET_SW) != CY_SYS_RESET_SW)
 		{
-			PRINT("\r\nApp Started...\r\n");
+			PRINTF("\r\nApp Started...\r\n");
 		}
 		else
 		{
-			PRINT("\r\nApp Restarted after SW reset...\r\n");
+			PRINTF("\r\nApp Restarted after SW reset...\r\n");
 		}
 	#endif /* #ifdef TXDEBUG */
 
@@ -99,11 +102,11 @@ void InitApp(void)
 	
 	if(Codec_Init() == 0)
 	{
-		PRINT("Codec comm works!... \r\n");
+		PRINTF("Codec comm works!... \r\n");
 	}
 	else
 	{
-		PRINT("Codec comm DOESN'T work!... \r\n");
+		PRINTF("Codec comm DOESN'T work!... \r\n");
 	}
 	
 	Update_VolumeAudioOut();
@@ -148,6 +151,8 @@ void RunApplication(void)
 		/* Update the volume data */
 		Update_VolumeAudioOut();		
 	}
+    
+    TkShellService();
 }
 
 /*******************************************************************************
@@ -208,8 +213,7 @@ uint8 Update_VolumeAudioOut(void)
 			ret = Codec_AdjustBothHeadphoneVolume((uint8)volume);
 			
 			#ifdef TXDEBUG
-				sprintf(str, "Codec vol set to %d \r\n", (int)volume);
-				PRINT(str);
+				PRINTF("Codec vol set to %d \r\n", (int)volume);
 			#endif
 		}
 		
@@ -223,7 +227,7 @@ uint8 Update_VolumeAudioOut(void)
 			if(prevMute != 0)
 			{
 				ret = Codec_AdjustBothHeadphoneVolume(0);
-				PRINT("Muted\r\n");
+				PRINTF("Muted\r\n");
 			}
 			else
 			{
@@ -246,7 +250,7 @@ uint8 Update_VolumeAudioOut(void)
 				
 				#ifdef TXDEBUG
 					sprintf(str, "Unmute - Codec vol set to %d \r\n", (int)volume);
-					PRINT(str);
+					PRINTF(str);
 				#endif
 			}
 		}

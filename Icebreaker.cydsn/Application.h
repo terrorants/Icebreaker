@@ -43,11 +43,24 @@
 		
 	#include "Config.h"
 	#include <UART.h>
+    #include <UART_SPI_UART.h>
+    #include <stdio.h>
+    #include <stdint.h>
+    #include <stdbool.h>
+    #include <stdlib.h>
 		
 	#ifdef TXDEBUG
+        extern char gbuf[];
 		#define PRINT	UART_UartPutString
+        #define PRINTF(...) \
+            do \
+            { \
+                sprintf(gbuf, __VA_ARGS__); \
+                UART_UartPutString(gbuf); \
+            } while (0)
 	#else	
 		#define PRINT(x)
+        #define PRINTF(...)
 	#endif	/* #ifdef TXDEBUG */
 
 	/*  Function Prototype  */

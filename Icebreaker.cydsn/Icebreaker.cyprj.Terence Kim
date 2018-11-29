@@ -11,6 +11,44 @@
 <CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256 type_name="CyDesigner.Common.ProjMgmt.Model.CyConfigDependencies" version="1">
 <dependency_info name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" xml_contents_version="2">
 <CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
+<file name=".\CortexM0\ARM_GCC_541\Debug\TkShell.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\UART.h" />
+<dep name=".\Generated_Source\PSoC4\UART_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\UART_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\UART_SPI_UART.h" />
+<dep name=".\Generated_Source\PSoC4\UART_rx.h" />
+<dep name=".\Generated_Source\PSoC4\UART_rx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\UART_tx.h" />
+<dep name=".\Generated_Source\PSoC4\UART_tx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Application.h" />
+<dep name=".\Config.h" />
+<dep name=".\TkShell.c" />
+<dep name=".\TkShell.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<file name=".\Generated_Source\PSoC4\CyLib.h" />
+<file name=".\Generated_Source\PSoC4\UART.h" />
+<file name=".\Generated_Source\PSoC4\UART_PINS.h" />
+<file name=".\Generated_Source\PSoC4\UART_SCBCLK.h" />
+<file name=".\Generated_Source\PSoC4\UART_SPI_UART.h" />
+<file name=".\Generated_Source\PSoC4\UART_rx.h" />
+<file name=".\Generated_Source\PSoC4\UART_rx_aliases.h" />
+<file name=".\Generated_Source\PSoC4\UART_tx.h" />
+<file name=".\Generated_Source\PSoC4\UART_tx_aliases.h" />
+<file name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<file name=".\Generated_Source\PSoC4\cyfitter.h" />
+<file name=".\Generated_Source\PSoC4\cypins.h" />
+<file name=".\Generated_Source\PSoC4\cytypes.h" />
+<file name=".\Application.h" />
+<file name=".\Config.h" />
+<file name=".\TkShell.c" />
+<file name=".\TkShell.h" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\Application.o">
 <dep name=".\Generated_Source\PSoC4\Async_Feedback_Counter.h" />
 <dep name=".\Generated_Source\PSoC4\AudioClkSel.h" />
@@ -68,7 +106,9 @@
 <dep name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep5_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep7_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_hid.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_midi.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_msc.h" />
@@ -97,6 +137,7 @@
 <dep name=".\Codec.h" />
 <dep name=".\Config.h" />
 <dep name=".\Interrupts.h" />
+<dep name=".\TkShell.h" />
 <dep name=".\USBInterface.h" />
 <dep name=".\cyapicallbacks.h" />
 </file>
@@ -127,23 +168,13 @@
 <file name=".\Generated_Source\PSoC4\Codec_MCLK_aliases.h" />
 <file name=".\Generated_Source\PSoC4\CyDMA.h" />
 <file name=".\Generated_Source\PSoC4\CyFlash.h" />
-<file name=".\Generated_Source\PSoC4\CyLFClk.h" />
-<file name=".\Generated_Source\PSoC4\CyLib.h" />
 <file name=".\Generated_Source\PSoC4\I2S.h" />
 <file name=".\Generated_Source\PSoC4\I2S_PVT.h" />
 <file name=".\Generated_Source\PSoC4\RxDMA.h" />
 <file name=".\Generated_Source\PSoC4\TxDMA.h" />
-<file name=".\Generated_Source\PSoC4\UART.h" />
 <file name=".\Generated_Source\PSoC4\UART_BOOT.h" />
-<file name=".\Generated_Source\PSoC4\UART_PINS.h" />
 <file name=".\Generated_Source\PSoC4\UART_PVT.h" />
-<file name=".\Generated_Source\PSoC4\UART_SCBCLK.h" />
-<file name=".\Generated_Source\PSoC4\UART_SPI_UART.h" />
 <file name=".\Generated_Source\PSoC4\UART_SPI_UART_PVT.h" />
-<file name=".\Generated_Source\PSoC4\UART_rx.h" />
-<file name=".\Generated_Source\PSoC4\UART_rx_aliases.h" />
-<file name=".\Generated_Source\PSoC4\UART_tx.h" />
-<file name=".\Generated_Source\PSoC4\UART_tx_aliases.h" />
 <file name=".\Generated_Source\PSoC4\USBFS.h" />
 <file name=".\Generated_Source\PSoC4\USBFS_Dm.h" />
 <file name=".\Generated_Source\PSoC4\USBFS_Dm_aliases.h" />
@@ -156,7 +187,9 @@
 <file name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
 <file name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
 <file name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
+<file name=".\Generated_Source\PSoC4\USBFS_ep5_dma.h" />
 <file name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
+<file name=".\Generated_Source\PSoC4\USBFS_ep7_dma.h" />
 <file name=".\Generated_Source\PSoC4\USBFS_hid.h" />
 <file name=".\Generated_Source\PSoC4\USBFS_midi.h" />
 <file name=".\Generated_Source\PSoC4\USBFS_msc.h" />
@@ -170,20 +203,14 @@
 <file name=".\Generated_Source\PSoC4\core_cm0_psoc4.h" />
 <file name=".\Generated_Source\PSoC4\cyPm.h" />
 <file name=".\Generated_Source\PSoC4\cy_em_eeprom.h" />
-<file name=".\Generated_Source\PSoC4\cydevice_trm.h" />
 <file name=".\Generated_Source\PSoC4\cydisabledsheets.h" />
-<file name=".\Generated_Source\PSoC4\cyfitter.h" />
 <file name=".\Generated_Source\PSoC4\cyfitter_cfg.h" />
-<file name=".\Generated_Source\PSoC4\cypins.h" />
-<file name=".\Generated_Source\PSoC4\cytypes.h" />
 <file name=".\Generated_Source\PSoC4\isr_RxDMADone.h" />
 <file name=".\Generated_Source\PSoC4\isr_TxDMADone.h" />
 <file name=".\Generated_Source\PSoC4\project.h" />
 <file name=".\Application.c" />
-<file name=".\Application.h" />
 <file name=".\AudioControl.h" />
 <file name=".\Codec.h" />
-<file name=".\Config.h" />
 <file name=".\Interrupts.h" />
 <file name=".\USBInterface.h" />
 <file name=".\cyapicallbacks.h" />
@@ -244,7 +271,9 @@
 <dep name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep5_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep7_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_hid.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_midi.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_msc.h" />
@@ -338,7 +367,9 @@
 <dep name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep5_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep7_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_hid.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_midi.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_msc.h" />
@@ -429,7 +460,9 @@
 <dep name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep5_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep7_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_hid.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_midi.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_msc.h" />
@@ -462,6 +495,25 @@
 <dep name=".\cyapicallbacks.h" />
 </file>
 <file name=".\AudioOut.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\Codec.o">
+<dep name=".\Generated_Source\PSoC4\CodecI2CM.h" />
+<dep name=".\Generated_Source\PSoC4\CodecI2CM_I2C.h" />
+<dep name=".\Generated_Source\PSoC4\CodecI2CM_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\CodecI2CM_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\CodecI2CM_scl.h" />
+<dep name=".\Generated_Source\PSoC4\CodecI2CM_scl_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\CodecI2CM_sda.h" />
+<dep name=".\Generated_Source\PSoC4\CodecI2CM_sda_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Codec.c" />
+<dep name=".\Codec.h" />
+</file>
+<file name=".\Codec.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\Async_Feedback_Counter.o">
 <dep name=".\Generated_Source\PSoC4\Async_Feedback_Counter.h" />
 <dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
@@ -1119,7 +1171,9 @@
 <dep name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep5_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep7_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_hid.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_midi.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_msc.h" />
@@ -1183,7 +1237,9 @@
 <dep name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep5_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep7_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_midi.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_msc.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_pvt.h" />
@@ -1205,7 +1261,9 @@
 <dep name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep5_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep7_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_midi.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_msc.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_pvt.h" />
@@ -1227,7 +1285,9 @@
 <dep name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep5_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep7_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_midi.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_msc.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_pvt.h" />
@@ -1249,7 +1309,9 @@
 <dep name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep5_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep7_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_midi.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_msc.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_pvt.h" />
@@ -1271,7 +1333,9 @@
 <dep name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep5_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep7_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_midi.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_msc.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_pvt.h" />
@@ -1293,7 +1357,9 @@
 <dep name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep5_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep7_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_midi.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_msc.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_pvt.h" />
@@ -1361,7 +1427,9 @@
 <dep name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep5_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep7_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_midi.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_msc.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_pvt.h" />
@@ -1383,7 +1451,9 @@
 <dep name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep5_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep7_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_hid.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_midi.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_msc.h" />
@@ -1406,7 +1476,9 @@
 <dep name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep5_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep7_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_midi.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_msc.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_pvt.h" />
@@ -1428,7 +1500,9 @@
 <dep name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep5_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep7_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_midi.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_msc.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_pvt.h" />
@@ -1452,7 +1526,9 @@
 <dep name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep5_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep7_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_midi.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_msc.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_pvt.h" />
@@ -1475,7 +1551,9 @@
 <dep name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep5_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep7_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_midi.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_msc.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_pvt.h" />
@@ -1497,7 +1575,9 @@
 <dep name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep5_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep7_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_midi.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_msc.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_pvt.h" />
@@ -1650,7 +1730,9 @@
 <dep name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep5_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep7_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_hid.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_midi.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_msc.h" />
@@ -1739,7 +1821,9 @@
 <dep name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep5_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep7_dma.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_hid.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_midi.h" />
 <dep name=".\Generated_Source\PSoC4\USBFS_msc.h" />
@@ -1773,6 +1857,97 @@
 <dep name=".\cyapicallbacks.h" />
 </file>
 <file name=".\USBInterface.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\main.o">
+<dep name=".\Generated_Source\PSoC4\Async_Feedback_Counter.h" />
+<dep name=".\Generated_Source\PSoC4\AudioClkSel.h" />
+<dep name=".\Generated_Source\PSoC4\ByteCounter_Rx.h" />
+<dep name=".\Generated_Source\PSoC4\ByteCounter_Tx.h" />
+<dep name=".\Generated_Source\PSoC4\Clk_Counter.h" />
+<dep name=".\Generated_Source\PSoC4\CodecI2CM.h" />
+<dep name=".\Generated_Source\PSoC4\CodecI2CM_BOOT.h" />
+<dep name=".\Generated_Source\PSoC4\CodecI2CM_I2C.h" />
+<dep name=".\Generated_Source\PSoC4\CodecI2CM_I2C_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\CodecI2CM_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\CodecI2CM_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\CodecI2CM_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\CodecI2CM_SCB_IRQ.h" />
+<dep name=".\Generated_Source\PSoC4\CodecI2CM_scl.h" />
+<dep name=".\Generated_Source\PSoC4\CodecI2CM_scl_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\CodecI2CM_sda.h" />
+<dep name=".\Generated_Source\PSoC4\CodecI2CM_sda_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\Codec_BCLK.h" />
+<dep name=".\Generated_Source\PSoC4\Codec_BCLK_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\Codec_DACDAT.h" />
+<dep name=".\Generated_Source\PSoC4\Codec_DACDAT_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\Codec_LRC.h" />
+<dep name=".\Generated_Source\PSoC4\Codec_LRC_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\Codec_MCLK.h" />
+<dep name=".\Generated_Source\PSoC4\Codec_MCLK_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\CyDMA.h" />
+<dep name=".\Generated_Source\PSoC4\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\I2S.h" />
+<dep name=".\Generated_Source\PSoC4\I2S_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\RxDMA.h" />
+<dep name=".\Generated_Source\PSoC4\TxDMA.h" />
+<dep name=".\Generated_Source\PSoC4\UART.h" />
+<dep name=".\Generated_Source\PSoC4\UART_BOOT.h" />
+<dep name=".\Generated_Source\PSoC4\UART_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\UART_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\UART_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\UART_SPI_UART.h" />
+<dep name=".\Generated_Source\PSoC4\UART_SPI_UART_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\UART_rx.h" />
+<dep name=".\Generated_Source\PSoC4\UART_rx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\UART_tx.h" />
+<dep name=".\Generated_Source\PSoC4\UART_tx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_Dm.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_Dm_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_Dp.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_Dp_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_audio.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_cdc.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_cydmac.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep1_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep5_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_ep7_dma.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_hid.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_midi.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_msc.h" />
+<dep name=".\Generated_Source\PSoC4\USBFS_pvt.h" />
+<dep name=".\Generated_Source\PSoC4\USBInDMA.h" />
+<dep name=".\Generated_Source\PSoC4\USBOutDMA.h" />
+<dep name=".\Generated_Source\PSoC4\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC4\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC4\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC4\core_cm0.h" />
+<dep name=".\Generated_Source\PSoC4\core_cm0_psoc4.h" />
+<dep name=".\Generated_Source\PSoC4\cyPm.h" />
+<dep name=".\Generated_Source\PSoC4\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\isr_RxDMADone.h" />
+<dep name=".\Generated_Source\PSoC4\isr_TxDMADone.h" />
+<dep name=".\Generated_Source\PSoC4\project.h" />
+<dep name=".\Application.h" />
+<dep name=".\AudioControl.h" />
+<dep name=".\Codec.h" />
+<dep name=".\Config.h" />
+<dep name=".\USBInterface.h" />
+<dep name=".\cyapicallbacks.h" />
+<dep name=".\main.c" />
+</file>
+<file name=".\main.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\CyBootAsmGnu.o">
 <dep name=".\Generated_Source\PSoC4\CyBootAsmGnu.s" />
 <dep name=".\Generated_Source\PSoC4\cydevicegnu_trm.inc" />
@@ -1791,25 +1966,6 @@
 <file name=".\Generated_Source\PSoC4\CapSense_SampleClk.h" />
 <file name=".\Generated_Source\PSoC4\CapSense_SenseClk.h" />
 <file name=".\Gesture.h" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\Codec.o">
-<dep name=".\Generated_Source\PSoC4\CodecI2CM.h" />
-<dep name=".\Generated_Source\PSoC4\CodecI2CM_I2C.h" />
-<dep name=".\Generated_Source\PSoC4\CodecI2CM_PINS.h" />
-<dep name=".\Generated_Source\PSoC4\CodecI2CM_SCBCLK.h" />
-<dep name=".\Generated_Source\PSoC4\CodecI2CM_scl.h" />
-<dep name=".\Generated_Source\PSoC4\CodecI2CM_scl_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\CodecI2CM_sda.h" />
-<dep name=".\Generated_Source\PSoC4\CodecI2CM_sda_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
-<dep name=".\Generated_Source\PSoC4\CyLib.h" />
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-<dep name=".\Codec.c" />
-<dep name=".\Codec.h" />
-</file>
-<file name=".\Codec.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\Clock_1.o">
 <dep name=".\Generated_Source\PSoC4\Clock_1.h" />
 <dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
@@ -1890,100 +2046,6 @@
 </file>
 <file name=".\Generated_Source\PSoC4\CapSense_CSHL.h" />
 <file name=".\Gesture.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\main.o">
-<dep name=".\Generated_Source\PSoC4\Async_Feedback_Counter.h" />
-<dep name=".\Generated_Source\PSoC4\AudioClkSel.h" />
-<dep name=".\Generated_Source\PSoC4\ByteCounter_Rx.h" />
-<dep name=".\Generated_Source\PSoC4\ByteCounter_Tx.h" />
-<dep name=".\Generated_Source\PSoC4\Clk_Counter.h" />
-<dep name=".\Generated_Source\PSoC4\Clock_1.h" />
-<dep name=".\Generated_Source\PSoC4\CodecI2CM.h" />
-<dep name=".\Generated_Source\PSoC4\CodecI2CM_BOOT.h" />
-<dep name=".\Generated_Source\PSoC4\CodecI2CM_I2C.h" />
-<dep name=".\Generated_Source\PSoC4\CodecI2CM_I2C_PVT.h" />
-<dep name=".\Generated_Source\PSoC4\CodecI2CM_PINS.h" />
-<dep name=".\Generated_Source\PSoC4\CodecI2CM_PVT.h" />
-<dep name=".\Generated_Source\PSoC4\CodecI2CM_SCBCLK.h" />
-<dep name=".\Generated_Source\PSoC4\CodecI2CM_SCB_IRQ.h" />
-<dep name=".\Generated_Source\PSoC4\CodecI2CM_scl.h" />
-<dep name=".\Generated_Source\PSoC4\CodecI2CM_scl_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\CodecI2CM_sda.h" />
-<dep name=".\Generated_Source\PSoC4\CodecI2CM_sda_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\Codec_BCLK.h" />
-<dep name=".\Generated_Source\PSoC4\Codec_BCLK_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\Codec_DACDAT.h" />
-<dep name=".\Generated_Source\PSoC4\Codec_DACDAT_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\Codec_LRC.h" />
-<dep name=".\Generated_Source\PSoC4\Codec_LRC_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\Codec_MCLK.h" />
-<dep name=".\Generated_Source\PSoC4\Codec_MCLK_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\CyDMA.h" />
-<dep name=".\Generated_Source\PSoC4\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
-<dep name=".\Generated_Source\PSoC4\CyLib.h" />
-<dep name=".\Generated_Source\PSoC4\I2S.h" />
-<dep name=".\Generated_Source\PSoC4\I2S_PVT.h" />
-<dep name=".\Generated_Source\PSoC4\LED_BLUE.h" />
-<dep name=".\Generated_Source\PSoC4\LED_BLUE_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\PWM.h" />
-<dep name=".\Generated_Source\PSoC4\RxDMA.h" />
-<dep name=".\Generated_Source\PSoC4\TC_ISR.h" />
-<dep name=".\Generated_Source\PSoC4\TxDMA.h" />
-<dep name=".\Generated_Source\PSoC4\UART.h" />
-<dep name=".\Generated_Source\PSoC4\UART_BOOT.h" />
-<dep name=".\Generated_Source\PSoC4\UART_PINS.h" />
-<dep name=".\Generated_Source\PSoC4\UART_PVT.h" />
-<dep name=".\Generated_Source\PSoC4\UART_SCBCLK.h" />
-<dep name=".\Generated_Source\PSoC4\UART_SPI_UART.h" />
-<dep name=".\Generated_Source\PSoC4\UART_SPI_UART_PVT.h" />
-<dep name=".\Generated_Source\PSoC4\UART_rx.h" />
-<dep name=".\Generated_Source\PSoC4\UART_rx_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\UART_tx.h" />
-<dep name=".\Generated_Source\PSoC4\UART_tx_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\USBFS.h" />
-<dep name=".\Generated_Source\PSoC4\USBFS_Dm.h" />
-<dep name=".\Generated_Source\PSoC4\USBFS_Dm_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\USBFS_Dp.h" />
-<dep name=".\Generated_Source\PSoC4\USBFS_Dp_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\USBFS_audio.h" />
-<dep name=".\Generated_Source\PSoC4\USBFS_cdc.h" />
-<dep name=".\Generated_Source\PSoC4\USBFS_cydmac.h" />
-<dep name=".\Generated_Source\PSoC4\USBFS_ep1_dma.h" />
-<dep name=".\Generated_Source\PSoC4\USBFS_ep2_dma.h" />
-<dep name=".\Generated_Source\PSoC4\USBFS_ep3_dma.h" />
-<dep name=".\Generated_Source\PSoC4\USBFS_ep4_dma.h" />
-<dep name=".\Generated_Source\PSoC4\USBFS_ep6_dma.h" />
-<dep name=".\Generated_Source\PSoC4\USBFS_hid.h" />
-<dep name=".\Generated_Source\PSoC4\USBFS_midi.h" />
-<dep name=".\Generated_Source\PSoC4\USBFS_msc.h" />
-<dep name=".\Generated_Source\PSoC4\USBFS_pvt.h" />
-<dep name=".\Generated_Source\PSoC4\USBInDMA.h" />
-<dep name=".\Generated_Source\PSoC4\USBOutDMA.h" />
-<dep name=".\Generated_Source\PSoC4\cmsis_armcc.h" />
-<dep name=".\Generated_Source\PSoC4\cmsis_compiler.h" />
-<dep name=".\Generated_Source\PSoC4\cmsis_gcc.h" />
-<dep name=".\Generated_Source\PSoC4\core_cm0.h" />
-<dep name=".\Generated_Source\PSoC4\core_cm0_psoc4.h" />
-<dep name=".\Generated_Source\PSoC4\cyPm.h" />
-<dep name=".\Generated_Source\PSoC4\cy_em_eeprom.h" />
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cydisabledsheets.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter_cfg.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-<dep name=".\Generated_Source\PSoC4\isr_RxDMADone.h" />
-<dep name=".\Generated_Source\PSoC4\isr_TxDMADone.h" />
-<dep name=".\Generated_Source\PSoC4\project.h" />
-<dep name=".\Application.h" />
-<dep name=".\AudioControl.h" />
-<dep name=".\Codec.h" />
-<dep name=".\Config.h" />
-<dep name=".\USBInterface.h" />
-<dep name=".\cyapicallbacks.h" />
-<dep name=".\main.c" />
-</file>
-<file name=".\main.c" />
 <file name=".\Generated_Source\PSoC4\CapSense_PVT.h" />
 <file name=".\Generated_Source\PSoC4\CapSense_SMS.h" />
 <file name=".\Generated_Source\PSoC4\CapSense_Sns_aliases.h" />
@@ -2144,6 +2206,7 @@
 <dep name=".\CortexM0\ARM_GCC_541\Debug\AudioOut.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\Interrupts.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\USBInterface.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\TkShell.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\cymetadata.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\USBOutDMA.o" />
@@ -2349,6 +2412,7 @@
 <name_val_pair name="Generated_Source\PSoC4\UART_rx.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC4\UART_rx_PM.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="C:\dev\git\Icebreaker\Icebreaker.cydsn\CortexM0\ARM_GCC_541\Debug\Icebreaker.hex" v="-mcpu=cortex-m0 -mthumb -L Generated_Source\PSoC4 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name="TkShell.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -Og" />
 </name>
 </genericCmdLineData>
 <codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\Terence Kim\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\dev\git\Icebreaker\Icebreaker.cydsn\Icebreaker.cyprj -d CY8C4246AZI-L433 -s C:\dev\git\Icebreaker\Icebreaker.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
@@ -2366,7 +2430,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="131877876293087971" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="131879968133385513" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>
@@ -2418,6 +2482,21 @@
 <CyGuid_50eb6c77-9735-4e57-8808-b714f60fbc0d type_name="CyDesigner.Device.FitterPSoC.Common.DesignWideResources.DeviceEditor.CyItemState" version="1" Name="\CapSense:Net_245_0\" Color="-8213505" />
 </ComponentStates>
 </CyGuid_d442b0b8-dd66-4eee-b5be-1cb213792b31>
+</dataGuid>
+<dataGuid v="504337dd-7d07-4bc7-9057-90e60cf6c469">
+<CyGuid_504337dd-7d07-4bc7-9057-90e60cf6c469 type_name="CyDesigner.Common.Debugger.CyBreakpointList" version="1">
+<debugger_breakpoint_list>
+<CyGuid_76464711-0ae1-4583-b869-f07a0403fc6e type_name="CyDesigner.Common.Debugger.CyFileLineBreakpoint" version="1" hitcount="0" condition="" enabled="True" hardware="True" temparary="False" filename=".\Codec.c" linenumber="117" />
+<CyGuid_76464711-0ae1-4583-b869-f07a0403fc6e type_name="CyDesigner.Common.Debugger.CyFileLineBreakpoint" version="1" hitcount="0" condition="" enabled="True" hardware="True" temparary="False" filename=".\Codec.c" linenumber="114" />
+</debugger_breakpoint_list>
+</CyGuid_504337dd-7d07-4bc7-9057-90e60cf6c469>
+</dataGuid>
+<dataGuid v="bf610382-39c6-441f-80b8-b04622ea7845">
+<CyGuid_bf610382-39c6-441f-80b8-b04622ea7845 type_name="CyDesigner.Common.Debugger.CyWatchedVariableList" version="1">
+<debugger_watch_list>
+<CyGuid_ccf7a56e-c00d-460c-82dd-56c8f54feb7f type_name="CyDesigner.Common.Debugger.CyWatchedVariableList+CyWatchedItem" version="1" window="0" name="__tk_shell_verbs_gpio" radix="Default" />
+</debugger_watch_list>
+</CyGuid_bf610382-39c6-441f-80b8-b04622ea7845>
 </dataGuid>
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>

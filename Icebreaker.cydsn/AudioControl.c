@@ -184,12 +184,12 @@ void HandleSamplingFrequencyChangeRequest(void)
             if(SAMPLING_RATE_48KHZ == newFrequency)
             {
                 newRate = RATE_48KHZ;
-				PRINT("Sampling Rate Change Request: 48 ksps \r\n");
+				PRINTF("Sampling Rate Change Request: 48 ksps: %lu\r\n", newFrequency);
             }
             else if(SAMPLING_RATE_44KHZ == newFrequency)
             {
                 newRate = RATE_44KHZ;
-				PRINT("Sampling Rate Change Request: 44.1 ksps \r\n");
+				PRINTF("Sampling Rate Change Request: 44.1 ksps \r\n");
             }
                 
             if(setRate != newRate)

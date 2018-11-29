@@ -62,7 +62,7 @@ int main()
 	/* Setup the Application part of the firmware */
     InitApp();
 	
-	PRINT("InitApp Complete\r\n");
+	PRINTF("InitApp Complete\r\n");
 	
     for(;;)
     {
@@ -81,20 +81,20 @@ int main()
 				if(usbEnumFlag == FALSE)
 				{
 					usbEnumFlag = TRUE; 
-					PRINT("USB Enumeration Done\r\n");
+					PRINTF("USB Enumeration Done\r\n");
 				}
 	        }	
 		}
 		else
 		{		
 			/* Do not operate the device when VBUS is absent */			
-			PRINT("USB Disconnected \r\n");	
+			PRINTF("USB Disconnected \r\n");	
 			
 			/* Wait till the USB is connected again */
 			while(USBFS_VBusPresent() == FALSE);
 			
 			/* Do a software reset once VBUS is connected to properly reinitialize USB, DMA and I2S components */
-			PRINT("USB Reconnected - SW reset \r\n");
+			PRINTF("USB Reconnected - SW reset \r\n");
             #ifdef TXDEBUG
 			    while(UART_SpiUartGetTxBufferSize() != 0);
             #endif
