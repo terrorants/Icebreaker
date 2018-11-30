@@ -44,8 +44,8 @@ const uint8 CYCODE USBFS_DEVICE0_DESCR[18u] = {
 /* idVendor                                */ 0xB4u, 0x04u,
 /* idProduct                               */ 0x44u, 0xF1u,
 /* bcdDevice                               */ 0x01u, 0x00u,
-/* iManufacturer                           */ 0x01u,
-/* iProduct                                */ 0x02u,
+/* iManufacturer                           */ 0x0Au,
+/* iProduct                                */ 0x09u,
 /* iSerialNumber                           */ 0x80u,
 /* bNumConfigurations                      */ 0x01u
 };
@@ -333,7 +333,7 @@ const uint8 CYCODE USBFS_DEVICE0_CONFIGURATION0_DESCR[231u] = {
 /*********************************************************************
 * String Descriptor Table
 *********************************************************************/
-const uint8 CYCODE USBFS_STRING_DESCRIPTORS[227u] = {
+const uint8 CYCODE USBFS_STRING_DESCRIPTORS[283u] = {
 /*********************************************************************
 * Language ID Descriptor
 *********************************************************************/
@@ -404,6 +404,22 @@ const uint8 CYCODE USBFS_STRING_DESCRIPTORS[227u] = {
  (uint8)'P', 0u,(uint8)'l', 0u,(uint8)'a', 0u,(uint8)'y', 0u,(uint8)'l', 0u,
  (uint8)'i', 0u,(uint8)'s', 0u,(uint8)'t', 0u,(uint8)'C', 0u,(uint8)'o', 0u,
  (uint8)'n', 0u,(uint8)'t', 0u,(uint8)'r', 0u,(uint8)'o', 0u,(uint8)'l', 0u,
+/*********************************************************************
+* String Descriptor: "Icebreaker"
+*********************************************************************/
+/* Descriptor Length                       */ 0x16u,
+/* DescriptorType: STRING                  */ 0x03u,
+ (uint8)'I', 0u,(uint8)'c', 0u,(uint8)'e', 0u,(uint8)'b', 0u,(uint8)'r', 0u,
+ (uint8)'e', 0u,(uint8)'a', 0u,(uint8)'k', 0u,(uint8)'e', 0u,(uint8)'r', 0u,
+/*********************************************************************
+* String Descriptor: "Tiger DesignLabs"
+*********************************************************************/
+/* Descriptor Length                       */ 0x22u,
+/* DescriptorType: STRING                  */ 0x03u,
+ (uint8)'T', 0u,(uint8)'i', 0u,(uint8)'g', 0u,(uint8)'e', 0u,(uint8)'r', 0u,
+ (uint8)' ', 0u,(uint8)'D', 0u,(uint8)'e', 0u,(uint8)'s', 0u,(uint8)'i', 0u,
+ (uint8)'g', 0u,(uint8)'n', 0u,(uint8)'L', 0u,(uint8)'a', 0u,(uint8)'b', 0u,
+ (uint8)'s', 0u,
 /*********************************************************************/
 /* Marks the end of the list.              */ 0x00u};
 /*********************************************************************/
