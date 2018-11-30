@@ -52,3 +52,11 @@ Mkfile.old
 dkms.conf
 
 *.lst
+Icebreaker.cydsn/codegentemp/
+*.html
+*.log
+Icebreaker.cydsn/CortexM0/ARM_GCC_541/Debug/.deps
+*.cycdx
+*.rpt
+*.svd
+*.Terence Kim
