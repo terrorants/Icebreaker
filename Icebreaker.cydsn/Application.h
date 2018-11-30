@@ -130,6 +130,10 @@
 		#define STOP_BTN	CapSense_DOWN__BTN
 		#define MUTE_BTN	CapSense_UP__BTN
 	#endif
+    
+    extern volatile uint32_t sys_tick;
+    extern volatile uint32_t pwm_period;
+    extern volatile uint8_t  pwm_duty_cycle;
 
 #endif /* #ifndef APP_H */
 

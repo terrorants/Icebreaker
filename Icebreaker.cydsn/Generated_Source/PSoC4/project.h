@@ -59,6 +59,8 @@
 #include "CodecI2CM_PVT.h"
 #include "CodecI2CM_BOOT.h"
 #include "AudioClkSel.h"
+#include "LED_BLUE.h"
+#include "LED_BLUE_aliases.h"
 #include "USBFS_ep6_dma.h"
 #include "USBFS_ep4_dma.h"
 #include "USBFS_ep3_dma.h"

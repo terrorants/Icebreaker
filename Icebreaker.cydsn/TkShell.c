@@ -77,10 +77,28 @@ static TK_SHELL_VERBS(wm) =
     { "", NULL }
 };
 
+TK_SHELL_METHOD(sys, crash);
+TK_SHELL_METHOD(sys, info);
+static TK_SHELL_VERBS(sys) = 
+{
+    TK_SHELL_VERB(sys, crash),
+    TK_SHELL_VERB(sys, info),
+    { "", NULL }
+};
+
+TK_SHELL_METHOD(led, pwm);
+static TK_SHELL_VERBS(led) =
+{
+    TK_SHELL_VERB(led, pwm),
+    { "", NULL }
+};
+
 static const tk_shell_command_s commands[] = 
 {
     TK_SHELL_COMMAND(gpio),
     TK_SHELL_COMMAND(wm),
+    TK_SHELL_COMMAND(sys),
+    TK_SHELL_COMMAND(led),
     { "", NULL }
 };
 
@@ -257,6 +275,43 @@ TK_SHELL_METHOD(wm, reg_rd)
     
     PRINTF("> wm:ok 0x%04X\n", Codec_GetData(reg));
     
+    return 0;
+}
+
+TK_SHELL_METHOD(sys, crash)
+{
+    void (*fp)(void) = NULL;
+    
+    fp();
+    
+    PRINTF("> sys:er\n");
+    
+    return 0;
+}
+
+TK_SHELL_METHOD(sys, info)
+{
+    PRINTF("> sys:ok %08lu\n", sys_tick);
+
+    return 0;
+}
+
+TK_SHELL_METHOD(led, pwm)
+{
+    int i = 2;
+    
+    argc -= i;
+    
+    if (argc != 2)
+    {
+        PRINTF("Invalid number of arguments!\n");
+        return -1;
+    }
+    pwm_period = atoi(argv[2]);
+    pwm_duty_cycle = atoi(argv[3]);
+    
+    PRINTF("> led:ok\n");
+
     return 0;
 }
 
