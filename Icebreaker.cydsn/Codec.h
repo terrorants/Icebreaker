@@ -168,6 +168,7 @@
 	uint8 Codec_Init(void);
 	uint8 Codec_SelectMicInputToADC(void);
 	uint8 Codec_AdjustBothHeadphoneVolume(uint8 volume);
+    uint8 Codec_GetHeadphoneVolume(void);
 	uint8 Codec_MuteMic(_Bool isMuteOrUnmute);
     uint8 Codec_SetMicBoost(_Bool micBoost);
 	uint8 Codec_SetSamplingRate(uint8 srCtrlField);
@@ -175,6 +176,7 @@
 	uint8 Codec_Deactivate(void);
 	uint8 Codec_ResetOverI2C(void);
 	uint8 Codec_SendData(uint8 regAddr, uint16 data);
+    uint16 Codec_GetData(uint8 regAddr);
     uint8 Codec_PowerOffControl(uint32 powerOffMask);
     uint8 Codec_PowerOnControl(uint32 powerOnMask);
 		

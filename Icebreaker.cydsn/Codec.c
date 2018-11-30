@@ -45,6 +45,14 @@
 #define I2C_WRITE_OPERATION		(0x00)
 #define I2C_TIMEOUT_MS          (0x64)
 
+typedef struct
+{
+    uint8_t volume;
+    uint16_t reg[16];
+} codec_data_s;
+
+static codec_data_s codec_data;
+
 static uint16 Codec_analogPathSetting = CODEC_DEF_ANALOG_CTRL;
 uint32 Codec_powerControlSetting = CODEC_DEF_POWER_CTRL;
 
@@ -126,8 +134,18 @@ uint8 Codec_SendData(uint8 regAddr, uint16 data)
 			}
 		}
 	}
+    
+    if (temp == CodecI2CM_I2C_MSTR_NO_ERROR)
+    {
+        codec_data.reg[regAddr] = data;
+    }
 
 	return temp;
+}
+
+uint16 Codec_GetData(uint8 regAddr)
+{
+    return codec_data.reg[regAddr];
 }
 
 /*******************************************************************************
@@ -192,7 +210,14 @@ uint8 Codec_AdjustBothHeadphoneVolume(uint8 volume)
 		volume = CODEC_HP_VOLUME_MAX;
 	}
 	
+    codec_data.volume = volume;
+
 	return Codec_SendData(CODEC_REG_LHPOUT, (volume + (CODEC_LHPOUT_BOTH + CODEC_LHPOUT_LZCEN + CODEC_HP_MUTE_VALUE)));
+}
+
+uint8 Codec_GetHeadphoneVolume(void)
+{
+    return codec_data.volume;
 }
 
 /*******************************************************************************

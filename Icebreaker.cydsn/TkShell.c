@@ -13,11 +13,12 @@
 #include <Application.h>
 #include <ctype.h>
 #include "TkShell.h"
+#include <Codec.h>
 
-#define TK_SHELL_METHOD(c, verb)   int __tk_shell_ ## c ## _ ## verb(int __unused argc, char __unused **argv)
-#define TK_SHELL_COMMAND(name)       {#name, (tk_shell_command_verb_s *)__tk_shell_verbs_ ## name}
-#define TK_SHELL_VERBS(name)         __tk_shell_verbs_ ## name 
-#define TK_SHELL_VERB(c, name)     {#name, __tk_shell_ ## c ## _ ## name}
+#define TK_SHELL_METHOD(c, verb)        int __tk_shell_ ## c ## _ ## verb(int __unused argc, char __unused **argv)
+#define TK_SHELL_COMMAND(name)          {#name, (tk_shell_command_verb_s *)__tk_shell_verbs_ ## name}
+#define TK_SHELL_VERBS(name)            const tk_shell_command_verb_s __tk_shell_verbs_ ## name[] 
+#define TK_SHELL_VERB(c, name)          {#name, __tk_shell_ ## c ## _ ## name}
 
 #define CMD_BUF_LEN 64
 #define TK_SHELL_MAX_ARGS 10
@@ -52,11 +53,10 @@ static const uint32_t reg_lookup[] =
     CYREG_PRT12_DR, // 12
     CYREG_PRT13_DR, // 13
 };
-static TK_SHELL_METHOD(gpio, set);
-static TK_SHELL_METHOD(gpio, config);
-static TK_SHELL_METHOD(gpio, get);
-
-static const tk_shell_command_verb_s TK_SHELL_VERBS(gpio)[] =
+TK_SHELL_METHOD(gpio, set);
+TK_SHELL_METHOD(gpio, config);
+TK_SHELL_METHOD(gpio, get);
+static TK_SHELL_VERBS(gpio) =
 {
     TK_SHELL_VERB(gpio, set),
     TK_SHELL_VERB(gpio, config),
@@ -64,9 +64,23 @@ static const tk_shell_command_verb_s TK_SHELL_VERBS(gpio)[] =
     { "", NULL }
 };
 
+TK_SHELL_METHOD(wm, vol_set);
+TK_SHELL_METHOD(wm, vol_get);
+TK_SHELL_METHOD(wm, reg_wr);
+TK_SHELL_METHOD(wm, reg_rd);
+static TK_SHELL_VERBS(wm) =
+{
+    TK_SHELL_VERB(wm, vol_set),
+    TK_SHELL_VERB(wm, vol_get),
+    TK_SHELL_VERB(wm, reg_wr),
+    TK_SHELL_VERB(wm, reg_rd),
+    { "", NULL }
+};
+
 static const tk_shell_command_s commands[] = 
 {
     TK_SHELL_COMMAND(gpio),
+    TK_SHELL_COMMAND(wm),
     { "", NULL }
 };
 
@@ -84,7 +98,7 @@ int strcicmp(char const *a, char const *b)
     }
 }
 
-static TK_SHELL_METHOD(gpio, set)
+TK_SHELL_METHOD(gpio, set)
 {
     uint32_t port, pin, state;
     int i = 2;
@@ -116,7 +130,7 @@ static TK_SHELL_METHOD(gpio, set)
     return 0;
 }
 
-static TK_SHELL_METHOD(gpio, config)
+TK_SHELL_METHOD(gpio, config)
 {
     uint32_t port, pin, mode;
     int i = 2;
@@ -138,7 +152,7 @@ static TK_SHELL_METHOD(gpio, config)
     return 0;
 }
 
-static TK_SHELL_METHOD(gpio, get)
+TK_SHELL_METHOD(gpio, get)
 {
     uint32_t port, pin;
     int i = 2;
@@ -155,6 +169,93 @@ static TK_SHELL_METHOD(gpio, get)
     pin = atoi(argv[i]);
     
     PRINTF("> gpio:ok %d\n", (int)CY_SYS_PINS_READ_PIN(reg_lookup[port], pin));
+    
+    return 0;
+}
+
+TK_SHELL_METHOD(wm, vol_set)
+{
+    int vol;
+    int i = 2;
+    uint8_t rv;
+    
+    argc -= i;
+    
+    if (argc != 1)
+    {
+        PRINTF("Invalid number of arguments!\n");
+        return -1;
+    }
+
+    vol = atoi(argv[i++]);
+
+    if ((rv = Codec_AdjustBothHeadphoneVolume(vol)) == 0)
+    {
+        PRINTF("> wm:ok\n");
+    }
+    else
+    {
+        PRINTF("> wm:er %d\n", rv);
+        return -2;
+    }
+
+    return 0;
+}
+
+TK_SHELL_METHOD(wm, vol_get)
+{
+    PRINTF("> wm:ok %d\n", (int)Codec_GetHeadphoneVolume());
+
+    return 0;
+}
+
+TK_SHELL_METHOD(wm, reg_wr)
+{
+    int i = 2;
+    uint8_t reg;
+    uint16_t data;
+    int rv;
+    
+    argc -= i;
+    
+    if (argc != 2)
+    {
+        PRINTF("Invalid number of arguments!\n");
+        return -1;
+    }
+    
+    reg = atoi(argv[i++]);
+    data = strtoul(argv[i++], NULL, 16);
+    
+    if ((rv = Codec_SendData(reg, data)) == 0)
+    {
+        PRINTF("> wm:ok\n");
+    }
+    else
+    {
+        PRINTF("> wm:er %d\n", rv);
+        return -2;
+    }
+    
+    return 0;
+}
+
+TK_SHELL_METHOD(wm, reg_rd)
+{
+    int i = 2;
+    uint8_t reg;
+    
+    argc -= i;
+    
+    if (argc != 1)
+    {
+        PRINTF("Invalid number of arguments!\n");
+        return -1;
+    }
+    
+    reg = atoi(argv[i++]);
+    
+    PRINTF("> wm:ok 0x%04X\n", Codec_GetData(reg));
     
     return 0;
 }
@@ -206,11 +307,15 @@ static int TkShellProcessCommand(void)
         {
             if (strcicmp(argv[0], commands[i].name) == 0)
             {
-                while (strcicmp(commands[i].verbs[j].name, "") != 0)
+                while (strcmp(commands[i].verbs[j].name, "") != 0)
                 {
-                    retval = commands[i].verbs[j].func(argc, argv);
-                    found = true;
-                    break;
+                    if (strcicmp(argv[1], commands[i].verbs[j].name) == 0)
+                    {
+                        retval = commands[i].verbs[j].func(argc, argv);
+                        found = true;
+                        break;
+                    }
+                    j++;
                 }
 
                 if (found)
@@ -218,6 +323,7 @@ static int TkShellProcessCommand(void)
                     break;
                 }
             }
+            i++;
         }
     }
     
