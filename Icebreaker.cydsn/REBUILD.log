@@ -1,4 +1,4 @@
---------------- Rebuild Started: 11/29/2018 03:33:29 Project: Icebreaker, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Rebuild Started: 11/29/2018 17:28:06 Project: Icebreaker, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\main.o"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\Codec.o"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\Application.o"
@@ -218,6 +218,6 @@ No ELF section .cychecksum found, creating one
 Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
 cyelftool.exe -S C:\dev\git\Icebreaker\Icebreaker.cydsn\CortexM0\ARM_GCC_541\Debug\Icebreaker.elf
-Flash used: 27366 of 65536 bytes (41.8%).
+Flash used: 27422 of 65536 bytes (41.8%).
 SRAM used: 6440 of 8192 bytes (78.6%). Stack: 2048 bytes. Heap: 128 bytes.
---------------- Rebuild Succeeded: 11/29/2018 03:34:03 ---------------
+--------------- Rebuild Succeeded: 11/29/2018 17:28:42 ---------------
