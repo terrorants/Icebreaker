@@ -127,6 +127,8 @@ void InitApp(void)
 	USBFS_LoadInEP(MAC_PC_HID_CONTROL_ENDPOINT, USBFS_NULL, sizeof(playlistControlReport) );	
 	
 	Async_Feedback_Counter_Start();
+    
+    TkShellInit();
 }
 
 

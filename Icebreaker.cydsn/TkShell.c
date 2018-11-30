@@ -79,10 +79,12 @@ static TK_SHELL_VERBS(wm) =
 
 TK_SHELL_METHOD(sys, crash);
 TK_SHELL_METHOD(sys, info);
+TK_SHELL_METHOD(sys, reset);
 static TK_SHELL_VERBS(sys) = 
 {
     TK_SHELL_VERB(sys, crash),
     TK_SHELL_VERB(sys, info),
+    TK_SHELL_VERB(sys, reset),
     { "", NULL }
 };
 
@@ -291,8 +293,15 @@ TK_SHELL_METHOD(sys, crash)
 
 TK_SHELL_METHOD(sys, info)
 {
-    PRINTF("> sys:ok %08lu\n", sys_tick);
+    PRINTF("> sys:ok %08lu\n", (unsigned long)sys_tick);
 
+    return 0;
+}
+
+TK_SHELL_METHOD(sys, reset)
+{
+    CySoftwareReset();
+    
     return 0;
 }
 
