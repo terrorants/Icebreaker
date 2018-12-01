@@ -46,6 +46,7 @@
 #include <USBInterface.h>
 #include <Codec.h>
 #include <TkShell.h>
+#include <VolumeControl.h>
 
 extern CYPDATA uint8 audioSource;
 extern CYDATA uint8 auxConfigured;
@@ -129,6 +130,8 @@ void InitApp(void)
 	Async_Feedback_Counter_Start();
     
     TkShellInit();
+    
+    VolumeControlInit();
 }
 
 
@@ -151,10 +154,11 @@ void RunApplication(void)
 	if(USBFS_GetConfiguration() == TRUE)
 	{
 		/* Update the volume data */
-		Update_VolumeAudioOut();		
+		//Update_VolumeAudioOut();		
 	}
     
     TkShellService();
+    VolumeControlService();
 }
 
 /*******************************************************************************

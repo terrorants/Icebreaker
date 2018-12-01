@@ -14,6 +14,7 @@
 #include <ctype.h>
 #include "TkShell.h"
 #include <Codec.h>
+#include <VolumeControl.h>
 
 #define TK_SHELL_METHOD(c, verb)        int __tk_shell_ ## c ## _ ## verb(int __unused argc, char __unused **argv)
 #define TK_SHELL_COMMAND(name)          {#name, (tk_shell_command_verb_s *)__tk_shell_verbs_ ## name}
@@ -80,11 +81,13 @@ static TK_SHELL_VERBS(wm) =
 TK_SHELL_METHOD(sys, crash);
 TK_SHELL_METHOD(sys, info);
 TK_SHELL_METHOD(sys, reset);
+TK_SHELL_METHOD(sys, adc);
 static TK_SHELL_VERBS(sys) = 
 {
     TK_SHELL_VERB(sys, crash),
     TK_SHELL_VERB(sys, info),
     TK_SHELL_VERB(sys, reset),
+    TK_SHELL_VERB(sys, adc),
     { "", NULL }
 };
 
@@ -301,6 +304,13 @@ TK_SHELL_METHOD(sys, info)
 TK_SHELL_METHOD(sys, reset)
 {
     CySoftwareReset();
+    
+    return 0;
+}
+
+TK_SHELL_METHOD(sys, adc)
+{
+    PRINTF("> sys:ok %d,%d\n", adcSampleR, adcSampleL);
     
     return 0;
 }
