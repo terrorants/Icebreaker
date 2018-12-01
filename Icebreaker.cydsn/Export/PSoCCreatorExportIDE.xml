@@ -248,16 +248,20 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ADC.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ADC_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ADC_INT.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\V1.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\V1.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\V1_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\V1_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DMA.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\DMA.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ADC_IRQ.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ADC_IRQ.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ADC_intClock.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ADC_intClock.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\POTR.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\POTR.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\POTR_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\POTR_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\POTL.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\POTL.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\POTL_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\POTL_PM.c</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">

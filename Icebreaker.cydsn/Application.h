@@ -134,7 +134,6 @@
     extern volatile uint32_t sys_tick;
     extern volatile uint32_t pwm_period;
     extern volatile uint8_t  pwm_duty_cycle;
-    extern int16 adcSample;
 
 #endif /* #ifndef APP_H */
 

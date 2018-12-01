@@ -310,7 +310,7 @@ TK_SHELL_METHOD(sys, reset)
 
 TK_SHELL_METHOD(sys, adc)
 {
-    PRINTF("> sys:ok %d,%d\n", adcSampleR, adcSampleL);
+    PRINTF("> sys:ok %d,%d\n", adcSample[vol_ctrl_left], adcSample[vol_ctrl_right]);
     
     return 0;
 }

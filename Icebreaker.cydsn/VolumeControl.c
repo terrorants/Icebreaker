@@ -17,14 +17,13 @@
 #include <Codec.h>
 #include <USBFS.h>
 
-#define ADC_MIN_READING_R         -2
-#define ADC_MAX_READING_R         2047
+int32 ADC_MIN_READING[vol_ctrl_both] = { -2, -2 };
+int32 ADC_MAX_READING[vol_ctrl_both] = { 2047, 2047 };
 
-#define ADC_READING_RANGE_R       (ADC_MAX_READING_R - ADC_MIN_READING_R)
+#define ADC_READING_RANGE(side)       (ADC_MAX_READING[side] - ADC_MIN_READING[side])
 
 /* ADC measurement status and result */
-int16_t   adcSampleR = 0;
-int16_t   adcSampleL = 0;
+int16   adcSample[vol_ctrl_both] = { 0, 0 };
 
 CY_ISR(DmaIntHandler)
 {
@@ -39,7 +38,7 @@ void VolumeControlInit(void)
     /* Configure DMA source and destination locations to transfer from
     * ADC data register to memory variable.
     */
-    DMA_Start((void *)ADC_SAR_CHAN0_RESULT_PTR, (void *)&adcSampleR);
+    DMA_Start((void *)ADC_SAR_CHAN0_RESULT_PTR, (void *)adcSample);
     
     DMA_SetInterruptCallback(DmaIntHandler);
 
@@ -49,33 +48,32 @@ void VolumeControlInit(void)
 
 void VolumeControlService(void)
 {
-    static int32_t prevVol = 0;
-    int32_t volume;
-    uint8_t ret = 0;
+    static int32 prevVol[vol_ctrl_both] = { 0, 0 };
+    int32 volume[vol_ctrl_both] = { 0, 0 };
+    int i;
 
-    /* Process volume control only when USB bus is idle */
-	if(USBFS_TRANS_STATE_IDLE == USBFS_transferState)
+    for (i = 0; i < vol_ctrl_both; i++)
 	{
         // Scale ADC reading to USBFS volume range
-        volume = (adcSampleR - ADC_MIN_READING_R) * PC_VOLUME_MSB_MAX / ADC_READING_RANGE_R;
+        volume[i] = (adcSample[i] - ADC_MIN_READING[i]) * PC_VOLUME_MSB_MAX / ADC_READING_RANGE(i);
 
         /* Filter volume to be in the expected range */
-		if((volume > PC_VOLUME_MSB_MIN) && (volume <= PC_VOLUME_MSB_MAX))
+		if((volume[i] > PC_VOLUME_MSB_MIN) && (volume[i] <= PC_VOLUME_MSB_MAX))
 		{
-			volume = (uint8)(((volume - PC_VOLUME_MSB_MIN) * CODEC_HP_VOLUME_MAX) / (PC_VOLUME_MSB_MAX - PC_VOLUME_MSB_MIN));	 
+			volume[i] = (uint8)(((volume[i] - PC_VOLUME_MSB_MIN) * CODEC_HP_VOLUME_MAX) / (PC_VOLUME_MSB_MAX - PC_VOLUME_MSB_MIN));	 
 		}
 		else
 		{
 			/* Set volume to 0 if the volume from PC is not in expected range */
-			volume = 0;
+			volume[i] = 0;
 		}
 
-        if (volume != prevVol)
+        if (volume[i] != prevVol[i])
         {
             /* Update the codec volume */
-            PRINTF("Volume knob change %ld -> %ld\n", prevVol, volume);
-    		ret = Codec_AdjustBothHeadphoneVolume((uint8)volume);
-            prevVol = volume;
+            PRINTF("%s volume knob change %ld -> %ld\n", (i == vol_ctrl_right) ? "Right" : "Left", prevVol[i], volume[i]);
+    		Codec_AdjustBothHeadphoneVolume((uint8)volume[i]);
+            prevVol[i] = volume[i];
         }
     }
 }

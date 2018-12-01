@@ -865,7 +865,7 @@ extern uint8 DMA_initVar;
 ***************************************/
 
 #define DMA_CHANNEL_CFG           (0x30000000u)
-#define DMA_DESCR0_CFG            (0x08410000u)
+#define DMA_DESCR0_CFG            (0x48E10001u)
 #define DMA_DESCR1_CFG            (0x00000000u)
 
 
