@@ -51,10 +51,9 @@
 #include "Codec.h"
 #include "AudioControl.h"
 #include "USBInterface.h"
+#include <LED.h>
 
 volatile uint32_t sys_tick;
-volatile uint32_t pwm_period = 20;
-volatile uint8_t  pwm_duty_cycle = 5;
 
 CY_ISR(HFI_Handler)
 {
@@ -71,16 +70,8 @@ CY_ISR(HFI_Handler)
 CY_ISR(SysTickHandler)
 {
     sys_tick++;
-#if 0
-    if ((sys_tick % pwm_period) == 0)
-    {
-        LED_BLUE_Write(1);
-    }
-    else if ((sys_tick % pwm_period) == (pwm_duty_cycle * pwm_period / 100))
-    {
-        LED_BLUE_Write(0);
-    }
-#endif
+    
+    LedIntHandler();
 }
 
 int main()
@@ -88,9 +79,10 @@ int main()
 	int32 usbEnumFlag = 0;
     
     CyIntSetSysVector(CY_INT_HARD_FAULT_IRQN, HFI_Handler);
-    
-    //CySysTickStart();
-    //CySysTickSetCallback(0, SysTickHandler);
+
+    /* Start SysTick */
+    CySysTickStart();
+    CySysTickSetCallback(0, SysTickHandler);
 	
 	/* Setup the Audio pipe from USB to I2S.*/	
     InitAudioPath();

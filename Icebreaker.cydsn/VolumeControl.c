@@ -72,7 +72,7 @@ void VolumeControlService(void)
         if (volume[i] != prevVol[i])
         {
             /* Update the codec volume */
-            PRINTF("%s volume knob change %ld -> %ld\n", (i == vol_ctrl_right) ? "Right" : "Left", prevVol[i], volume[i]);
+            D_PRINTF(DEBUG, "%s volume knob change %ld -> %ld\n", (i == vol_ctrl_right) ? "Right" : "Left", prevVol[i], volume[i]);
             
             if (i == vol_ctrl_right)
             {

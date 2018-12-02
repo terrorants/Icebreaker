@@ -16,6 +16,8 @@
 #include <Codec.h>
 #include <VolumeControl.h>
 #include <pcm1770.h>
+#include <Calibration.h>
+#include <LED.h>
 
 #define TK_SHELL_METHOD(c, verb)        int __tk_shell_ ## c ## _ ## verb(int __unused argc, char __unused **argv)
 #define TK_SHELL_COMMAND(name)          {#name, (tk_shell_command_verb_s *)__tk_shell_verbs_ ## name}
@@ -99,10 +101,25 @@ static TK_SHELL_VERBS(sys) =
     { "", NULL }
 };
 
-TK_SHELL_METHOD(led, pwm);
+TK_SHELL_METHOD(led, pwm_period);
+TK_SHELL_METHOD(led, start);
+TK_SHELL_METHOD(led, stop);
 static TK_SHELL_VERBS(led) =
 {
-    TK_SHELL_VERB(led, pwm),
+    TK_SHELL_VERB(led, pwm_period),
+    TK_SHELL_VERB(led, start),
+    TK_SHELL_VERB(led, stop),
+    { "", NULL }
+};
+
+TK_SHELL_METHOD(cal, print);
+TK_SHELL_METHOD(cal, set);
+TK_SHELL_METHOD(cal, save);
+static TK_SHELL_VERBS(cal) =
+{
+    TK_SHELL_VERB(cal, print),
+    TK_SHELL_VERB(cal, set),
+    TK_SHELL_VERB(cal, save),
     { "", NULL }
 };
 
@@ -113,6 +130,7 @@ static const tk_shell_command_s commands[] =
     TK_SHELL_COMMAND(pcm),
     TK_SHELL_COMMAND(sys),
     TK_SHELL_COMMAND(led),
+    TK_SHELL_COMMAND(cal),
     { "", NULL }
 };
 
@@ -351,22 +369,88 @@ TK_SHELL_METHOD(sys, adc)
     return 0;
 }
 
-TK_SHELL_METHOD(led, pwm)
+TK_SHELL_METHOD(led, pwm_period)
 {
     int i = 2;
     
     argc -= i;
     
-    if (argc != 2)
+    if (argc != 1)
     {
         PRINTF("Invalid number of arguments!\n");
         return -1;
     }
     pwm_period = atoi(argv[2]);
-    pwm_duty_cycle = atoi(argv[3]);
     
     PRINTF("> led:ok\n");
 
+    return 0;
+}
+
+TK_SHELL_METHOD(led, start)
+{
+    LedInit();
+    
+    PRINTF("> led:ok\n");
+
+    return 0;
+}
+
+TK_SHELL_METHOD(led, stop)
+{
+    LedDeInit();
+    
+    PRINTF("> led:ok\n");
+
+    return 0;
+}
+
+TK_SHELL_METHOD(cal, print)
+{
+    PRINTF("sign = 0x%08X\n", (unsigned int)cal_data->signature);
+    PRINTF("ctr = %lu\n", cal_data->counter);
+    PRINTF("adc_min[R] = %d\n", cal_data->adc_min[vol_ctrl_right]);
+    PRINTF("adc_max[R] = %d\n", cal_data->adc_max[vol_ctrl_right]);
+    PRINTF("adc_min[L] = %d\n", cal_data->adc_min[vol_ctrl_left]);
+    PRINTF("adc_max[L] = %d\n", cal_data->adc_max[vol_ctrl_left]);
+
+    PRINTF("led_max_brightness = %d\n", cal_data->led_max_brightness);
+    PRINTF("debug_mask = 0x%02X\n", (unsigned int)cal_data->debug_mask);
+    PRINTF("> cal:ok\n");
+
+    return 0;    
+}
+
+TK_SHELL_METHOD(cal, set)
+{
+    int i = 2;
+    
+    argc -= i;
+    
+    if (argc == 0)
+    {
+        PRINTF("Invalid number of arguments!\n");
+        return -1;
+    }
+    
+    if (strcicmp(argv[i], "led_max_brightness") == 0)
+    {
+        cal_data->led_max_brightness = atoi(argv[++i]);
+    }
+    else if (strcicmp(argv[i], "adc_min_l") == 0)
+    {
+        cal_data->adc_min[vol_ctrl_left] = atoi(argv[++i]);
+    }
+    else if (strcicmp(argv[i], "debug_mask") == 0)
+    {
+        cal_data->debug_mask = strtoul(argv[++i], NULL, 16);
+    }
+    return 0;
+}
+
+TK_SHELL_METHOD(cal, save)
+{
+    PRINTF("> cal:ok %d\n", CalibrationSave());
     return 0;
 }
 

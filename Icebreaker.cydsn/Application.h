@@ -48,6 +48,7 @@
     #include <stdint.h>
     #include <stdbool.h>
     #include <stdlib.h>
+    #include <Calibration.h>
 		
 	#ifdef TXDEBUG
         extern char gbuf[];
@@ -58,9 +59,16 @@
                 sprintf(gbuf, __VA_ARGS__); \
                 UART_UartPutString(gbuf); \
             } while (0)
+        #define DM_LVL_ERROR    0
+        #define DM_LVL_WARNING  1
+        #define DM_LVL_INFO     2
+        #define DM_LVL_DEBUG    3
+        
+        #define D_PRINTF(lvl, ...) do { if ((cal_data != NULL) && (DM_LVL_ ## lvl & cal_data->debug_mask)) { PRINTF(__VA_ARGS__); } } while (0)
 	#else	
 		#define PRINT(x)
         #define PRINTF(...)
+        #define D_PRINTF(lvl, ...)
 	#endif	/* #ifdef TXDEBUG */
 
 	/*  Function Prototype  */
@@ -132,8 +140,6 @@
 	#endif
     
     extern volatile uint32_t sys_tick;
-    extern volatile uint32_t pwm_period;
-    extern volatile uint8_t  pwm_duty_cycle;
 
 #endif /* #ifndef APP_H */
 

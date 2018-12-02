@@ -48,6 +48,7 @@
 #include <TkShell.h>
 #include <VolumeControl.h>
 #include <pcm1770.h>
+#include <Calibration.h>
 
 extern CYPDATA uint8 audioSource;
 extern CYDATA uint8 auxConfigured;
@@ -86,16 +87,18 @@ void InitApp(void)
 	CY_SET_REG32((void *) 0x40100038, CY_GET_REG32((void *) 0x40100038) | 0x22222222);     
 	
 	CyGlobalIntEnable;
+
+    CalibrationInit();
 	
     #ifdef TXDEBUG
 		UART_Start();
 		if(CySysGetResetReason(CY_SYS_RESET_SW) != CY_SYS_RESET_SW)
 		{
-			PRINTF("\r\nApp Started...\r\n");
+			D_PRINTF(INFO, "\r\nApp Started...\r\n");
 		}
 		else
 		{
-			PRINTF("\r\nApp Restarted after SW reset...\r\n");
+			D_PRINTF(INFO, "\r\nApp Restarted after SW reset...\r\n");
 		}
 	#endif /* #ifdef TXDEBUG */
 
@@ -104,11 +107,11 @@ void InitApp(void)
 	
 	if(Codec_Init() == 0)
 	{
-		PRINTF("Codec comm works!... \r\n");
+		D_PRINTF(INFO, "Codec comm works!... \r\n");
 	}
 	else
 	{
-		PRINTF("Codec comm DOESN'T work!... \r\n");
+		D_PRINTF(ERROR, "Codec comm DOESN'T work!... \r\n");
 	}
 	
 	Update_VolumeAudioOut();
@@ -182,9 +185,6 @@ uint8 Update_VolumeAudioOut(void)
 	uint8 ret = 0;
 	static int32 prevVol = 0;
 	static uint8 prevMute;
-	#ifdef TXDEBUG
-		char str[20];
-	#endif
 	
 	/* Get the MSB of the current volume data */
 	int32 volume = (((int8)USBFS_currentVolume[1])) + PC_VOLUME_MSB_CODEC_OFFSET;
@@ -223,7 +223,7 @@ uint8 Update_VolumeAudioOut(void)
 			ret = Codec_AdjustBothHeadphoneVolume((uint8)volume);
 			
 			#ifdef TXDEBUG
-				PRINTF("Codec vol set to %d \r\n", (int)volume);
+				D_PRINTF(DEBUG, "Codec vol set to %d \r\n", (int)volume);
 			#endif
 		}
 		
@@ -237,7 +237,7 @@ uint8 Update_VolumeAudioOut(void)
 			if(prevMute != 0)
 			{
 				ret = Codec_AdjustBothHeadphoneVolume(0);
-				PRINTF("Muted\r\n");
+				D_PRINTF(INFO, "Muted\r\n");
 			}
 			else
 			{
@@ -259,8 +259,7 @@ uint8 Update_VolumeAudioOut(void)
 				ret = Codec_AdjustBothHeadphoneVolume((uint8)volume);
 				
 				#ifdef TXDEBUG
-					sprintf(str, "Unmute - Codec vol set to %d \r\n", (int)volume);
-					PRINTF(str);
+					D_PRINTF(INFO, "Unmute - Codec vol set to %d \r\n", (int)volume);
 				#endif
 			}
 		}

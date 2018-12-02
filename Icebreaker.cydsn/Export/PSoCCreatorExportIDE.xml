@@ -47,6 +47,8 @@
           <File BuildType="BUILD" Toolchain="">TkShell.c</File>
           <File BuildType="BUILD" Toolchain="">VolumeControl.c</File>
           <File BuildType="BUILD" Toolchain="">pcm1770.c</File>
+          <File BuildType="BUILD" Toolchain="">Calibration.c</File>
+          <File BuildType="BUILD" Toolchain="">LED.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
           <File BuildType="BUILD" Toolchain="">Codec.h</File>
           <File BuildType="BUILD" Toolchain="">Application.h</File>
@@ -59,6 +61,8 @@
           <File BuildType="BUILD" Toolchain="">TkShell.h</File>
           <File BuildType="BUILD" Toolchain="">VolumeControl.h</File>
           <File BuildType="BUILD" Toolchain="">pcm1770.h</File>
+          <File BuildType="BUILD" Toolchain="">Calibration.h</File>
+          <File BuildType="BUILD" Toolchain="">LED.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\dev\git\Icebreaker\Icebreaker.cydsn\Generated_Source\PSoC4">
