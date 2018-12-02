@@ -161,7 +161,7 @@ void RunApplication(void)
 	if(USBFS_GetConfiguration() == TRUE)
 	{
 		/* Update the volume data */
-		//Update_VolumeAudioOut();		
+		Update_VolumeAudioOut();		
 	}
     
     TkShellService();
@@ -183,9 +183,9 @@ void RunApplication(void)
 uint8 Update_VolumeAudioOut(void)
 {
 	uint8 ret = 0;
-	static int32 prevVol = 0;
-	static uint8 prevMute;
-	
+    //static uint8 prevVol;
+	static uint8 prevMute = 0;
+#if 0
 	/* Get the MSB of the current volume data */
 	int32 volume = (((int8)USBFS_currentVolume[1])) + PC_VOLUME_MSB_CODEC_OFFSET;
 	
@@ -197,10 +197,12 @@ uint8 Update_VolumeAudioOut(void)
 	{
 		volume = PC_VOLUME_MSB_MIN;
 	}
-	
+#endif
+
 	/* Process volume control only when USB bus is idle */
 	if(USBFS_TRANS_STATE_IDLE == USBFS_transferState)
 	{
+#if 0
 		/* If there is a change in volume, update codec */
 		if(volume != prevVol)
 		{
@@ -226,7 +228,8 @@ uint8 Update_VolumeAudioOut(void)
 				D_PRINTF(DEBUG, "Codec vol set to %d \r\n", (int)volume);
 			#endif
 		}
-		
+#endif
+
 		/* Process mute data, if changed */
 		if(USBFS_currentMute != prevMute)
 		{
@@ -236,11 +239,15 @@ uint8 Update_VolumeAudioOut(void)
 			/* If mute is non-zero, then mute is active and update codec volume to 0 */
 			if(prevMute != 0)
 			{
-				ret = Codec_AdjustBothHeadphoneVolume(0);
+                //prevVol = Codec_GetHeadphoneVolume();
+				ret = Codec_SetMute(true);//Codec_AdjustBothHeadphoneVolume(0);
+                pcm1770_mute_set(true, true);
 				D_PRINTF(INFO, "Muted\r\n");
 			}
 			else
 			{
+                pcm1770_mute_set(false, false);
+                #if 0
 				/* If mute is released, then process and update the current volume to codec */
 				prevVol = volume;
 								
@@ -254,12 +261,13 @@ uint8 Update_VolumeAudioOut(void)
 					/* Set volume to 0 if the volume from PC is not in expected range */
 					volume = 0;
 				}
+                #endif
 								
 				/* Update the codec volume */
-				ret = Codec_AdjustBothHeadphoneVolume((uint8)volume);
+				ret = Codec_SetMute(false);//Codec_AdjustBothHeadphoneVolume((uint8)prevVol);
 				
 				#ifdef TXDEBUG
-					D_PRINTF(INFO, "Unmute - Codec vol set to %d \r\n", (int)volume);
+					D_PRINTF(INFO, "Unmute - Codec vol set to %d \r\n", (int)Codec_GetHeadphoneVolume);
 				#endif
 			}
 		}

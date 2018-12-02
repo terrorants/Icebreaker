@@ -41,6 +41,7 @@
 #include "cytypes.h"
 #include "CodecI2CM_I2C.h"
 #include "stdbool.h"
+#include "Application.h"
 
 #define I2C_WRITE_OPERATION		(0x00)
 #define I2C_TIMEOUT_MS          (0x64)
@@ -48,6 +49,7 @@
 typedef struct
 {
     uint8_t volume;
+    uint8_t mute;
     uint16_t reg[16];
 } codec_data_s;
 
@@ -205,6 +207,7 @@ uint8 Codec_SetSamplingRate(uint8 srCtrlField)
 
 uint8 Codec_AdjustBothHeadphoneVolume(uint8 volume)
 {
+    D_PRINTF(DEBUG, "Codec_AdjustBothHeadphoneVolume: %d -> %d, %d\n", codec_data.volume, volume, codec_data.mute);
 	if(volume > CODEC_HP_VOLUME_MAX)
 	{
 		volume = CODEC_HP_VOLUME_MAX;
@@ -212,12 +215,39 @@ uint8 Codec_AdjustBothHeadphoneVolume(uint8 volume)
 	
     codec_data.volume = volume;
 
-	return Codec_SendData(CODEC_REG_LHPOUT, (volume + (CODEC_LHPOUT_BOTH + CODEC_LHPOUT_LZCEN + CODEC_HP_MUTE_VALUE)));
+    if (codec_data.mute == false)
+    {
+	    return Codec_SendData(CODEC_REG_LHPOUT, (volume + (CODEC_LHPOUT_BOTH + CODEC_LHPOUT_LZCEN + CODEC_HP_MUTE_VALUE)));
+    }
+    else
+    {
+        return CodecI2CM_I2C_MSTR_NO_ERROR;
+    }
 }
 
 uint8 Codec_GetHeadphoneVolume(void)
 {
     return codec_data.volume;
+}
+
+uint8 Codec_SetMute(bool enable)
+{
+    uint8 ret = CodecI2CM_I2C_MSTR_NO_ERROR;
+
+    D_PRINTF(DEBUG, "Codec_SetMute: %d -> %d\n", codec_data.mute, enable);
+    if (enable)
+    {
+        ret = Codec_AdjustBothHeadphoneVolume(0);
+    }
+
+    codec_data.mute = enable;
+
+    if (!enable)
+    {
+        ret = Codec_AdjustBothHeadphoneVolume(codec_data.volume);
+    }
+    
+    return ret;
 }
 
 /*******************************************************************************

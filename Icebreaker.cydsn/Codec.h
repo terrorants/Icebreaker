@@ -42,6 +42,7 @@
 	#define CODEC_H	
 
 	#include "cytypes.h"
+    #include <stdbool.h>
 		
 	#define CODEC_I2C_ADDR			(0x1A)
 
@@ -169,6 +170,7 @@
 	uint8 Codec_SelectMicInputToADC(void);
 	uint8 Codec_AdjustBothHeadphoneVolume(uint8 volume);
     uint8 Codec_GetHeadphoneVolume(void);
+    uint8 Codec_SetMute(bool enable);
 	uint8 Codec_MuteMic(_Bool isMuteOrUnmute);
     uint8 Codec_SetMicBoost(_Bool micBoost);
 	uint8 Codec_SetSamplingRate(uint8 srCtrlField);

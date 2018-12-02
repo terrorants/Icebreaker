@@ -118,6 +118,9 @@ void pcm1770_reg_write(uint8 reg, uint8 data)
 
 void pcm1770_volume_set(int8 volume)
 {
+    uint8 data = pcm1770_regs[PCM1770_REG_HPOUT_L];
+    pcm1770_reg_hpout_l_s *pData = (pcm1770_reg_hpout_l_s *)&data;
+
     if (volume > PCM1770_VOL_MAX)
     {
         volume = PCM1770_VOL_MAX;
@@ -127,7 +130,9 @@ void pcm1770_volume_set(int8 volume)
     {
         volume = PCM1770_VOL_MIN;
     }
-    pcm1770_reg_write(1, volume + NUM_OF_STEPS);
+
+    pData->atl = volume + NUM_OF_STEPS;
+    pcm1770_reg_write(1, data);
     pcm1770_reg_write(2, volume + NUM_OF_STEPS);
 }
 
@@ -138,6 +143,17 @@ void pcm1770_volume_set_level(uint8 level)
     volume = level * NUM_OF_STEPS / PC_VOLUME_MSB_MAX - NUM_OF_STEPS;
 
     pcm1770_volume_set((int8) volume);
+}
+
+void pcm1770_mute_set(bool left, bool right)
+{
+    uint8 data = pcm1770_regs[PCM1770_REG_HPOUT_L];
+    pcm1770_reg_hpout_l_s *pData = (pcm1770_reg_hpout_l_s *)&data;
+
+    pData->mutl = left;
+    pData->mutr = right;
+
+    pcm1770_reg_write(PCM1770_REG_HPOUT_L, data);
 }
 
 uint8 pcm1770_reg_read(uint8 reg)
