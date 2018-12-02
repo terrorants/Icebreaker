@@ -16,6 +16,7 @@
 #include <DMA.h>
 #include <Codec.h>
 #include <USBFS.h>
+#include <pcm1770.h>
 
 int32 ADC_MIN_READING[vol_ctrl_both] = { -2, -2 };
 int32 ADC_MAX_READING[vol_ctrl_both] = { 2047, 2047 };
@@ -72,7 +73,15 @@ void VolumeControlService(void)
         {
             /* Update the codec volume */
             PRINTF("%s volume knob change %ld -> %ld\n", (i == vol_ctrl_right) ? "Right" : "Left", prevVol[i], volume[i]);
-    		Codec_AdjustBothHeadphoneVolume((uint8)volume[i]);
+            
+            if (i == vol_ctrl_right)
+            {
+    		    Codec_AdjustBothHeadphoneVolume((uint8)volume[i]);
+            }
+            else
+            {
+                pcm1770_volume_set_level(volume[i]);
+            }
             prevVol[i] = volume[i];
         }
     }

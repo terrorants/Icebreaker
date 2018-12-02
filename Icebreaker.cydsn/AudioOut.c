@@ -137,63 +137,66 @@ void ProcessAudioOut(void)
 		
 		/* Obtain the number of bytes received from USB Audio OUT endpoint */
         count = USBFS_GetEPCount(AUDIO_OUT_ENDPOINT);
-    
-        /* Update of usbCount needs to be atomic */
-        isr_TxDMADone_Disable();
-        outUsbCount += count;
-        isr_TxDMADone_Enable();
-        
-		/* Implement the circular buffer (outBuffer) DMA transfer
-			When the number of bytes to transfer from USB outRam to outBuffer makes the outBuffer to overflow,
-			wraparound the buffer and fill the remaining number of bytes from the buffer start. Two DMA TDs are
-			used for this purpose - one (TD 0) transferring the outRam to outBuffer till outBuffer is full and
-			second one (TD 1) transferring the remaining number of bytes to the outBuffer starting locations.
-			
-			When the number of bytes to transfer from outRam to outBuffer does not make the outBuffer to overflow,
-			Use only one TD (TD 0) to transfer the entire outRam contents to outBuffer */
-        if((outBufIndex + count) > sizeof(outBuffer))
+
+        if (count > 0)
         {
-            /* Set up TD to wrap around circular buffer */
-            remain = sizeof(outBuffer) - outBufIndex;
-			
-			USBOutDMA_SetNumDataElements(0, remain);
-			USBOutDMA_SetDstAddress(0, (void *) (outBuffer + outBufIndex));
-			USBOutDMA_SetSrcAddress(0, (void *) (outRam));						
-			USBOutDMA_SetPostCompletionActions(0, CYDMA_CHAIN | CYDMA_INVALIDATE);
-			USBOutDMA_SetTransferMode(0,CYDMA_ENTIRE_DESCRIPTOR_CHAIN);			
-			
-			USBOutDMA_SetNumDataElements(1, count - remain);
-			USBOutDMA_SetDstAddress(1, (void *) (outBuffer));
-			USBOutDMA_SetSrcAddress(1, (void *) (outRam + remain));			
-			USBOutDMA_SetPostCompletionActions(1, CYDMA_CHAIN | CYDMA_INVALIDATE);
-			USBOutDMA_SetTransferMode(1, CYDMA_ENTIRE_DESCRIPTOR);
-			
-			USBOutDMA_SetNextDescriptor(0);	
-			
-			/* Validate descriptors */
-            USBOutDMA_ValidateDescriptor(0);
-            USBOutDMA_ValidateDescriptor(1); 
-                        
-            outBufIndex = count-remain;
-        }
-        else 
-        {
-            /* Single contiguous TD */
-			USBOutDMA_SetNumDataElements(0, count);
-			USBOutDMA_SetDstAddress(0, (void *) (outBuffer + outBufIndex));
-			USBOutDMA_SetSrcAddress(0, (void *) (outRam));						
-			USBOutDMA_SetPostCompletionActions(0, CYDMA_INVALIDATE);
-			USBOutDMA_SetTransferMode(0,CYDMA_ENTIRE_DESCRIPTOR);
-			
-			USBOutDMA_SetNextDescriptor(0);	
-			
-			USBOutDMA_ValidateDescriptor(0);
-			           
-            outBufIndex += count;
-            if (outBufIndex == sizeof(outBuffer)) 
-			{
-				outBufIndex = 0;
-			}
+            /* Update of usbCount needs to be atomic */
+            isr_TxDMADone_Disable();
+            outUsbCount += count;
+            isr_TxDMADone_Enable();
+            
+    		/* Implement the circular buffer (outBuffer) DMA transfer
+    			When the number of bytes to transfer from USB outRam to outBuffer makes the outBuffer to overflow,
+    			wraparound the buffer and fill the remaining number of bytes from the buffer start. Two DMA TDs are
+    			used for this purpose - one (TD 0) transferring the outRam to outBuffer till outBuffer is full and
+    			second one (TD 1) transferring the remaining number of bytes to the outBuffer starting locations.
+    			
+    			When the number of bytes to transfer from outRam to outBuffer does not make the outBuffer to overflow,
+    			Use only one TD (TD 0) to transfer the entire outRam contents to outBuffer */
+            if((outBufIndex + count) > sizeof(outBuffer))
+            {
+                /* Set up TD to wrap around circular buffer */
+                remain = sizeof(outBuffer) - outBufIndex;
+    			
+    			USBOutDMA_SetNumDataElements(0, remain);
+    			USBOutDMA_SetDstAddress(0, (void *) (outBuffer + outBufIndex));
+    			USBOutDMA_SetSrcAddress(0, (void *) (outRam));						
+    			USBOutDMA_SetPostCompletionActions(0, CYDMA_CHAIN | CYDMA_INVALIDATE);
+    			USBOutDMA_SetTransferMode(0,CYDMA_ENTIRE_DESCRIPTOR_CHAIN);			
+    			
+    			USBOutDMA_SetNumDataElements(1, count - remain);
+    			USBOutDMA_SetDstAddress(1, (void *) (outBuffer));
+    			USBOutDMA_SetSrcAddress(1, (void *) (outRam + remain));			
+    			USBOutDMA_SetPostCompletionActions(1, CYDMA_CHAIN | CYDMA_INVALIDATE);
+    			USBOutDMA_SetTransferMode(1, CYDMA_ENTIRE_DESCRIPTOR);
+    			
+    			USBOutDMA_SetNextDescriptor(0);	
+    			
+    			/* Validate descriptors */
+                USBOutDMA_ValidateDescriptor(0);
+                USBOutDMA_ValidateDescriptor(1); 
+                            
+                outBufIndex = count-remain;
+            }
+            else 
+            {
+                /* Single contiguous TD */
+    			USBOutDMA_SetNumDataElements(0, count);
+    			USBOutDMA_SetDstAddress(0, (void *) (outBuffer + outBufIndex));
+    			USBOutDMA_SetSrcAddress(0, (void *) (outRam));						
+    			USBOutDMA_SetPostCompletionActions(0, CYDMA_INVALIDATE);
+    			USBOutDMA_SetTransferMode(0,CYDMA_ENTIRE_DESCRIPTOR);
+    			
+    			USBOutDMA_SetNextDescriptor(0);	
+    			
+    			USBOutDMA_ValidateDescriptor(0);
+    			           
+                outBufIndex += count;
+                if (outBufIndex == sizeof(outBuffer)) 
+    			{
+    				outBufIndex = 0;
+    			}
+            }
         }
         
         /* Enable the USB Out DMA, don't update the TD as it progresses */

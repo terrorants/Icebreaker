@@ -47,6 +47,7 @@
 #include <Codec.h>
 #include <TkShell.h>
 #include <VolumeControl.h>
+#include <pcm1770.h>
 
 extern CYPDATA uint8 audioSource;
 extern CYDATA uint8 auxConfigured;
@@ -132,6 +133,9 @@ void InitApp(void)
     TkShellInit();
     
     VolumeControlInit();
+    
+    /* Start SPI Master */
+    pcm1770_init();
 }
 
 

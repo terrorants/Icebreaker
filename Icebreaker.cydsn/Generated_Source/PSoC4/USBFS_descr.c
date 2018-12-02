@@ -59,8 +59,8 @@ const uint8 CYCODE USBFS_DEVICE0_CONFIGURATION0_DESCR[231u] = {
 /*  bNumInterfaces                         */ 0x04u,
 /*  bConfigurationValue                    */ 0x01u,
 /*  iConfiguration                         */ 0x03u,
-/*  bmAttributes                           */ 0xC0u,
-/*  bMaxPower                              */ 0x32u,
+/*  bmAttributes                           */ 0x80u,
+/*  bMaxPower                              */ 0xFAu,
 /*********************************************************************
 * AudioControl Interface Descriptor
 *********************************************************************/

@@ -15,6 +15,7 @@
 #include "TkShell.h"
 #include <Codec.h>
 #include <VolumeControl.h>
+#include <pcm1770.h>
 
 #define TK_SHELL_METHOD(c, verb)        int __tk_shell_ ## c ## _ ## verb(int __unused argc, char __unused **argv)
 #define TK_SHELL_COMMAND(name)          {#name, (tk_shell_command_verb_s *)__tk_shell_verbs_ ## name}
@@ -78,6 +79,13 @@ static TK_SHELL_VERBS(wm) =
     { "", NULL }
 };
 
+TK_SHELL_METHOD(pcm, reg);
+static TK_SHELL_VERBS(pcm) = 
+{
+    TK_SHELL_VERB(pcm, reg),
+    { "", NULL }
+};
+
 TK_SHELL_METHOD(sys, crash);
 TK_SHELL_METHOD(sys, info);
 TK_SHELL_METHOD(sys, reset);
@@ -102,6 +110,7 @@ static const tk_shell_command_s commands[] =
 {
     TK_SHELL_COMMAND(gpio),
     TK_SHELL_COMMAND(wm),
+    TK_SHELL_COMMAND(pcm),
     TK_SHELL_COMMAND(sys),
     TK_SHELL_COMMAND(led),
     { "", NULL }
@@ -279,6 +288,33 @@ TK_SHELL_METHOD(wm, reg_rd)
     reg = atoi(argv[i++]);
     
     PRINTF("> wm:ok 0x%04X\n", Codec_GetData(reg));
+    
+    return 0;
+}
+
+TK_SHELL_METHOD(pcm, reg)
+{
+    int i = 2;
+    uint8 reg;
+    uint8 data;
+    
+    argc -= i;
+    
+    if (argc != 3)
+    {
+        PRINTF("Invalid number of arguments!\n");
+        return -1;
+    }
+    
+    reg = atoi(argv[i + 1]);
+    data = strtoul(argv[i + 2], NULL, 16);
+
+    if (strcicmp(argv[i], "wr") == 0)
+    {
+        pcm1770_reg_write(reg, data);
+    }
+    
+    PRINTF("> pcm:ok 0x%02X\n", pcm1770_reg_read(reg));
     
     return 0;
 }
