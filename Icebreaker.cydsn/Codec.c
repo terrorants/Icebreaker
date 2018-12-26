@@ -225,6 +225,14 @@ uint8 Codec_AdjustBothHeadphoneVolume(uint8 volume)
     }
 }
 
+uint8 Codec_AdjustBothHeadphoneVolumeLevel(uint8 level)
+{
+    uint32 volume = level;
+
+    // Round with 1000th digit precision
+    return Codec_AdjustBothHeadphoneVolume((uint8)((((volume * 1000) / PC_VOLUME_MSB_MAX) * CODEC_HP_VOLUME_MAX + 500) / 1000));
+}
+
 uint8 Codec_GetHeadphoneVolume(void)
 {
     return codec_data.volume;

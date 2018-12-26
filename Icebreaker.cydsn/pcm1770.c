@@ -131,6 +131,8 @@ void pcm1770_volume_set(int8 volume)
         volume = PCM1770_VOL_MIN;
     }
 
+    D_PRINTF(DEBUG, "%s: %d -> %d\n", __FUNCTION__, pData->atl - NUM_OF_STEPS, volume);
+
     pData->atl = volume + NUM_OF_STEPS;
     pcm1770_reg_write(1, data);
     pcm1770_reg_write(2, volume + NUM_OF_STEPS);
@@ -138,9 +140,10 @@ void pcm1770_volume_set(int8 volume)
 
 void pcm1770_volume_set_level(uint8 level)
 {
-    int32 volume;
+    int32 volume = level;
 
-    volume = level * NUM_OF_STEPS / PC_VOLUME_MSB_MAX - NUM_OF_STEPS;
+    // Round with 1000th digit precision
+    volume = ((volume * 1000 / PC_VOLUME_MSB_MAX) * NUM_OF_STEPS + 500) / 1000 + PCM1770_VOL_MIN;
 
     pcm1770_volume_set((int8) volume);
 }

@@ -49,6 +49,10 @@
     #include <stdbool.h>
     #include <stdlib.h>
     #include <Calibration.h>
+    
+    #define FW_VER_MAJOR        1
+    #define FW_VER_MINOR        0
+    #define FW_VER_REV          0
 		
 	#ifdef TXDEBUG
         extern char gbuf[];

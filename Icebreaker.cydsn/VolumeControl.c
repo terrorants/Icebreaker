@@ -58,6 +58,7 @@ void VolumeControlService(void)
         // Scale ADC reading to USBFS volume range
         volume[i] = (adcSample[i] - ADC_MIN_READING[i]) * PC_VOLUME_MSB_MAX / ADC_READING_RANGE(i);
 
+        #if 0
         /* Filter volume to be in the expected range */
 		if((volume[i] > PC_VOLUME_MSB_MIN) && (volume[i] <= PC_VOLUME_MSB_MAX))
 		{
@@ -68,6 +69,7 @@ void VolumeControlService(void)
 			/* Set volume to 0 if the volume from PC is not in expected range */
 			volume[i] = 0;
 		}
+        #endif
 
         if (volume[i] != prevVol[i])
         {
@@ -76,7 +78,7 @@ void VolumeControlService(void)
             
             if (i == vol_ctrl_right)
             {
-    		    Codec_AdjustBothHeadphoneVolume((uint8)volume[i]);
+    		    Codec_AdjustBothHeadphoneVolumeLevel(volume[i]);
             }
             else
             {

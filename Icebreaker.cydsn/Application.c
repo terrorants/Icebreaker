@@ -92,6 +92,9 @@ void InitApp(void)
 	
     #ifdef TXDEBUG
 		UART_Start();
+
+        PRINTF("\r\n=== v%d.%d.%d ===\r\n", FW_VER_MAJOR, FW_VER_MINOR, FW_VER_REV);
+
 		if(CySysGetResetReason(CY_SYS_RESET_SW) != CY_SYS_RESET_SW)
 		{
 			D_PRINTF(INFO, "\r\nApp Started...\r\n");

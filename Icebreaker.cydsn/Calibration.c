@@ -63,7 +63,7 @@ bool CalibrationSave(void)
 
     returnValue = CySysFlashWriteRow(CY_TEST_FLASH_ROW, (uint8 *)cal_data);
 
-    /* Check if operration is successful */
+    /* Check if operation is successful */
     return (returnValue == CY_SYS_FLASH_SUCCESS);
 }
 

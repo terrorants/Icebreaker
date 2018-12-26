@@ -154,7 +154,7 @@
 	#define CODEC_RESET_WAIT_DELAY				(10)	 /* in milli seconds */
 
 	#define CODEC_HP_DEFAULT_VOLUME				(0)
-	#define CODEC_HP_VOLUME_MAX					(80) 	/* 81 levels including MUTE */	
+	#define CODEC_HP_VOLUME_MAX					(74) 	/* 81 levels including MUTE, 74 levels up to full-scale (0 dB) */	
 	#define CODEC_HP_MUTE_VALUE					(0x2F) 	/* Writing <= 0x2F mutes the headphone output */
 		
 	/* Value format: bit[0] - BOSR, bit[4:1] - SR[3:0] */	
@@ -169,6 +169,7 @@
 	uint8 Codec_Init(void);
 	uint8 Codec_SelectMicInputToADC(void);
 	uint8 Codec_AdjustBothHeadphoneVolume(uint8 volume);
+    uint8 Codec_AdjustBothHeadphoneVolumeLevel(uint8 level);
     uint8 Codec_GetHeadphoneVolume(void);
     uint8 Codec_SetMute(bool enable);
 	uint8 Codec_MuteMic(_Bool isMuteOrUnmute);

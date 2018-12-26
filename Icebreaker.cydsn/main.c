@@ -89,6 +89,9 @@ int main()
 	
 	/* Setup the Application part of the firmware */
     InitApp();
+    
+    /* Start LED animation */
+    LedInit();
 	
 	PRINTF("InitApp Complete\r\n");
 	

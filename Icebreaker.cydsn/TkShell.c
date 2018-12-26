@@ -19,10 +19,10 @@
 #include <Calibration.h>
 #include <LED.h>
 
-#define TK_SHELL_METHOD(c, verb)        int __tk_shell_ ## c ## _ ## verb(int __unused argc, char __unused **argv)
-#define TK_SHELL_COMMAND(name)          {#name, (tk_shell_command_verb_s *)__tk_shell_verbs_ ## name}
-#define TK_SHELL_VERBS(name)            const tk_shell_command_verb_s __tk_shell_verbs_ ## name[] 
-#define TK_SHELL_VERB(c, name)          {#name, __tk_shell_ ## c ## _ ## name}
+#define TK_SHELL_METHOD(c, verb)              int __tk_shell_ ## c ## _ ## verb(int __unused argc, char __unused **argv)
+#define TK_SHELL_COMMAND(name, desc)          {#name, (tk_shell_command_verb_s *)__tk_shell_verbs_ ## name, desc}
+#define TK_SHELL_VERBS(name)                  const tk_shell_command_verb_s __tk_shell_verbs_ ## name[] 
+#define TK_SHELL_VERB(c, name, desc)          {#name, __tk_shell_ ## c ## _ ## name, desc}
 
 #define CMD_BUF_LEN 64
 #define TK_SHELL_MAX_ARGS 10
@@ -31,12 +31,14 @@ typedef struct
 {
   const char *name;
   int        (*func)(int argc, char **argv);
+  const char *desc;
 } tk_shell_command_verb_s;
 
 typedef struct
 {
   const char *name;
   tk_shell_command_verb_s *verbs;
+  const char *desc;
 } tk_shell_command_s;
 
 
@@ -62,10 +64,10 @@ TK_SHELL_METHOD(gpio, config);
 TK_SHELL_METHOD(gpio, get);
 static TK_SHELL_VERBS(gpio) =
 {
-    TK_SHELL_VERB(gpio, set),
-    TK_SHELL_VERB(gpio, config),
-    TK_SHELL_VERB(gpio, get),
-    { "", NULL }
+    TK_SHELL_VERB(gpio, set, "set GPIO state"),
+    TK_SHELL_VERB(gpio, config, "configure GPIO"),
+    TK_SHELL_VERB(gpio, get, "get GPIO state"),
+    { "", NULL, "" }
 };
 
 TK_SHELL_METHOD(wm, vol_set);
@@ -74,18 +76,18 @@ TK_SHELL_METHOD(wm, reg_wr);
 TK_SHELL_METHOD(wm, reg_rd);
 static TK_SHELL_VERBS(wm) =
 {
-    TK_SHELL_VERB(wm, vol_set),
-    TK_SHELL_VERB(wm, vol_get),
-    TK_SHELL_VERB(wm, reg_wr),
-    TK_SHELL_VERB(wm, reg_rd),
-    { "", NULL }
+    TK_SHELL_VERB(wm, vol_set, "set volume level <vol:uint8>"),
+    TK_SHELL_VERB(wm, vol_get, "get volume level"),
+    TK_SHELL_VERB(wm, reg_wr, "write register <reg:uint8,data:uint16>)"),
+    TK_SHELL_VERB(wm, reg_rd, "read register <reg:uint8>"),
+    { "", NULL, "" }
 };
 
 TK_SHELL_METHOD(pcm, reg);
 static TK_SHELL_VERBS(pcm) = 
 {
-    TK_SHELL_VERB(pcm, reg),
-    { "", NULL }
+    TK_SHELL_VERB(pcm, reg, "register read (rd) and write (wr) <reg:uint8,data:uint8>"),
+    { "", NULL, "" }
 };
 
 TK_SHELL_METHOD(sys, crash);
@@ -94,11 +96,11 @@ TK_SHELL_METHOD(sys, reset);
 TK_SHELL_METHOD(sys, adc);
 static TK_SHELL_VERBS(sys) = 
 {
-    TK_SHELL_VERB(sys, crash),
-    TK_SHELL_VERB(sys, info),
-    TK_SHELL_VERB(sys, reset),
-    TK_SHELL_VERB(sys, adc),
-    { "", NULL }
+    TK_SHELL_VERB(sys, crash, "trigger a hard fault"),
+    TK_SHELL_VERB(sys, info, "print info"),
+    TK_SHELL_VERB(sys, reset, "trigger a SW reset"),
+    TK_SHELL_VERB(sys, adc, "print ADC values"),
+    { "", NULL, "" }
 };
 
 TK_SHELL_METHOD(led, pwm_period);
@@ -106,10 +108,10 @@ TK_SHELL_METHOD(led, start);
 TK_SHELL_METHOD(led, stop);
 static TK_SHELL_VERBS(led) =
 {
-    TK_SHELL_VERB(led, pwm_period),
-    TK_SHELL_VERB(led, start),
-    TK_SHELL_VERB(led, stop),
-    { "", NULL }
+    TK_SHELL_VERB(led, pwm_period, "set LED PWM period"),
+    TK_SHELL_VERB(led, start, "start LED animation"),
+    TK_SHELL_VERB(led, stop, "stop LED animation"),
+    { "", NULL, "" }
 };
 
 TK_SHELL_METHOD(cal, print);
@@ -117,21 +119,21 @@ TK_SHELL_METHOD(cal, set);
 TK_SHELL_METHOD(cal, save);
 static TK_SHELL_VERBS(cal) =
 {
-    TK_SHELL_VERB(cal, print),
-    TK_SHELL_VERB(cal, set),
-    TK_SHELL_VERB(cal, save),
-    { "", NULL }
+    TK_SHELL_VERB(cal, print, "print cal data"),
+    TK_SHELL_VERB(cal, set, "set cal data"),
+    TK_SHELL_VERB(cal, save, "commit cal data to flash"),
+    { "", NULL, "" }
 };
 
 static const tk_shell_command_s commands[] = 
 {
-    TK_SHELL_COMMAND(gpio),
-    TK_SHELL_COMMAND(wm),
-    TK_SHELL_COMMAND(pcm),
-    TK_SHELL_COMMAND(sys),
-    TK_SHELL_COMMAND(led),
-    TK_SHELL_COMMAND(cal),
-    { "", NULL }
+    TK_SHELL_COMMAND(gpio, "GPIO commands"),
+    TK_SHELL_COMMAND(wm, "Wolfson Codec commands"),
+    TK_SHELL_COMMAND(pcm, "Burr-Brown Codec commands"),
+    TK_SHELL_COMMAND(sys, "System commands"),
+    TK_SHELL_COMMAND(led, "LED commands"),
+    TK_SHELL_COMMAND(cal, "Calibration data commands"),
+    { "", NULL, "" }
 };
 
 static char cmd_buf[CMD_BUF_LEN];
@@ -461,7 +463,7 @@ static int TkShellProcessCommand(void)
     bool found = false;
     char *argv[TK_SHELL_MAX_ARGS];
     int argc = 0;
-    int i = 0, j = 0;
+    int i = 0, j = 0, k = 0;
     
     while (1)
     {
@@ -495,8 +497,7 @@ static int TkShellProcessCommand(void)
     
     if (argc > 0)
     {
-        i = 0;
-        j = 0;
+        i = j = k = 0;
         while (strcmp(commands[i].name, "") != 0)
         {
             if (strcicmp(argv[0], commands[i].name) == 0)
@@ -509,6 +510,17 @@ static int TkShellProcessCommand(void)
                         found = true;
                         break;
                     }
+                    else if (strcicmp(argv[1], "help") == 0)
+                    {
+                        found = true;
+                        PRINTF("Displaying list of %s commands:\n", commands[i].name);
+                        while (strcmp(commands[i].verbs[k].name, "") != 0)
+                        {
+                            PRINTF("\t%s %s: %s\n", commands[i].name, commands[i].verbs[k].name, commands[i].verbs[k].desc);
+                            k++;
+                        }
+                        break;
+                    }
                     j++;
                 }
 
@@ -516,6 +528,17 @@ static int TkShellProcessCommand(void)
                 {
                     break;
                 }
+            }
+            else if (strcicmp(argv[0], "help") == 0)
+            {
+                found = true;
+                PRINTF("Displaying list of commands:\n");
+                while (strcmp(commands[j].name, "") != 0)
+                {
+                    PRINTF("\t%s: %s\n", commands[j].name, commands[j].desc);
+                    j++;
+                }
+                break;
             }
             i++;
         }
